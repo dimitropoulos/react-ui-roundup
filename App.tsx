@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { ThemeProvider, createMuiTheme } from '@material-ui/core';
+import { ThemeProvider, createMuiTheme, Container } from '@material-ui/core';
 
 import { Components } from './Components';
 import { FrameworkStats } from './FrameworkStats';
@@ -23,9 +23,11 @@ export const App: FC = () => {
   return (
     <ThemeProvider theme={theme}>
       <Header />
-      <FrameworkStats />
-      <FrameworkFeatures />
-      <Components />
+      <Container maxWidth="lg">
+        <FrameworkStats />
+        <FrameworkFeatures />
+        <Components />
+      </Container>
     </ThemeProvider>
   )
 };
