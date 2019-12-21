@@ -20,7 +20,7 @@ export const materialUI: Framework = {
       },
     ],
     rtlSupport: true,
-    themer: `${frameworkHomepage}/discover-more/related-projects/#design-resources`,
+    themer: `${frameworkHomepage}/discover-more/related-projects/#theming`,
     typeScript: true,
   },
   components: [
