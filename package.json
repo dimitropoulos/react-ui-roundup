@@ -4,8 +4,9 @@
   "author": "Dimitri Mitropoulos <dimitrimitropoulos@gmail.com>",
   "license": "MIT",
   "scripts": {
+    "build": "yarn parcel build index.html",
     "generate": "yarn ts-node generate-readme.ts",
-    "start": "yarn run parcel index.html"
+    "start": "yarn parcel index.html"
   },
   "dependencies": {
     "@material-ui/core": "^4.8.0",
