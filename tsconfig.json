@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "types": [
+      "node",
+      "webpack-env"
+    ],
+    "esModuleInterop": true,
+    "jsx": "react",
+    "strict": true,
+  },
+  "include": [
+    "*.ts"
+  ]
+}

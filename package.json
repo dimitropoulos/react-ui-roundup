@@ -1,0 +1,30 @@
+{
+  "name": "react-ui-roundup",
+  "version": "1.0.0",
+  "author": "Dimitri Mitropoulos <dimitrimitropoulos@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "generate": "yarn ts-node generate-readme.ts",
+    "start": "yarn run parcel index.html"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.8.0",
+    "@material-ui/icons": "^4.5.1",
+    "@material-ui/lab": "^4.0.0-alpha.36",
+    "@types/node": "^12.12.21",
+    "@types/node-fetch": "^2.5.4",
+    "@types/ramda": "^0.26.38",
+    "@types/webpack-env": "^1.14.1",
+    "cross-fetch": "^3.0.4",
+    "node-fetch": "^2.6.0",
+    "parcel": "^1.12.4",
+    "ramda": "^0.26.1",
+    "ramda-adjunct": "^2.23.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "ts-node": "^8.5.4"
+  },
+  "devDependencies": {
+    "typescript": "^3.7.3"
+  }
+}
