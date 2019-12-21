@@ -31,7 +31,7 @@ const frameworksSectionMarkdown = (repoInfo: any) => disclaimerLines([
     rows: map(({ frameworkName, frameworkHomepage, repoURL }) => [
       frameworkName,
       link({ text: removeProtocol(frameworkHomepage), href: frameworkHomepage }),
-      link({ text: removeProtocol(repoURL), href: repoURL }),
+      link({ text: removeProtocol(repoURL).replace(/github\.com\//, ''), href: repoURL }),
       repoInfo[repoURL]?.stargazers_count?.toLocaleString() ?? noValue,
       repoInfo[repoURL]?.forks_count?.toLocaleString() ?? noValue,
       repoInfo[repoURL]?.open_issues_count?.toLocaleString() ?? noValue,

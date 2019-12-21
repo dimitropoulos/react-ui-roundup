@@ -11,27 +11,27 @@ Are you a frontend developer or designer?  Do you wish you had a one-stop-shop y
 
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [github.com/ant-design/ant-design](https://github.com/ant-design/ant-design) | 54,668 | 19,778 | 492 | MIT License |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 54,668 | 19,778 | 492 | MIT License |
 | Atlaskit | [atlaskit.atlassian.com](https://atlaskit.atlassian.com) | [bitbucket.org/atlassian/atlaskit-mk-2/src/master](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master) | -- | -- | -- | -- |
-| Atlaskit | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [github.com/JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,341 | 125 | 11 | Apache License 2.0 |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [github.com/palantir/blueprint](https://github.com/palantir/blueprint) | 15,330 | 1,459 | 462 | Apache License 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [github.com/carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,410 | 517 | 451 | Apache License 2.0 |
-| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [github.com/chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 3,720 | 200 | 48 | MIT License |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [github.com/elastic/eui](https://github.com/elastic/eui) | 1,419 | 246 | 303 | Apache License 2.0 |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [github.com/elementalui/elemental](https://github.com/elementalui/elemental) | 4,283 | 239 | 50 | MIT License |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [github.com/segmentio/evergreen](https://github.com/segmentio/evergreen) | 8,915 | 456 | 64 | MIT License |
-| Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [github.com/pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,328 | 218 | 7 | Apache License 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [github.com/mui-org/material-ui](https://github.com/mui-org/material-ui) | 53,126 | 13,627 | 294 | MIT License |
-| Onsen UI | [onsen.io](https://onsen.io) | [github.com/OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,768 | 893 | 117 | Apache License 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [github.com/kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 371 | 40 | 42 | MIT License |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [github.com/primefaces/primereact](https://github.com/primefaces/primereact) | 1,173 | 286 | 120 | MIT License |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [github.com/react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 16,796 | 2,730 | 118 | MIT License |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [github.com/react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,540 | 1,052 | 259 | MIT License |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [github.com/Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,035 | 4,964 | 964 | MIT License |
-| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [github.com/OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,468 | 1,328 | 592 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [github.com/zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 709 | 48 | 13 | Apache License 2.0 |
-| grommet | [v2.grommet.io](https://v2.grommet.io) | [github.com/grommet/grommet](https://github.com/grommet/grommet) | 5,719 | 680 | 173 | Apache License 2.0 |
-| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [github.com/mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,049 | 301 | 114 | MIT License |
+| Atlaskit | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,341 | 125 | 11 | Apache License 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,330 | 1,459 | 462 | Apache License 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,410 | 517 | 451 | Apache License 2.0 |
+| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 3,720 | 200 | 48 | MIT License |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,420 | 246 | 303 | Apache License 2.0 |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,283 | 239 | 50 | MIT License |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 8,915 | 456 | 64 | MIT License |
+| Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,328 | 218 | 7 | Apache License 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 53,126 | 13,627 | 294 | MIT License |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,768 | 893 | 117 | Apache License 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 371 | 40 | 42 | MIT License |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,173 | 286 | 120 | MIT License |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 16,796 | 2,730 | 118 | MIT License |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,540 | 1,052 | 259 | MIT License |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,035 | 4,964 | 964 | MIT License |
+| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,468 | 1,328 | 592 | Other |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 709 | 48 | 13 | Apache License 2.0 |
+| grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 5,719 | 680 | 173 | Apache License 2.0 |
+| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,049 | 301 | 114 | MIT License |
 
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ### Framework Features
