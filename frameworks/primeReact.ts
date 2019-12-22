@@ -24,6 +24,18 @@ export const primeReact: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/#/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: false,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'TabView',
       componentURL: `${frameworkHomepage}/#/tabview`,

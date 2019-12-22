@@ -24,6 +24,18 @@ export const reactToolbox: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/#/components/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: false,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/#/components/tabs`,

@@ -25,6 +25,15 @@ export const orbit: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/components/alert-message/`,
+      options: {
+        closable: true,
+        types: ['success', 'info', 'warning', 'critical'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/button/`,
@@ -33,12 +42,15 @@ export const orbit: Framework = {
       },
     },
     {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/components/alert-message/`,
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/components/checkbox`,
       options: {
-        closable: true,
-        types: ['success', 'info', 'warning', 'critical'],
+        customIcon: false,
+        disabled: true,
+        indeterminate: false,
+        invalid: true,
+        labelPlacement: ['right'],
       },
     },
   ],

@@ -2,7 +2,7 @@ import React, { ReactNode } from 'react';
 import { withStyles, Box, Link } from "@material-ui/core";
 import { HelpOutline, Check as MuiCheck, Close as MuiClose } from '@material-ui/icons';
 import { pipe, sortBy, prop, map } from 'ramda';
-import { DesignKit, FrameworkFeaturesById } from './entities';
+import { DesignKit, FrameworkFeaturesById, Checkbox } from './entities';
 import { noValue } from './utils';
 
 export const GroupTitle = withStyles(theme => ({

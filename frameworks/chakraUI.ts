@@ -16,6 +16,15 @@ export const chakra: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/alert`,
+      options: {
+        closable: true,
+        types: ['success', 'info', 'warning', 'error'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/button`,
@@ -24,20 +33,23 @@ export const chakra: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: true,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/tabs`,
       options: {
         canBeVertical: true,
-      },
-    },
-    {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/alert`,
-      options: {
-        closable: true,
-        types: ['success', 'info', 'warning', 'error'],
       },
     },
   ],

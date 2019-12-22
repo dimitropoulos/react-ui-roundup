@@ -21,6 +21,15 @@ export const evergreen: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/components/alert`,
+      options: {
+        closable: true,
+        types: ['none', 'success', 'warning', 'danger'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/button`,
@@ -29,20 +38,23 @@ export const evergreen: Framework = {
       }
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/components/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: true,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tablist',
       componentURL: `${frameworkHomepage}/components/tab`,
       options: {
         canBeVertical: true,
-      },
-    },
-    {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/components/alert`,
-      options: {
-        closable: true,
-        types: ['none', 'success', 'warning', 'danger'],
       },
     },
   ]

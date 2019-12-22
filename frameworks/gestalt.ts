@@ -24,6 +24,18 @@ export const gestalt: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/#/Checkbox`,
+      options: {
+        customIcon: true,
+        disabled: true,
+        indeterminate: true,
+        invalid: true,
+        labelPlacement: ['right', 'left', 'above', 'below'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/#/Tabs`,

@@ -16,6 +16,15 @@ export const reactBootstrap: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/components/alerts`,
+      options: {
+        closable: true,
+        types: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/buttons`,
@@ -29,15 +38,6 @@ export const reactBootstrap: Framework = {
       componentURL: `${frameworkHomepage}/components/tabs`,
       options: {
         canBeVertical: false,
-      },
-    },
-    {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/components/alerts`,
-      options: {
-        closable: true,
-        types: ['primary', 'secondary', 'success', 'danger', 'warning', 'info', 'light', 'dark'],
       },
     },
   ],

@@ -35,24 +35,35 @@ export interface Alert extends BaseComponent {
   options: {
     closable: boolean | undefined;
     types: string[] | null;
-  }
+  };
 }
 
 export interface Button extends BaseComponent {
   componentId: 'button';
   options: {
     sizes: string[] | null;
-  }
+  };
+}
+
+export interface Checkbox extends BaseComponent {
+  componentId: 'checkbox';
+  options: {
+    customIcon: boolean | undefined;
+    disabled: boolean | undefined;
+    indeterminate: boolean | undefined;
+    invalid: boolean | undefined;
+    labelPlacement: ('above' | 'right' | 'left' | 'below')[];
+  };
 }
 
 export interface Tabs extends BaseComponent {
   componentId: 'tabs';
   options: {
     canBeVertical: boolean;
-  }
+  };
 }
 
-export type Component = Alert | Button | Tabs;
+export type Component = Alert | Button | Checkbox | Tabs;
 
 export interface DesignKit {
   type: 'Sketch' | 'Figma' | 'Abstract',

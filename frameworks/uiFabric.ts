@@ -25,6 +25,15 @@ export const uiFabric: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'MessageBar',
+      componentURL: `${frameworkHomepage}#/controls/web/messagebar`,
+      options: {
+        closable: true,
+        types: ['blocked', 'error', 'info', 'remove', 'severeWarning', 'success', 'warning'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}#/controls/web/button`,
@@ -33,20 +42,23 @@ export const uiFabric: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}#/controls/web/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right', 'left'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Pivot',
       componentURL: `${frameworkHomepage}#/controls/web/pivot`,
       options: {
         canBeVertical: false,
-      },
-    },
-    {
-      componentId: 'alert',
-      componentName: 'MessageBar',
-      componentURL: `${frameworkHomepage}#/controls/web/messagebar`,
-      options: {
-        closable: true,
-        types: ['blocked', 'error', 'info', 'remove', 'severeWarning', 'success', 'warning'],
       },
     },
   ],

@@ -29,6 +29,18 @@ export const blueprint: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/docs/#core/components/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: false,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right', 'left'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/docs/#core/components/tabs`,

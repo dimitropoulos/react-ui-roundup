@@ -16,28 +16,40 @@ export const zendesk: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Notification',
+      componentURL: `${frameworkHomepage}/react-components/notifications`,
+      options: {
+        closable: true,
+        types: ['success', 'info', 'warning', 'error'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/react-components/buttons/`,
+      componentURL: `${frameworkHomepage}/react-components/buttons`,
       options: {
         sizes: ['small', 'large', 'default'],
       },
     },
     {
-      componentId: 'tabs',
-      componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/react-components/tabs/`,
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/css-components/forms/checkbox`,
       options: {
-        canBeVertical: true,
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right'],
       },
     },
     {
-      componentId: 'alert',
-      componentName: 'Notification',
-      componentURL: `${frameworkHomepage}/react-components/notifications/`,
+      componentId: 'tabs',
+      componentName: 'Tabs',
+      componentURL: `${frameworkHomepage}/react-components/tabs`,
       options: {
-        closable: true,
-        types: ['success', 'info', 'warning', 'error'],
+        canBeVertical: true,
       },
     },
   ],

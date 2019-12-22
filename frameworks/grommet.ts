@@ -24,6 +24,18 @@ export const grommet: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/tabs`,

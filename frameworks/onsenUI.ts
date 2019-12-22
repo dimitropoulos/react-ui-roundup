@@ -24,6 +24,18 @@ export const onsenUI: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/v2/api/react/Checkbox.html`,
+      options: {
+        customIcon: true,
+        disabled: false,
+        indeterminate: true,
+        invalid: true,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabbar',
       componentURL: `${frameworkHomepage}/v2/api/react/Tabbar.html`,

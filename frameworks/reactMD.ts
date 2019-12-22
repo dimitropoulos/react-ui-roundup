@@ -24,6 +24,18 @@ export const reactMD: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/components/selection-controls`,
+      options: {
+        customIcon: true,
+        disabled: true,
+        indeterminate: false,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/components/tabs`,

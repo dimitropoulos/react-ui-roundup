@@ -25,9 +25,30 @@ export const antDesign: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/components/alert`,
+      options: {
+        closable: true,
+        types: ['success', 'info', 'warning', 'error'],
+      },
+    },
+    {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/components/checkbox`,
+      options: {
+        customIcon: true,
+        disabled: true,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/button/`,
+      componentURL: `${frameworkHomepage}/components/button`,
       options: {
         sizes: ['small', 'large', 'default'],
       },
@@ -35,18 +56,9 @@ export const antDesign: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/components/tabs/`,
+      componentURL: `${frameworkHomepage}/components/tabs`,
       options: {
         canBeVertical: true,
-      },
-    },
-    {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/components/alert/`,
-      options: {
-        closable: true,
-        types: ['success', 'info', 'warning', 'error'],
       },
     },
   ],

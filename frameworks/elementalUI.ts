@@ -16,6 +16,15 @@ export const elementalUI: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/misc`,
+      options: {
+        closable: false,
+        types: ['danger', 'info', 'primary', 'success', 'warning'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/buttons`,
@@ -24,12 +33,15 @@ export const elementalUI: Framework = {
       },
     },
     {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/misc`,
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/components/checkbox`,
       options: {
-        closable: false,
-        types: ['danger', 'info', 'primary', 'success', 'warning'],
+        customIcon: false,
+        disabled: false,
+        indeterminate: false,
+        invalid: false,
+        labelPlacement: ['right'],
       },
     },
   ],

@@ -44,6 +44,42 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
+    componentId: 'checkbox',
+    cannonicalName: 'Checkbox',
+    optionsById: indexByOptionId([
+      {
+        name: 'Custom Icon',
+        optionId: 'customIcon',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        name: 'Disabled',
+        optionId: 'disabled',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        name: 'Indeterminate',
+        optionId: 'indeterminate',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        name: 'Invalid',
+        optionId: 'invalid',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        name: 'Label Placement',
+        optionId: 'labelPlacement',
+        toJsx: jsxStringArray,
+        toMarkdown: markdownStringArray,
+      },
+    ]),
+  },
+  {
     componentId: 'tabs',
     cannonicalName: 'Tabs',
     optionsById: indexByOptionId([

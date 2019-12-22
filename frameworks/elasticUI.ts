@@ -29,6 +29,18 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/#/forms/form-controls`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/#/navigation/tabs`,

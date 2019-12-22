@@ -16,6 +16,15 @@ export const ringUI: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-alert--simple`,
+      options: {
+        closable: true,
+        types: ['error', 'loading', 'message', 'success', 'warning'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-button--basic`,
@@ -24,20 +33,23 @@ export const ringUI: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-checkbox--basic`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: false,
+        invalid: false,
+        labelPlacement: ['right'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-tabs--basic`,
       options: {
         canBeVertical: false,
-      },
-    },
-    {
-      componentId: 'alert',
-      componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-alert--simple`,
-      options: {
-        closable: true,
-        types: ['error', 'loading', 'message', 'success', 'warning'],
       },
     },
   ],

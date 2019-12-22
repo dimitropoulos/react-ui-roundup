@@ -21,22 +21,6 @@ export const atlaskit: Framework = {
   },
   components: [
     {
-      componentId: 'button',
-      componentName: 'Button',
-      componentURL: `${frameworkHomepage}/packages/core/button`,
-      options: {
-        sizes: null,
-      },
-    },
-    {
-      componentId: 'tabs',
-      componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/packages/core/tabs`,
-      options: {
-        canBeVertical: false,
-      },
-    },
-    {
       componentId: 'alert',
       componentName: 'SectionMessage',
       componentURL: `${frameworkHomepage}/packages/core/section-message`,
@@ -52,6 +36,34 @@ export const atlaskit: Framework = {
       options: {
         closable: false,
         types: ['info', 'warning', 'error', 'confirmation', 'change'],
+      },
+    },
+    {
+      componentId: 'button',
+      componentName: 'Button',
+      componentURL: `${frameworkHomepage}/packages/core/button`,
+      options: {
+        sizes: null,
+      },
+    },
+    {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/packages/core/checkbox`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: true,
+        invalid: true,
+        labelPlacement: ['right'],
+      },
+    },
+    {
+      componentId: 'tabs',
+      componentName: 'Tabs',
+      componentURL: `${frameworkHomepage}/packages/core/tabs`,
+      options: {
+        canBeVertical: false,
       },
     },
   ],

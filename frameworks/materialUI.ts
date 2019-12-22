@@ -33,6 +33,18 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Checkbox',
+      componentURL: `${frameworkHomepage}/components/checkboxes`,
+      options: {
+        customIcon: true,
+        disabled: true,
+        indeterminate: true,
+        invalid: false,
+        labelPlacement: ['right', 'left', 'above', 'below'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/components/tabs/`,
