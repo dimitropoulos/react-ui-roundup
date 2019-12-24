@@ -29,6 +29,10 @@ export const elementalUI: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/buttons`,
       options: {
+        disabled: false,
+        groupable: true,
+        icon: null,
+        loading: false,
         sizes: ['large', 'default', 'small', 'extra small'],
       },
     },

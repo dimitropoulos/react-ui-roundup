@@ -20,6 +20,10 @@ export const reactMD: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/buttons`,
       options: {
+        disabled: true,
+        groupable: false,
+        icon: ['left', 'right', 'only'],
+        loading: false,
         sizes: null,
       },
     },

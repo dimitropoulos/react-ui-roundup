@@ -29,6 +29,10 @@ export const chakra: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/button`,
       options: {
+        disabled: true,
+        groupable: false,
+        icon: ['left', 'right', 'only'],
+        loading: false,
         sizes: ['xs', 'sm', 'md', 'lg'],
       },
     },

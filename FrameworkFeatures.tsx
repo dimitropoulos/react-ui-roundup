@@ -3,9 +3,10 @@ import { frameworks, frameworkInfo, frameworkInfoById } from './frameworks';
 import { map } from 'ramda';
 import { Framework } from './entities';
 import { toStablePairs } from './utils';
-import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Typography } from '@material-ui/core';
+import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
 import { GroupTitle } from './common';
+import { Criteria } from './Criteria';
 
 const Card = withStyles({
   root: {
@@ -29,9 +30,15 @@ const Feature: FC<Framework> = ({ frameworkFeaturesById, frameworkId, frameworkN
 export const FrameworkFeatures: FC = () => {
   return (
     <Card>
-      <GroupTitle>
-        <Typography variant="h5">Framework Features</Typography>
-      </GroupTitle>
+
+      <GroupTitle title="Framework Features" />
+
+      <Criteria
+        items={map(([key, value]) => (
+          [value.name, value.criteria]
+        ), toStablePairs(frameworkInfoById))}
+      />
+
       <TableContainer>
         <Table size="small">
           <TableHead>

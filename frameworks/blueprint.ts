@@ -25,6 +25,10 @@ export const blueprint: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/docs/#core/components/button`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right', 'only'],
+        loading: true,
         sizes: ['default', 'large'],
       },
     },

@@ -29,6 +29,10 @@ export const materialUI: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/buttons/`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right', 'only'],
+        loading: false,
         sizes: ['small', 'medium', 'large'],
       },
     },

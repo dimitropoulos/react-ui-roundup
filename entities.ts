@@ -3,6 +3,7 @@ import { ReactNode } from "react";
 type OptionId = string;
 
 export interface Option {
+  criteria: string;
   name: string;
   optionId: OptionId;
   toJsx: (any: any) => ReactNode | string;
@@ -16,6 +17,7 @@ type OptionsById = {
 export interface ComponentInfo {
   componentId: string;
   cannonicalName: string;
+  description: string;
   optionsById: OptionsById;
 }
 
@@ -33,7 +35,7 @@ interface BaseComponent {
 export interface Alert extends BaseComponent {
   componentId: 'alert';
   options: {
-    closable: boolean | undefined;
+    closable: boolean;
     types: string[] | null;
   };
 }
@@ -41,6 +43,10 @@ export interface Alert extends BaseComponent {
 export interface Button extends BaseComponent {
   componentId: 'button';
   options: {
+    disabled: boolean;
+    groupable: boolean;
+    icon: ('left' | 'right' | 'only')[] | null;
+    loading: boolean;
     sizes: string[] | null;
   };
 }
@@ -48,10 +54,10 @@ export interface Button extends BaseComponent {
 export interface Checkbox extends BaseComponent {
   componentId: 'checkbox';
   options: {
-    customIcon: boolean | undefined;
-    disabled: boolean | undefined;
-    indeterminate: boolean | undefined;
-    invalid: boolean | undefined;
+    customIcon: boolean;
+    disabled: boolean;
+    indeterminate: boolean;
+    invalid: boolean;
     labelPlacement: ('above' | 'right' | 'left' | 'below')[];
   };
 }
@@ -88,6 +94,7 @@ export type FrameworkFeaturesById = {
 
 export type FrameworkFeatureInfoGeneric<T extends keyof FrameworkFeaturesById> = {
   featureId: T;
+  criteria: string;
   name: string;
   toJsx: (input: FrameworkFeaturesById[T]) => ReactNode | string;
   toMarkdown: (input: FrameworkFeaturesById[T]) => string;

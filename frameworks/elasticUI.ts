@@ -25,7 +25,11 @@ export const elasticUI: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/#/navigation/button`,
       options: {
-        sizes: null,
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right', 'only'],
+        loading: true,
+        sizes: ['m', 'sm', 'xs'],
       },
     },
     {

@@ -1,18 +1,36 @@
-import React, { ReactNode } from 'react';
-import { withStyles, Box, Link } from "@material-ui/core";
+import React, { ReactNode, FC } from 'react';
+import { withStyles, Box, Link, Typography, Toolbar } from "@material-ui/core";
 import { HelpOutline, Check as MuiCheck, Close as MuiClose } from '@material-ui/icons';
 import { pipe, sortBy, prop, map } from 'ramda';
-import { DesignKit, FrameworkFeaturesById, Checkbox } from './entities';
+import { DesignKit, FrameworkFeaturesById } from './entities';
 import { noValue } from './utils';
 
-export const GroupTitle = withStyles(theme => ({
+export const TitleWrapper = withStyles({
   root: {
     display: 'flex',
-    justifyContent: 'space-between',
-    padding: '1em',
-    background: theme.palette.background.default,
+    flexDirection: 'column',
+    flexGrow: 1,
+    padding: '1em 0',
   },
-}))(Box);
+})(Box);
+
+interface GroupTitleProps {
+  title: string;
+  subtitle?: string;
+  actions?: JSX.Element;
+}
+
+export const GroupTitle: FC<GroupTitleProps> = ({ title, subtitle, actions }) => {
+  return (
+    <Toolbar>
+      <TitleWrapper>
+        <Typography variant="h5">{title}</Typography>
+        {subtitle && <Typography variant="subtitle2">{subtitle}</Typography>}
+      </TitleWrapper>
+      {actions}
+    </Toolbar>
+  );
+}
 
 export const Check = withStyles({
   root: {

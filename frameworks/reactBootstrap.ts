@@ -29,6 +29,10 @@ export const reactBootstrap: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/buttons`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: null,
+        loading: false,
         sizes: ['sm', 'lg'],
       },
     },

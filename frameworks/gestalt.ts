@@ -20,6 +20,10 @@ export const gestalt: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/#/Button`,
       options: {
+        disabled: true,
+        groupable: false,
+        icon: ['only'],
+        loading: false,
         sizes: ['sm', 'md', 'lg'],
       },
     },

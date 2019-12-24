@@ -38,6 +38,10 @@ export const uiFabric: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}#/controls/web/button`,
       options: {
+        disabled: true,
+        groupable: false,
+        icon: null,
+        loading: false,
         sizes: null,
       },
     },

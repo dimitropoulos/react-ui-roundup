@@ -29,6 +29,10 @@ export const zendesk: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/react-components/buttons`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['only'],
+        loading: false,
         sizes: ['small', 'large', 'default'],
       },
     },

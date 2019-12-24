@@ -7,6 +7,7 @@ import { UnwrapedComponent, Component } from './entities';
 import { componentInfoById } from './components';
 import { withStyles } from '@material-ui/styles';
 import { GroupTitle } from './common';
+import { Criteria } from './Criteria';
 
 const Card = withStyles({
   root: {
@@ -43,7 +44,9 @@ const Component: FC<UnwrapedComponent> = ({
 }
 
 const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, components]) => {
-  const { cannonicalName, optionsById } = componentInfoById[componentId];
+  const { cannonicalName, description, optionsById } = componentInfoById[componentId];
+
+  const options = toStablePairs(optionsById);
 
   const openAll = () => {
     forEach(({ componentURL, }) => {
@@ -53,10 +56,17 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
 
   return (
     <Card key={componentId}>
-      <GroupTitle>
-        <Typography variant="h5">{cannonicalName}</Typography>
-        <Button onClick={openAll}>Open All In New Tabs</Button>
-      </GroupTitle>
+      <GroupTitle
+        title={cannonicalName}
+        subtitle={description}
+        actions={<Button onClick={openAll}>Open All In New Tabs</Button>}
+      />
+
+      <Criteria
+        items={map(([key, value]) => (
+          [value.name, value.criteria]
+        ), options)}
+      />
 
       <TableContainer>
         <Table size="small">
@@ -68,7 +78,7 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
 
               {map(([key, value]) => (
                 <TableCell key={key}>{value.name}</TableCell>
-              ), toStablePairs(optionsById))}
+              ), options)}
             </TableRow>
           </TableHead>
 

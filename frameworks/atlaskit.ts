@@ -43,6 +43,10 @@ export const atlaskit: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/packages/core/button`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right'],
+        loading: true,
         sizes: null,
       },
     },

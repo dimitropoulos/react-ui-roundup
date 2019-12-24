@@ -50,6 +50,10 @@ export const antDesign: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/button`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right', 'only'],
+        loading: true,
         sizes: ['small', 'large', 'default'],
       },
     },

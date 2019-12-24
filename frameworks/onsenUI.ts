@@ -20,6 +20,10 @@ export const onsenUI: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/v2/api/react/Button.html`,
       options: {
+        disabled: true,
+        groupable: false,
+        icon: null,
+        loading: false,
         sizes: ['default', 'large'],
       },
     },

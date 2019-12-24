@@ -25,6 +25,10 @@ export const semanticUI: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/elements/button.html`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right', 'only'],
+        loading: true,
         sizes: ['mini', 'tiny', 'small', 'medium', 'large', 'big', 'huge', 'massive'],
       },
     },

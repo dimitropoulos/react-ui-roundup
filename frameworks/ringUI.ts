@@ -6,7 +6,7 @@ export const ringUI: Framework = {
   frameworkHomepage,
   frameworkId: 'ringUI',
   repoURL: 'https://github.com/JetBrains/ring-ui',
-  frameworkName: 'Atlaskit',
+  frameworkName: 'Ring UI',
   frameworkFeaturesById: {
     darkMode: false,
     designKits: false,
@@ -29,7 +29,11 @@ export const ringUI: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-button--basic`,
       options: {
-        sizes: null,
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'only'],
+        loading: true,
+        sizes: ['small', 'large', 'default'],
       },
     },
     {

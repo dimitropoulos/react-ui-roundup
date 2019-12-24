@@ -41,7 +41,7 @@ const Framework: FC<Framework> = ({ frameworkName: name, frameworkId, frameworkH
       <TableCell>{repoInfo?.stargazers_count?.toLocaleString() ?? noValue}</TableCell>
       <TableCell>{repoInfo?.forks_count?.toLocaleString() ?? noValue}</TableCell>
       <TableCell>{repoInfo?.open_issues_count?.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.license?.name?.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.license?.name?.replace(/ License/, '') ?? noValue}</TableCell>
     </TableRow>
   )
 };
@@ -61,13 +61,15 @@ export const FrameworkStats: FC = () => {
 
   return (
     <Card>
-      <GroupTitle>
-        <Typography variant="h5">Framework Stats</Typography>
-        <div>
-          <Button onClick={openAll('homepages')}>Open All Homepages</Button>
-          <Button onClick={openAll('repositories')}>Open All Repositories</Button>
-        </div>
-      </GroupTitle>
+      <GroupTitle
+        title="Framework Stats"
+        actions={(
+          <>
+            <Button onClick={openAll('homepages')}>Open All Homepages</Button>
+            <Button onClick={openAll('repositories')}>Open All Repositories</Button>
+          </>
+        )}
+      />
       <TableContainer>
         <Table size="small">
           <TableHead>

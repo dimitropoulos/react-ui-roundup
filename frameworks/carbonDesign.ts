@@ -20,6 +20,10 @@ export const carbonDesign: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/?path=/story/buttons--default`,
       options: {
+        disabled: true,
+        groupable: true,
+        icon: ['right', 'only'],
+        loading: true,
         sizes: ['default', 'field', 'small'],
       },
     },

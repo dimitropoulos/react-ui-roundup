@@ -1,12 +1,19 @@
 import React, { FC } from 'react';
-import { AppBar as MuiAppBar, Toolbar, Typography, IconButton, withStyles, Tooltip } from '@material-ui/core';
+import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Typography, IconButton, withStyles, Tooltip } from '@material-ui/core';
 import { GitHub } from '@material-ui/icons';
+import { kubernetesBlue } from './theme';
 
 const AppBar = withStyles({
   root: {
     color: 'white',
   },
 })(MuiAppBar);
+
+const Toolbar = withStyles({
+  root: {
+    backgroundColor: kubernetesBlue,
+  },
+})(MuiToolbar);
 
 export const Header: FC = () => {
   return (

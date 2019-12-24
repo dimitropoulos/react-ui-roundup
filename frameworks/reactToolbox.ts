@@ -20,6 +20,10 @@ export const reactToolbox: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/#/components/button`,
       options: {
+        disabled: true,
+        groupable: false,
+        icon: ['left', 'only'],
+        loading: false,
         sizes: null,
       },
     },

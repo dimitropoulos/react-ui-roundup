@@ -20,6 +20,10 @@ export const primeReact: Framework = {
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/#/button`,
       options: {
+        disabled: false,
+        groupable: false,
+        icon: ['left', 'right', 'only'],
+        loading: false,
         sizes: null,
       },
     },

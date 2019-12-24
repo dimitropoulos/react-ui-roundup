@@ -1,4 +1,4 @@
-import { Framework, FrameworkFeatureInfo, DesignKit, FrameworkFeaturesById } from '../entities';
+import { Framework, FrameworkFeatureInfo } from '../entities';
 import { indexBy, prop, sortBy } from 'ramda';
 
 import { antDesign } from './antDesign';
@@ -33,7 +33,6 @@ import {
   themer as jsxThemer,
   designKits as jsxDesignKits,
 } from '../common';
-import { noValue } from '../utils';
 
 export const frameworks: Framework[] = sortBy(prop('frameworkName'), [
   antDesign,
@@ -64,30 +63,35 @@ export const frameworksById = indexBy(prop('frameworkId'), frameworks);
 export const frameworkInfo: FrameworkFeatureInfo[] = sortBy(prop('featureId'), [
   {
     featureId: 'darkMode',
+    criteria: 'The project is made with dark-mode styling in mind.  An out-of-the-box dark mode is either used on the docs site itself or well documented and easy to configure.',
     name: 'Native Dark Mode',
     toJsx: jsxCheckmark,
     toMarkdown: markdownCheckmark,
   },
   {
     featureId: 'designKits',
+    criteria: 'Ready-made resources exist for designers such as Sketch or Figma download packs.',
     name: 'Design Kits',
     toJsx: jsxDesignKits,
     toMarkdown: markdownDesignKits,
   },
   {
     featureId: 'rtlSupport',
+    criteria: 'Explicit right-to-Left support for use in apps with languages like Arabic, Hebrew, or Persian.',
     name: 'RTL Support',
     toJsx: jsxCheckmark,
     toMarkdown: markdownCheckmark,
   },
   {
     featureId: 'themer',
+    criteria: 'A user-interactable theming area where designers and developers can play around with look and feel without needing to do any programming.',
     name: 'Themer',
     toJsx: jsxThemer,
     toMarkdown: markdownThemer,
   },
   {
     featureId: 'typeScript',
+    criteria: 'Is either written in TypeScript (ideally) or has TypeScript definitions directly in the project.  DefinitelyTyped does not qualify.',
     name: 'Native TypeScript',
     toJsx: jsxCheckmark,
     toMarkdown: markdownCheckmark,
