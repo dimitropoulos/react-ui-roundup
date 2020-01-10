@@ -32,11 +32,11 @@ export const gestalt: Framework = {
       componentName: 'Checkbox',
       componentURL: `${frameworkHomepage}/#/Checkbox`,
       options: {
-        customIcon: true,
+        customIcon: false,
         disabled: true,
         indeterminate: true,
         invalid: true,
-        labelPlacement: ['right', 'left', 'above', 'below'],
+        labelPlacement: ['right'],
       },
     },
     {

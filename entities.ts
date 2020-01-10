@@ -72,7 +72,7 @@ export interface Tabs extends BaseComponent {
 export type Component = Alert | Button | Checkbox | Tabs;
 
 export interface DesignKit {
-  type: 'Sketch' | 'Figma' | 'Abstract',
+  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure',
   href: URL;
 }
 

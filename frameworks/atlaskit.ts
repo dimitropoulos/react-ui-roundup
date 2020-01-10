@@ -32,7 +32,7 @@ export const atlaskit: Framework = {
     {
       componentId: 'alert',
       componentName: 'Flag',
-      componentURL: `${frameworkHomepage}/pakages/core/flag`,
+      componentURL: `${frameworkHomepage}/packages/core/flag`,
       options: {
         closable: false,
         types: ['info', 'warning', 'error', 'confirmation', 'change'],

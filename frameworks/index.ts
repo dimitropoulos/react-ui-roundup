@@ -7,6 +7,7 @@ import { blueprint } from './blueprint';
 import { carbonDesign } from './carbonDesign';
 import { chakra } from './chakraUI';
 import { elasticUI } from './elasticUI';
+import { element } from './element';
 import { elementalUI } from './elementalUI';
 import { evergreen } from './evergreen';
 import { gestalt } from './gestalt';
@@ -20,6 +21,7 @@ import { reactMD } from './reactMD';
 import { reactToolbox } from './reactToolbox';
 import { ringUI } from './ringUI';
 import { semanticUI } from './semanticUI';
+import { smoothUI } from './smoothUI';
 import { uiFabric } from './uiFabric';
 import { zendesk } from './zendesk';
 
@@ -41,6 +43,7 @@ export const frameworks: Framework[] = sortBy(prop('frameworkName'), [
   carbonDesign,
   chakra,
   elasticUI,
+  element,
   elementalUI,
   evergreen,
   gestalt,
@@ -54,6 +57,7 @@ export const frameworks: Framework[] = sortBy(prop('frameworkName'), [
   reactToolbox,
   ringUI,
   semanticUI,
+  smoothUI,
   uiFabric,
   zendesk,
 ]);

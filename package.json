@@ -9,13 +9,13 @@
     "start": "yarn parcel index.html --no-cache"
   },
   "dependencies": {
-    "@material-ui/core": "^4.8.0",
+    "@material-ui/core": "^4.8.3",
     "@material-ui/icons": "^4.5.1",
-    "@material-ui/lab": "^4.0.0-alpha.36",
-    "@types/node": "^12.12.21",
+    "@material-ui/lab": "^4.0.0-alpha.39",
+    "@types/node": "^13.1.4",
     "@types/node-fetch": "^2.5.4",
-    "@types/ramda": "^0.26.38",
-    "@types/webpack-env": "^1.14.1",
+    "@types/ramda": "^0.26.39",
+    "@types/webpack-env": "^1.15.0",
     "cross-fetch": "^3.0.4",
     "node-fetch": "^2.6.0",
     "parcel": "^1.12.4",
@@ -26,6 +26,6 @@
     "ts-node": "^8.5.4"
   },
   "devDependencies": {
-    "typescript": "^3.7.3"
+    "typescript": "^3.7.4"
   }
 }

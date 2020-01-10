@@ -14,7 +14,7 @@ const headerMarkdown = disclaimerLines([
 ])
 
 const frameworksSectionMarkdown = (repoInfo: any) => disclaimerLines([
-  h2('Framework Stats'),
+  h2('Framework Statistics'),
   table({
     headers: [
       'Name',

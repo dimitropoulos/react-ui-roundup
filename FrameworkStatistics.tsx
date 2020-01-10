@@ -46,7 +46,7 @@ const Framework: FC<Framework> = ({ frameworkName: name, frameworkId, frameworkH
   )
 };
 
-export const FrameworkStats: FC = () => {
+export const FrameworkStatistics: FC = () => {
   const openAll = (type: 'homepages' | 'repositories') => () => {
     forEach(({ frameworkHomepage, repoURL }) => {
       if (type === 'homepages') {
@@ -62,7 +62,7 @@ export const FrameworkStats: FC = () => {
   return (
     <Card>
       <GroupTitle
-        title="Framework Stats"
+        title="Framework Statistics"
         actions={(
           <>
             <Button onClick={openAll('homepages')}>Open All Homepages</Button>
