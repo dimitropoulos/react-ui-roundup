@@ -57,6 +57,6 @@ export const themer = (themer: FrameworkFeaturesById['themer']) => themer !== fa
 
 export const criteria = (items: [string, string][]) => lines([
   h4('Criteria'),
-  ...map(([name, description]) => `${inlineCode(name)}: ${description}`, items),
+  ...map(([name, description]) => `- ${inlineCode(name)}: ${description}`, items),
   '',
 ])

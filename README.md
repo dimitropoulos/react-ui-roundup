@@ -13,7 +13,7 @@ An even more better version of this exact document is available at [react-ui-rou
 
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 57,001 | 20,551 | 471 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 57,001 | 20,551 | 470 | MIT |
 | Atlaskit | [atlaskit.atlassian.com](https://atlaskit.atlassian.com) | [bitbucket.org/atlassian/atlaskit-mk-2/src/master](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master) | -- | -- | -- | -- |
 | Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,719 | 1,530 | 469 | Apache 2.0 |
 | Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,658 | 593 | 373 | Apache 2.0 |
@@ -33,7 +33,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,410 | 5,014 | 990 | MIT |
 | Smooth UI | [www.smooth-code.com/open-source/smooth-ui](https://www.smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,483 | 109 | 7 | MIT |
 | UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,785 | 1,397 | 467 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 725 | 46 | 8 | Apache 2.0 |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 725 | 46 | 9 | Apache 2.0 |
 | grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,026 | 705 | 201 | Apache 2.0 |
 | react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,075 | 303 | 120 | MIT |
 
@@ -42,11 +42,11 @@ An even more better version of this exact document is available at [react-ui-rou
 
 #### Criteria
 
-`Native Dark Mode`: The project is made with dark-mode styling in mind.  An out-of-the-box dark mode is either used on the docs site itself or well documented and easy to configure.
-`Design Kits`: Ready-made resources exist for designers such as Sketch or Figma download packs.
-`RTL Support`: Explicit right-to-Left support for use in apps with languages like Arabic, Hebrew, or Persian.
-`Themer`: A user-interactable theming area where designers and developers can play around with look and feel without needing to do any programming.
-`Native TypeScript`: Is either written in TypeScript (ideally) or has TypeScript definitions directly in the project.  DefinitelyTyped does not qualify.
+- `Native Dark Mode`: The project is made with dark-mode styling in mind.  An out-of-the-box dark mode is either used on the docs site itself or well documented and easy to configure.
+- `Design Kits`: Ready-made resources exist for designers such as Sketch or Figma download packs.
+- `RTL Support`: Explicit right-to-Left support for use in apps with languages like Arabic, Hebrew, or Persian.
+- `Themer`: A user-interactable theming area where designers and developers can play around with look and feel without needing to do any programming.
+- `Native TypeScript`: Is either written in TypeScript (ideally) or has TypeScript definitions directly in the project.  DefinitelyTyped does not qualify.
 
 | Name | Native Dark Mode | Design Kits | RTL Support | Themer | Native TypeScript |
 | --- | --- | --- | --- | --- | --- |
@@ -82,8 +82,8 @@ An even more better version of this exact document is available at [react-ui-rou
 
 #### Criteria
 
-`Closable`: The alert has an "out of the box" way to dismiss, usually with an `onClose` prop.
-`Types`: The alert has ready-made variations.
+- `Closable`: The alert has an "out of the box" way to dismiss, usually with an `onClose` prop.
+- `Types`: The alert has ready-made variations.
 
 | Framework | Name | Closable | Types |
 | --- | --- | --- | --- |
@@ -109,11 +109,11 @@ An even more better version of this exact document is available at [react-ui-rou
 
 #### Criteria
 
-`Disabled`: A `disabled` prop exists for use in situations where the user cannot interact with the button.
-`Groupable`: A ButtonGroup component exists in the library, or other such pre-made methods for making button groups.
-`Icon`: An icon can be included either at the left or right of the text, or button can be used with just an icon and no text (notated as `only`).
-`Loading`: The button has a pre-made loading state for asynchronous events.
-`Sizes`: The button can be easily sized between different (and consistent) major sizes.
+- `Disabled`: A `disabled` prop exists for use in situations where the user cannot interact with the button.
+- `Groupable`: A ButtonGroup component exists in the library, or other such pre-made methods for making button groups.
+- `Icon`: An icon can be included either at the left or right of the text, or button can be used with just an icon and no text (notated as `only`).
+- `Loading`: The button has a pre-made loading state for asynchronous events.
+- `Sizes`: The button can be easily sized between different (and consistent) major sizes.
 
 | Framework | Name | Disabled | Groupable | Icon | Loading | Sizes |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -147,11 +147,11 @@ An even more better version of this exact document is available at [react-ui-rou
 
 #### Criteria
 
-`Custom Icon`: A custom icon can be provided in place of the checkbox itself.
-`Disabled`: The checkbox has a `disabled` state, indicating the user cannot interact with it
-`Indeterminate`: The checkbox has an indeterminate state.
-`Invalid`: The checkbox has an `invalid` or `error` state.
-`Label Placement`: The text can be positioned at different places around the checkbox.
+- `Custom Icon`: A custom icon can be provided in place of the checkbox itself.
+- `Disabled`: The checkbox has a `disabled` state, indicating the user cannot interact with it
+- `Indeterminate`: The checkbox has an indeterminate state.
+- `Invalid`: The checkbox has an `invalid` or `error` state.
+- `Label Placement`: The text can be positioned at different places around the checkbox.
 
 | Framework | Name | Custom Icon | Disabled | Indeterminate | Invalid | Label Placement |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -185,12 +185,12 @@ An even more better version of this exact document is available at [react-ui-rou
 
 #### Criteria
 
-`Disabled`: The switch has a `disabled` state, indicating that the user cannot interact with it.
-`Internal Icons`: The switch has the option to include custom icons within the space of the switch.
-`Internal Text`: The switch has the option to include custom text within the space of the switch (e.g. `on` and `off`).
-`Lable Placement`: Where a label can be attached to the switch.
-`Loading`: The switch has a `loading` state that indicates a pending state of a switch action.
-`Sizes`: The lable has native, pre-configured size options.
+- `Disabled`: The switch has a `disabled` state, indicating that the user cannot interact with it.
+- `Internal Icons`: The switch has the option to include custom icons within the space of the switch.
+- `Internal Text`: The switch has the option to include custom text within the space of the switch (e.g. `on` and `off`).
+- `Lable Placement`: Where a label can be attached to the switch.
+- `Loading`: The switch has a `loading` state that indicates a pending state of a switch action.
+- `Sizes`: The lable has native, pre-configured size options.
 
 | Framework | Name | Disabled | Internal Icons | Internal Text | Lable Placement | Loading | Sizes |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -219,7 +219,7 @@ An even more better version of this exact document is available at [react-ui-rou
 
 #### Criteria
 
-`Can Be Vertical`: The tabs can be stacked vertically.
+- `Can Be Vertical`: The tabs can be stacked vertically.
 
 | Framework | Name | Can Be Vertical |
 | --- | --- | --- |
