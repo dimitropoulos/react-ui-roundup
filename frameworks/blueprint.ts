@@ -45,6 +45,19 @@ export const blueprint: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/docs/#core/components/switch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: true,
+        labelPlacement: ['left', 'right'],
+        loading: false,
+        sizes: ['default', 'large'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/docs/#core/components/tabs`,

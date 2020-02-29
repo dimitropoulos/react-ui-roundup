@@ -34,6 +34,18 @@ export const antDesign: Framework = {
       },
     },
     {
+      componentId: 'button',
+      componentName: 'Button',
+      componentURL: `${frameworkHomepage}/components/button`,
+      options: {
+        disabled: true,
+        groupable: true,
+        icon: ['left', 'right', 'only'],
+        loading: true,
+        sizes: ['small', 'large', 'default'],
+      },
+    },
+    {
       componentId: 'checkbox',
       componentName: 'Checkbox',
       componentURL: `${frameworkHomepage}/components/checkbox`,
@@ -46,15 +58,16 @@ export const antDesign: Framework = {
       },
     },
     {
-      componentId: 'button',
-      componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/button`,
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/components/switch`,
       options: {
         disabled: true,
-        groupable: true,
-        icon: ['left', 'right', 'only'],
+        internalIcons: true,
+        internalText: true,
+        labelPlacement: [],
         loading: true,
-        sizes: ['small', 'large', 'default'],
+        sizes: ['default', 'small'],
       },
     },
     {

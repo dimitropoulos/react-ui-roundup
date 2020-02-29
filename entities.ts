@@ -67,6 +67,18 @@ export interface Checkbox extends BaseComponent {
   };
 }
 
+export interface Switch extends BaseComponent {
+  componentId: 'switch',
+  options: {
+    disabled: boolean;
+    internalIcons: boolean;
+    internalText: boolean;
+    labelPlacement: ('above' | 'right' | 'left' | 'below')[];
+    loading: boolean;
+    sizes: string[];
+  };
+}
+
 export interface Tabs extends BaseComponent {
   componentId: 'tabs';
   options: {
@@ -74,7 +86,7 @@ export interface Tabs extends BaseComponent {
   };
 }
 
-export type Component = Alert | Button | Checkbox | Tabs;
+export type Component = Alert | Button | Checkbox | Switch | Tabs;
 
 export interface DesignKit {
   type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure',

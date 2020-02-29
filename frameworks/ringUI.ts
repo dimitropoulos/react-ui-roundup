@@ -49,6 +49,19 @@ export const ringUI: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Toggle',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-toggle--basic`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['right', 'left'],
+        loading: false,
+        sizes: [],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-tabs--basic`,

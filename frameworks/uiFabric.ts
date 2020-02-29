@@ -8,7 +8,7 @@ export const uiFabric: Framework = {
   repoURL: 'https://github.com/OfficeDev/office-ui-fabric-react',
   frameworkName: 'UI Fabric',
   frameworkFeaturesById: {
-    darkMode: false,
+    darkMode: true,
     designKits: [
       {
         type: 'Sketch',
@@ -55,6 +55,19 @@ export const uiFabric: Framework = {
         indeterminate: true,
         invalid: false,
         labelPlacement: ['right', 'left'],
+      },
+    },
+    {
+      componentId: 'switch',
+      componentName: 'Toggle',
+      componentURL: `${frameworkHomepage}#/controls/web/toggle`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['left', 'right'],
+        loading: false,
+        sizes: [],
       },
     },
     {

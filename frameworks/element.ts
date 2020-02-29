@@ -58,6 +58,19 @@ export const element: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/#/en-US/component/switch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['left', 'right'],
+        loading: false,
+        sizes: [],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/#/en-US/component/tabs`,

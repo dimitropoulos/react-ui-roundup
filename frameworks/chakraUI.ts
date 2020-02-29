@@ -49,6 +49,19 @@ export const chakra: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/switch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['left', 'right'],
+        loading: false,
+        sizes: ['sm', 'md', 'lg'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/tabs`,

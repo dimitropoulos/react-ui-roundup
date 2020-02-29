@@ -45,6 +45,19 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/#/forms/form-controls`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['right'],
+        loading: false,
+        sizes: ['default', 'compressed'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/#/navigation/tabs`,

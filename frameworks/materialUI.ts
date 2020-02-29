@@ -58,6 +58,19 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/components/switches`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['above', 'below', 'left', 'right'],
+        loading: false,
+        sizes: ['default', 'small'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/components/tabs`,

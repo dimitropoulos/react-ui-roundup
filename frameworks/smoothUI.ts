@@ -48,5 +48,18 @@ export const smoothUI: Framework = {
         labelPlacement: ['right'],
       },
     },
+    {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/docs/switch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: true,
+        labelPlacement: [],
+        loading: false,
+        sizes: ['xs', 'sm', 'base', 'lg', 'xl'],
+      },
+    },
   ],
 };

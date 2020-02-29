@@ -37,6 +37,31 @@ export const reactBootstrap: Framework = {
       },
     },
     {
+      componentId: 'checkbox',
+      componentName: 'Form.Check',
+      componentURL: `${frameworkHomepage}/components/forms/#forms-form-check`,
+      options: {
+        customIcon: false,
+        disabled: true,
+        indeterminate: false,
+        invalid: false,
+        labelPlacement: [],
+      },
+    },
+    {
+      componentId: 'switch',
+      componentName: 'Form.Check',
+      componentURL: `${frameworkHomepage}/components/forms/#forms-custom-switch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['right'],
+        loading: false,
+        sizes: [],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/components/tabs`,

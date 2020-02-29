@@ -13,7 +13,7 @@ An even more better version of this exact document is available at [react-ui-rou
 
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 56,998 | 20,550 | 471 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 57,001 | 20,551 | 471 | MIT |
 | Atlaskit | [atlaskit.atlassian.com](https://atlaskit.atlassian.com) | [bitbucket.org/atlassian/atlaskit-mk-2/src/master](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master) | -- | -- | -- | -- |
 | Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,719 | 1,530 | 469 | Apache 2.0 |
 | Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,658 | 593 | 373 | Apache 2.0 |
@@ -23,16 +23,16 @@ An even more better version of this exact document is available at [react-ui-rou
 | Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,293 | 242 | 50 | MIT |
 | Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 9,156 | 481 | 71 | MIT |
 | Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,409 | 228 | 7 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 54,902 | 14,623 | 373 | MIT |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 54,904 | 14,622 | 373 | MIT |
 | Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,850 | 897 | 106 | Apache 2.0 |
 | Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 417 | 46 | 44 | MIT |
 | Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,253 | 310 | 138 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 17,107 | 2,787 | 138 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 17,108 | 2,787 | 138 | MIT |
 | React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,573 | 1,051 | 260 | MIT |
 | Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,385 | 130 | 17 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,409 | 5,014 | 990 | MIT |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,410 | 5,014 | 990 | MIT |
 | Smooth UI | [www.smooth-code.com/open-source/smooth-ui](https://www.smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,483 | 109 | 7 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,785 | 1,397 | 466 | Other |
+| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,785 | 1,397 | 467 | Other |
 | Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 725 | 46 | 8 | Apache 2.0 |
 | grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,026 | 705 | 201 | Apache 2.0 |
 | react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,075 | 303 | 120 | MIT |
@@ -69,7 +69,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | Ring UI | :x: | :x: | :x: | :x: | :x: |
 | Semantic UI | :x: | [Sketch](https://semantic-ui.com/introduction/advanced-usage.html#sketch-files) | :heavy_check_mark: | :x: | :x: |
 | Smooth UI | :heavy_check_mark: | :x: | :x: | :x: | :x: |
-| UI Fabric | :x: | [Figma](https://developer.microsoft.com/en-us/fabric#/resources), [Sketch](https://developer.microsoft.com/en-us/fabric#/resources) | :x: | :x: | :heavy_check_mark: |
+| UI Fabric | :heavy_check_mark: | [Figma](https://developer.microsoft.com/en-us/fabric#/resources), [Sketch](https://developer.microsoft.com/en-us/fabric#/resources) | :x: | :x: | :heavy_check_mark: |
 | Zendesk Garden | :x: | :x: | :x: | :x: | :heavy_check_mark: |
 | grommet | :x: | :x: | :x: | :x: | :heavy_check_mark: |
 | react-md | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: |
@@ -169,6 +169,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | Onsen UI | [Checkbox](https://onsen.io/v2/api/react/Checkbox.html) | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Orbit | [Checkbox](https://orbit.kiwi/components/checkbox) | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | `right` |
 | Prime React | [Checkbox](https://primefaces.org/primereact/#/checkbox) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
+| React Bootstrap | [Form.Check](https://react-bootstrap.github.io/components/forms/#forms-form-check) | :x: | :heavy_check_mark: | :x: | :x: |  |
 | React Toolbox | [Checkbox](http://react-toolbox.io/#/components/checkbox) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
 | Ring UI | [Checkbox](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-checkbox--basic) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
 | Semantic UI | [Checkbox](https://semantic-ui.com/modules/checkbox.html) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
@@ -178,7 +179,40 @@ An even more better version of this exact document is available at [react-ui-rou
 | grommet | [Checkbox](https://v2.grommet.io/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | react-md | [Checkbox](https://react-md.mlaursen.com/components/selection-controls) | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | `right` |
 
-> [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap) appears to be missing a Checkbox component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+
+<!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
+## Switch
+
+#### Criteria
+
+`Disabled`: The switch has a `disabled` state, indicating that the user cannot interact with it.
+`Internal Icons`: The switch has the option to include custom icons within the space of the switch.
+`Internal Text`: The switch has the option to include custom text within the space of the switch (e.g. `on` and `off`).
+`Lable Placement`: Where a label can be attached to the switch.
+`Loading`: The switch has a `loading` state that indicates a pending state of a switch action.
+`Sizes`: The lable has native, pre-configured size options.
+
+| Framework | Name | Disabled | Internal Icons | Internal Text | Lable Placement | Loading | Sizes |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Ant Design | [Switch](https://ant.design/components/switch) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | `default`, `small` |
+| Atlaskit | [Toggle](https://atlaskit.atlassian.com/packages/core/toggle) | :heavy_check_mark: | :x: | :x: |  | :x: | `large`, `regular` |
+| Blueprint | [Switch](https://blueprintjs.com/docs/#core/components/switch) | :heavy_check_mark: | :x: | :heavy_check_mark: | `left`, `right` | :x: | `default`, `large` |
+| Carbon Design | [Switch](http://react.carbondesignsystem.com/?path=/story/toggle--toggled) | :heavy_check_mark: | :x: | :x: | `right` | :x: | `default`, `small` |
+| Chakra UI | [Switch](https://chakra-ui.com/switch) | :heavy_check_mark: | :x: | :x: | `left`, `right` | :x: | `lg`, `md`, `sm` |
+| Elastic UI | [Switch](https://elastic.github.io/eui/#/forms/form-controls) | :heavy_check_mark: | :x: | :x: | `right` | :x: | `compressed`, `default` |
+| Element | [Switch](https://element.eleme.io/#/en-US/component/switch) | :heavy_check_mark: | :x: | :x: | `left`, `right` | :x: |  |
+| Evergreen | [Switch](https://evergreen.segment.com/components/switch) | :heavy_check_mark: | :x: | :x: |  | :x: | `integers` |
+| Gestalt | [Switch](https://pinterest.github.io/gestalt/#/Switch) | :heavy_check_mark: | :x: | :x: |  | :x: |  |
+| Material UI | [Switch](https://material-ui.com/components/switches) | :heavy_check_mark: | :x: | :x: | `above`, `below`, `left`, `right` | :x: | `default`, `small` |
+| Onsen UI | [Switch](https://onsen.io/v2/api/react/Switch.html) | :heavy_check_mark: | :x: | :x: |  | :x: |  |
+| Prime React | [InputSwitch](https://primefaces.org/primereact/#/inputswitch) | :heavy_check_mark: | :x: | :x: |  | :x: |  |
+| React Bootstrap | [Form.Check](https://react-bootstrap.github.io/components/forms/#forms-custom-switch) | :heavy_check_mark: | :x: | :x: | `right` | :x: |  |
+| React Toolbox | [Switch](http://react-toolbox.io/#/components/switch) | :heavy_check_mark: | :x: | :x: | `right` | :x: |  |
+| Ring UI | [Toggle](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-toggle--basic) | :heavy_check_mark: | :x: | :x: | `left`, `right` | :x: |  |
+| Smooth UI | [Switch](https://www.smooth-code.com/open-source/smooth-ui/docs/switch) | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :x: | `base`, `lg`, `sm`, `xl`, `xs` |
+| UI Fabric | [Toggle](https://developer.microsoft.com/en-us/fabric#/controls/web/toggle) | :heavy_check_mark: | :x: | :x: | `left`, `right` | :x: |  |
+
+> [Elemental UI](https://github.com/elementalui/elemental), [Orbit](https://github.com/kiwicom/orbit-components), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), [Zendesk Garden](https://github.com/zendeskgarden/react-components), [grommet](https://github.com/grommet/grommet), and [react-md](https://github.com/mlaursen/react-md) appear to be missing a Switch component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ## Tabs

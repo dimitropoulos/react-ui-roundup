@@ -54,6 +54,19 @@ export const evergreen: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/components/switch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: [],
+        loading: false,
+        sizes: ['integers'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tablist',
       componentURL: `${frameworkHomepage}/components/tab`,

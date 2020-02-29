@@ -63,6 +63,19 @@ export const atlaskit: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Toggle',
+      componentURL: `${frameworkHomepage}/packages/core/toggle`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: [],
+        loading: false,
+        sizes: ['regular', 'large'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/packages/core/tabs`,

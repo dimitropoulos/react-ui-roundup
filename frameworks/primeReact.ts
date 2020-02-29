@@ -40,6 +40,19 @@ export const primeReact: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'InputSwitch',
+      componentURL: `${frameworkHomepage}/#/inputswitch`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: [],
+        loading: false,
+        sizes: [],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'TabView',
       componentURL: `${frameworkHomepage}/#/tabview`,

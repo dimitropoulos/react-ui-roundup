@@ -40,6 +40,19 @@ export const carbonDesign: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/?path=/story/toggle--toggled`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['right'],
+        loading: false,
+        sizes: ['default', 'small'],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/?path=/story/tabs--default`,

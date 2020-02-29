@@ -40,6 +40,19 @@ export const onsenUI: Framework = {
       },
     },
     {
+      componentId: 'switch',
+      componentName: 'Switch',
+      componentURL: `${frameworkHomepage}/v2/api/react/Switch.html`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: [],
+        loading: false,
+        sizes: [],
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabbar',
       componentURL: `${frameworkHomepage}/v2/api/react/Tabbar.html`,
