@@ -16,7 +16,12 @@ type OptionsById = {
 
 export interface ComponentInfo {
   componentId: string;
+
+  /** The typical name used by the layman to identify this component. */
   cannonicalName: string;
+
+  /** The English indefinte article to be used to refer to this Component */
+  indefiniteArticle: 'an' | 'a',
   description: string;
   optionsById: OptionsById;
 }

@@ -3,7 +3,9 @@ import { map, pipe, toPairs, sortBy, head } from 'ramda';
 import fetch from 'cross-fetch';
 
 export const noValue = '--';
+export const issueURL = 'https://github.com/dimitropoulos/react-ui-roundup/issues/new';
 
+/** adds `frameworkId` to all `Component`s in a `Framework` */
 export const unwrapFrameworks = (frameworks: Framework[]) => (
   map(({ components, frameworkId }) => (
     map(component => ({ ...component, frameworkId }), components)

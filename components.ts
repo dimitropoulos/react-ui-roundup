@@ -16,6 +16,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   {
     componentId: 'alert',
     cannonicalName: 'Alert',
+    indefiniteArticle: 'an',
     description: 'used to show an important message to users',
     optionsById: indexByOptionId([
       {
@@ -37,6 +38,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   {
     componentId: 'button',
     cannonicalName: 'Button',
+    indefiniteArticle: 'a',
     description: 'users trigger actions by clicking on buttons',
     optionsById: indexByOptionId([
       {
@@ -79,6 +81,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   {
     componentId: 'checkbox',
     cannonicalName: 'Checkbox',
+    indefiniteArticle: 'a',
     description: 'users toggle between checked, unchecked (or indeterminate) values with checkboxes',
     optionsById: indexByOptionId([
       {
@@ -121,6 +124,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   {
     componentId: 'tabs',
     cannonicalName: 'Tabs',
+    indefiniteArticle: 'a',
     description: 'users switch between different views with tabs',
     optionsById: indexByOptionId([
       {

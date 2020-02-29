@@ -1,11 +1,33 @@
-import { chain, map, pipe, filter, whereEq, values, sortBy, prop, pluck, indexBy } from 'ramda';
-import { compact } from 'ramda-adjunct';
+import {
+  append,
+  chain,
+  filter,
+  includes,
+  indexBy,
+  intersperse,
+  map,
+  pipe,
+  pluck,
+  prepend,
+  prop,
+  reject,
+  sortBy,
+  update,
+  values,
+  whereEq,
+} from 'ramda';
+import { compact, concatAll } from 'ramda-adjunct';
 import { componentInfo } from './components';
 import { frameworks, frameworkInfo, frameworksById } from './frameworks';
 import { writeFile } from 'fs';
 import { lines, h1, h2, link, p, table, disclaimerLines, website, disclaimer, criteria } from './markdownUtils';
-import { removeProtocol, getRepoInfo, noValue, toStablePairs } from './utils';
+import { removeProtocol, getRepoInfo, noValue, toStablePairs, issueURL } from './utils';
 import { Component, Framework } from './entities';
+
+const pleaseFileIssue = link({
+  text: 'Please file an issue',
+  href: issueURL,
+});
 
 const headerMarkdown = disclaimerLines([
   h1('React UI Roundup'),
@@ -61,9 +83,11 @@ const frameworksMarkdown = (repoInfo: any) => disclaimerLines([
   frameworkFeaturesSectionMarkdown,
 ]);
 
+type EnhancedComponent = Component & Pick<Framework, 'frameworkName' | 'frameworkId'>;
+
 const componentsMarkdown = disclaimerLines([
   h1('Components'),
-  ...chain(({ componentId, cannonicalName, optionsById }) => {
+  ...chain(({ componentId, cannonicalName, indefiniteArticle, optionsById }) => {
     const optionsArray = pipe(
       values,
       sortBy(prop('name')),
@@ -75,10 +99,16 @@ const componentsMarkdown = disclaimerLines([
       ...pluck('name', optionsArray),
     ];
 
+    const enhancedComponents: EnhancedComponent[] = chain(({ components, frameworkId, frameworkName }) => (
+      map(component => ({
+        ...component,
+        frameworkId,
+        frameworkName
+      }), components)
+    ), frameworks);
+
     const rows = pipe(
-      chain<Framework, Component & Pick<Framework, 'frameworkName'>>(({ components, frameworkName }) => (
-        map(component => ({ ...component, frameworkName }), components)
-      )),
+      // @ts-ignore
       filter(whereEq({ componentId })),
       map(({ componentName, frameworkName, componentURL, options }) => [
         frameworkName,
@@ -86,7 +116,42 @@ const componentsMarkdown = disclaimerLines([
         // @ts-ignore @ROBBBBBBBBBBBBBBB
         ...map(({ optionId, toMarkdown }) => toMarkdown(options[optionId]), optionsArray),
       ]),
-    )(frameworks);
+    )(enhancedComponents);
+
+    const missingFrameworks = pipe(
+      filter(whereEq({ componentId })),
+      // @ts-ignore
+      pluck('frameworkId'),
+      (frameworkIds: string[]) => reject(
+        framework => includes(framework.frameworkId, frameworkIds),
+        frameworks,
+      ),
+      map(({ frameworkName, repoURL }) => (
+        link({ text: frameworkName, href: repoURL })
+      )),
+      intersperse(', '),
+      (elements: string[]) => {
+        switch (elements.length) {
+          case 0:
+            return [];
+
+          case 1:
+            return elements;
+
+          case 3:
+            return update(1, ' and ', elements)
+
+          default:
+            return update(elements.length - 2, ', and ', elements);
+        }
+      },
+      (elements: string[]) => elements.length > 0 ? append(
+        ` appear${elements.length === 1 ? 's' : ''} to be missing ${indefiniteArticle} ${cannonicalName} component. ${pleaseFileIssue} if one now exists.\n`,
+        elements,
+      ) : [],
+      elements => elements.length > 0 ? prepend('> ', elements) : [],
+      concatAll,
+    )(enhancedComponents)
 
     return [
       disclaimer,
@@ -98,6 +163,7 @@ const componentsMarkdown = disclaimerLines([
         headers,
         rows,
       }),
+      missingFrameworks,
     ];
   }, componentInfo),
 ]);

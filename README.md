@@ -13,29 +13,29 @@ An even more better version of this exact document is available at [react-ui-rou
 
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 55,239 | 20,027 | 472 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 56,998 | 20,550 | 471 | MIT |
 | Atlaskit | [atlaskit.atlassian.com](https://atlaskit.atlassian.com) | [bitbucket.org/atlassian/atlaskit-mk-2/src/master](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,422 | 1,465 | 457 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,480 | 532 | 437 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 3,946 | 223 | 58 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,451 | 253 | 289 | Apache 2.0 |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 43,390 | 9,732 | 1,482 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,290 | 241 | 50 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 8,983 | 459 | 58 | MIT |
-| Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,345 | 219 | 6 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 53,520 | 13,839 | 316 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,787 | 894 | 109 | Apache 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 379 | 43 | 47 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,182 | 289 | 126 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 16,869 | 2,739 | 123 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,548 | 1,049 | 259 | MIT |
-| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,353 | 126 | 13 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,154 | 4,968 | 971 | MIT |
-| Smooth UI | [www.smooth-code.com/open-source/smooth-ui](https://www.smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,455 | 109 | 3 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,561 | 1,345 | 571 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 711 | 47 | 15 | Apache 2.0 |
-| grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 5,807 | 687 | 183 | Apache 2.0 |
-| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,056 | 301 | 117 | MIT |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,719 | 1,530 | 469 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,658 | 593 | 373 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 5,138 | 301 | 81 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,647 | 299 | 300 | Apache 2.0 |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 43,955 | 9,953 | 1,567 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,293 | 242 | 50 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 9,156 | 481 | 71 | MIT |
+| Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,409 | 228 | 7 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 54,902 | 14,623 | 373 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,850 | 897 | 106 | Apache 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 417 | 46 | 44 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,253 | 310 | 138 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 17,107 | 2,787 | 138 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,573 | 1,051 | 260 | MIT |
+| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,385 | 130 | 17 | Apache 2.0 |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,409 | 5,014 | 990 | MIT |
+| Smooth UI | [www.smooth-code.com/open-source/smooth-ui](https://www.smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,483 | 109 | 7 | MIT |
+| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,785 | 1,397 | 466 | Other |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 725 | 46 | 8 | Apache 2.0 |
+| grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,026 | 705 | 201 | Apache 2.0 |
+| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,075 | 303 | 120 | MIT |
 
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ## Framework Features
@@ -89,7 +89,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | --- | --- | --- | --- |
 | Ant Design | [Alert](https://ant.design/components/alert) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 | Atlaskit | [SectionMessage](https://atlaskit.atlassian.com/packages/core/section-message) | :x: | `change`, `confirmation`, `error`, `info`, `warning` |
-| Atlaskit | [Flag](https://atlaskit.atlassian.com/pakages/core/flag) | :x: | `change`, `confirmation`, `error`, `info`, `warning` |
+| Atlaskit | [Flag](https://atlaskit.atlassian.com/packages/core/flag) | :x: | `change`, `confirmation`, `error`, `info`, `warning` |
 | Chakra UI | [Alert](https://chakra-ui.com/alert) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 | Element | [Alert](https://element.eleme.io/#/en-US/component/alert) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 | Elemental UI | [Alert](http://elemental-ui.com/misc) | :x: | `danger`, `info`, `primary`, `success`, `warning` |
@@ -101,6 +101,8 @@ An even more better version of this exact document is available at [react-ui-rou
 | Smooth UI | [Alert](https://www.smooth-code.com/open-source/smooth-ui/docs/alert) | :x: | `danger`, `dark`, `info`, `light`, `primary`, `secondary`, `success`, `warning` |
 | UI Fabric | [MessageBar](https://developer.microsoft.com/en-us/fabric#/controls/web/messagebar) | :heavy_check_mark: | `blocked`, `error`, `info`, `remove`, `severeWarning`, `success`, `warning` |
 | Zendesk Garden | [Notification](https://garden.zendesk.com/react-components/notifications) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
+
+> [Blueprint](https://github.com/palantir/blueprint), [Carbon Design](https://github.com/carbon-design-system/carbon), [Elastic UI](https://github.com/elastic/eui), [Gestalt](https://github.com/pinterest/gestalt), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Prime React](https://github.com/primefaces/primereact), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), [grommet](https://github.com/grommet/grommet), and [react-md](https://github.com/mlaursen/react-md) appear to be missing an Alert component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ## Button
@@ -139,6 +141,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | grommet | [Button](https://v2.grommet.io/button) | :heavy_check_mark: | :x: | `left`, `only`, `right` | :x: |  |
 | react-md | [Button](https://react-md.mlaursen.com/components/buttons) | :heavy_check_mark: | :x: | `left`, `only`, `right` | :x: |  |
 
+
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ## Checkbox
 
@@ -175,6 +178,8 @@ An even more better version of this exact document is available at [react-ui-rou
 | grommet | [Checkbox](https://v2.grommet.io/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | react-md | [Checkbox](https://react-md.mlaursen.com/components/selection-controls) | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | `right` |
 
+> [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap) appears to be missing a Checkbox component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ## Tabs
 
@@ -204,3 +209,5 @@ An even more better version of this exact document is available at [react-ui-rou
 | Zendesk Garden | [Tabs](https://garden.zendesk.com/react-components/tabs) | :heavy_check_mark: |
 | grommet | [Tabs](https://v2.grommet.io/tabs) | :x: |
 | react-md | [Tabs](https://react-md.mlaursen.com/components/tabs) | :x: |
+
+> [Elemental UI](https://github.com/elementalui/elemental), [Orbit](https://github.com/kiwicom/orbit-components), and [Smooth UI](https://github.com/smooth-code/smooth-ui) appear to be missing a Tabs component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
