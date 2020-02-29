@@ -66,7 +66,7 @@ export const designKits = (designKits: FrameworkFeaturesById['designKits']) => d
 ) : checkmark(false);
 
 export const themer = (themer: FrameworkFeaturesById['themer']) => themer !== false ? (
-  link({ text: 'True', href: themer })
+  link({ text: 'Link', href: themer })
 ) : checkmark(themer);
 
 export const criteria = (items: [string, string][]) => lines([

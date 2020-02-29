@@ -50,7 +50,7 @@ export const antDesign: Framework = {
       componentName: 'Checkbox',
       componentURL: `${frameworkHomepage}/components/checkbox`,
       options: {
-        customIcon: true,
+        customIcon: false,
         disabled: true,
         indeterminate: true,
         invalid: false,

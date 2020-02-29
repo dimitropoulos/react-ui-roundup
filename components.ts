@@ -84,7 +84,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     description: 'users toggle between checked, unchecked (or indeterminate) values with checkboxes',
     optionsById: indexByOptionId([
       {
-        criteria: 'A custom icon can be provided in place of the checkbox itself.',
+        criteria: 'A custom icon can be provided in place of the checkbox itself via a prop or a child.',
         name: 'Custom Icon',
         optionId: 'customIcon',
         toJsx: jsxCheckmark,
@@ -134,14 +134,14 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
         toMarkdown: markdownCheckmark,
       },
       {
-        criteria: 'The switch has the option to include custom icons within the space of the switch.',
+        criteria: 'The switch has a prop (or child) to include custom icons within the space of the switch (e.g. a `checkmark` and an `x` icon).',
         name: 'Internal Icons',
         optionId: 'internalIcons',
         toJsx: jsxCheckmark,
         toMarkdown: markdownCheckmark,
       },
       {
-        criteria: 'The switch has the option to include custom text within the space of the switch (e.g. `on` and `off`).',
+        criteria: 'The switch has a prop (or child) to include custom text within the space of the switch (e.g. the text `on` and `off`).',
         name: 'Internal Text',
         optionId: 'internalText',
         toJsx: jsxCheckmark,
