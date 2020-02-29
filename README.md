@@ -94,6 +94,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | Element | [Alert](https://element.eleme.io/#/en-US/component/alert) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 | Elemental UI | [Alert](http://elemental-ui.com/misc) | :x: | `danger`, `info`, `primary`, `success`, `warning` |
 | Evergreen | [Alert](https://evergreen.segment.com/components/alert) | :heavy_check_mark: | `danger`, `none`, `success`, `warning` |
+| Material UI | [Alert](https://material-ui.com/components/alert) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 | Orbit | [Alert](https://orbit.kiwi/components/alert-message/) | :heavy_check_mark: | `critical`, `info`, `success`, `warning` |
 | React Bootstrap | [Alert](https://react-bootstrap.github.io/components/alerts) | :heavy_check_mark: | `danger`, `dark`, `info`, `light`, `primary`, `secondary`, `success`, `warning` |
 | Ring UI | [Alert](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-alert--simple) | :heavy_check_mark: | `error`, `loading`, `message`, `success`, `warning` |
@@ -124,7 +125,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | Elemental UI | [Button](http://elemental-ui.com/buttons) | :x: | :heavy_check_mark: |  | :x: | `default`, `extra small`, `large`, `small` |
 | Evergreen | [Button](https://evergreen.segment.com/components/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `arbitrary pixel sizes` |
 | Gestalt | [Button](https://pinterest.github.io/gestalt/#/Button) | :heavy_check_mark: | :x: | `only` | :x: | `lg`, `md`, `sm` |
-| Material UI | [Button](https://material-ui.com/components/buttons/) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :x: | `large`, `medium`, `small` |
+| Material UI | [Button](https://material-ui.com/components/buttons) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :x: | `large`, `medium`, `small` |
 | Onsen UI | [Button](https://onsen.io/v2/api/react/Button.html) | :heavy_check_mark: | :x: |  | :x: | `default`, `large` |
 | Orbit | [Button](https://orbit.kiwi/components/button/) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `large`, `normal`, `small` |
 | Prime React | [Button](https://primefaces.org/primereact/#/button) | :x: | :x: | `left`, `only`, `right` | :x: |  |
@@ -192,7 +193,7 @@ An even more better version of this exact document is available at [react-ui-rou
 | Element | [Tabs](https://element.eleme.io/#/en-US/component/tabs) | :heavy_check_mark: |
 | Evergreen | [Tablist](https://evergreen.segment.com/components/tab) | :heavy_check_mark: |
 | Gestalt | [Tabs](https://pinterest.github.io/gestalt/#/Tabs) | :x: |
-| Material UI | [Tabs](https://material-ui.com/components/tabs/) | :heavy_check_mark: |
+| Material UI | [Tabs](https://material-ui.com/components/tabs) | :heavy_check_mark: |
 | Onsen UI | [Tabbar](https://onsen.io/v2/api/react/Tabbar.html) | :x: |
 | Prime React | [TabView](https://primefaces.org/primereact/#/tabview) | :x: |
 | React Bootstrap | [Tabs](https://react-bootstrap.github.io/components/tabs) | :x: |

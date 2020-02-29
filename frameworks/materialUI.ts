@@ -25,9 +25,18 @@ export const materialUI: Framework = {
   },
   components: [
     {
+      componentId: 'alert',
+      componentName: 'Alert',
+      componentURL: `${frameworkHomepage}/components/alert`,
+      options: {
+        closable: true,
+        types: ['error', 'warning', 'info', 'success'],
+      }
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/buttons/`,
+      componentURL: `${frameworkHomepage}/components/buttons`,
       options: {
         disabled: true,
         groupable: true,
@@ -51,7 +60,7 @@ export const materialUI: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/components/tabs/`,
+      componentURL: `${frameworkHomepage}/components/tabs`,
       options: {
         canBeVertical: true,
       },
