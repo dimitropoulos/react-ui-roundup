@@ -2,8 +2,8 @@ import React, { ReactNode, FC } from 'react';
 import { withStyles, Box, Link, Typography, Toolbar } from "@material-ui/core";
 import { HelpOutline, Check as MuiCheck, Close as MuiClose } from '@material-ui/icons';
 import { pipe, sortBy, prop, map } from 'ramda';
-import { DesignKit, FrameworkFeaturesById } from './entities';
-import { noValue } from './utils';
+import { DesignKit, FrameworkFeaturesById } from '../entities';
+import { noValue } from '../utils';
 
 export const TitleWrapper = withStyles({
   root: {
@@ -30,7 +30,7 @@ export const GroupTitle: FC<GroupTitleProps> = ({ title, subtitle, actions }) =>
       {actions}
     </Toolbar>
   );
-}
+};
 
 export const Check = withStyles({
   root: {

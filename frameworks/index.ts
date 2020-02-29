@@ -29,12 +29,12 @@ import {
   checkmark as markdownCheckmark,
   themer as markdownThemer,
   designKits as markdownDesignKits
-} from '../markdownUtils';
+} from '../markdown/utils';
 import {
   checkmark as jsxCheckmark,
   themer as jsxThemer,
   designKits as jsxDesignKits,
-} from '../common';
+} from '../website/utils';
 
 export const frameworks: Framework[] = sortBy(prop('frameworkName'), [
   antDesign,

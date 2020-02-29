@@ -8,7 +8,7 @@ import {
   prop,
 } from 'ramda';
 import { repeatStr } from 'ramda-adjunct';
-import { URL, DesignKit, FrameworkFeaturesById } from './entities';
+import { URL, DesignKit, FrameworkFeaturesById } from '../entities';
 
 export const lines = join('\n');
 

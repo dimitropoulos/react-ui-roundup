@@ -3,14 +3,13 @@ import { ComponentInfo, Option } from './entities';
 import {
   stringArray as markdownStringArray,
   checkmark as markdownCheckmark,
-} from './markdownUtils';
+} from './markdown/utils';
 import {
   checkmark as jsxCheckmark,
   stringArray as jsxStringArray,
-} from './common';
+} from './website/utils';
 
 const indexByOptionId = indexBy<Option>(prop('optionId'))
-
 
 export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   {

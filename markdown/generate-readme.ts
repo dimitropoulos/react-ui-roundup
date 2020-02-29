@@ -16,12 +16,12 @@ import {
   whereEq,
 } from 'ramda';
 import { compact, concatAll } from 'ramda-adjunct';
-import { componentInfo } from './components';
-import { frameworks, frameworkInfo } from './frameworks';
+import { componentInfo } from '../components';
+import { frameworks, frameworkInfo } from '../frameworks';
 import { writeFile } from 'fs';
-import { lines, h1, h2, link, p, table, website, criteria, quote, inlineCode } from './markdownUtils';
-import { removeProtocol, getRepoInfo, noValue, toStablePairs, issueURL } from './utils';
-import { Component, Framework } from './entities';
+import { lines, h1, h2, link, p, table, website, criteria, quote, inlineCode } from './utils';
+import { removeProtocol, getRepoInfo, noValue, toStablePairs, issueURL } from '../utils';
+import { Component, Framework } from '../entities';
 
 const pleaseFileIssue = link({
   text: 'Please file an issue',

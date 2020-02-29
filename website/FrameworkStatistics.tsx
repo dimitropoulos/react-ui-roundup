@@ -1,11 +1,11 @@
 import React, { FC, useState, useEffect } from 'react';
-import { frameworks } from './frameworks';
+import { frameworks } from '../frameworks';
 import { map, forEach } from 'ramda';
-import { Framework } from './entities';
-import { getRepoInfo, removeProtocol, noValue } from './utils';
+import { Framework } from '../entities';
+import { getRepoInfo, removeProtocol, noValue } from '../utils';
 import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Link, Typography, Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
-import { GroupTitle } from './common';
+import { GroupTitle } from './utils';
 
 const Card = withStyles({
   root: {

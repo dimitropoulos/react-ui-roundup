@@ -18,8 +18,8 @@ import {
   noValue,
   toStablePairs,
   unwrapFrameworks,
-} from './utils';
-import { frameworks, frameworksById } from './frameworks';
+} from '../utils';
+import { frameworks, frameworksById } from '../frameworks';
 import {
   Card as MuiCard,
   TableContainer,
@@ -33,10 +33,10 @@ import {
   Button,
   Typography,
 } from '@material-ui/core';
-import { UnwrapedComponent, Component, Framework } from './entities';
-import { componentInfoById } from './components';
+import { UnwrapedComponent, Component, Framework } from '../entities';
+import { componentInfoById } from '../components';
 import { withStyles } from '@material-ui/styles';
-import { GroupTitle } from './common';
+import { GroupTitle } from './utils';
 import { Criteria } from './Criteria';
 
 const Card = withStyles({

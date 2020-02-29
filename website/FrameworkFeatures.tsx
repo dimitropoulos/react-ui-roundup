@@ -1,11 +1,11 @@
 import React, { FC } from 'react';
-import { frameworks, frameworkInfo, frameworkInfoById } from './frameworks';
+import { frameworks, frameworkInfo, frameworkInfoById } from '../frameworks';
 import { map } from 'ramda';
-import { Framework } from './entities';
-import { toStablePairs } from './utils';
+import { Framework } from '../entities';
+import { toStablePairs } from '../utils';
 import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell } from '@material-ui/core';
 import { withStyles } from '@material-ui/styles';
-import { GroupTitle } from './common';
+import { GroupTitle } from './utils';
 import { Criteria } from './Criteria';
 
 const Card = withStyles({
