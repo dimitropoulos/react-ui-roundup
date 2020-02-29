@@ -20,7 +20,7 @@ export const p = (text: string)  => disclaim(`${text}\n`);
 export const link = ({ text, href }: { text: string; href: URL }) => `[${text}](${href})`;
 export const comment = (text: string) => `<!--${text}-->`;
 export const inlineCode = (text: string) => `\`${text}\``;
-export const quote = (text: string) => `> ${text}`;
+export const quote = (text: string) => disclaim(`> ${text}\n`);
 export const checkmark = (value: boolean | undefined) => value === undefined ? ':question:' : value ? ':heavy_check_mark:' : ':x:';
 
 export const row = (data: string[]) => `| ${join(' | ', data)} |`;
@@ -43,7 +43,8 @@ export const disclaimer = comment(lines([
   '',
 ]));
 
-export const website = link({ text: 'react-ui-roundup.dimitrimitropoulos.com', href: 'http://react-ui-roundup.dimitrimitropoulos.com' });
+export const websiteHref = 'http://react-ui-roundup.dimitrimitropoulos.com';
+export const website = link({ text: 'react-ui-roundup.dimitrimitropoulos.com', href: websiteHref });
 
 export const disclaim = (input: string[] | string) => lines([
   disclaimer,

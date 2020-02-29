@@ -19,7 +19,7 @@ import { compact, concatAll } from 'ramda-adjunct';
 import { componentInfo } from '../components';
 import { frameworks, frameworkInfo } from '../frameworks';
 import { writeFile } from 'fs';
-import { lines, h1, h2, link, p, table, website, criteria, quote, inlineCode } from './utils';
+import { lines, h1, h2, link, p, table, website, criteria, quote, inlineCode, websiteHref } from './utils';
 import { removeProtocol, getRepoInfo, noValue, toStablePairs, issueURL } from '../utils';
 import { Component, Framework } from '../entities';
 
@@ -32,7 +32,7 @@ const headerMarkdown = lines([
   h1('React UI Roundup'),
   p('Are you a frontend developer or designer?  Do you wish you had a one-stop-shop you could go to see the various implementations of common components?  If so - React UI Roundup is for you!'),
   p(`I decided to make this project ${link({ href: 'https://github.com/mui-org/material-ui/issues/18094', text: 'while contributing an Alert component to material-ui' })}. While thinking about that component, it was HUGELY helpful to review other implementations from everything from feature set, DOM structure, CSS usage, theming integration, prop naming, and more. I wanted something where I could stand back at a distance and look at many high-quality implementations of a similar component while I researched - so I made this project.`),
-  p(`An even more better version of this exact document is available at ${website}.  It has special "Open All" buttons that allow you to open every link in a table with one click!`),
+  p(`An even more better version of this exact document is available at ${website}.  It has special "Open All" buttons that allow you to open every link in a table with one click!  Also, the Framework Statistics section on the website is always up to date since it pulls the data in realtime when you load the page.`),
 ])
 
 const howToMakeAChange = lines([
@@ -62,6 +62,7 @@ const frameworksSectionMarkdown = (repoInfo: any) => lines([
       repoInfo[repoURL]?.license?.name?.replace(/ License/, '') ?? noValue,
     ], frameworks),
   }),
+  quote(`all of the above statistics were last updated ${new Date().toUTCString()}.  For real-time data, ${link({ href: websiteHref, text: 'see the website'})}.`),
 ]);
 
 const frameworkFeaturesSectionMarkdown = lines([
