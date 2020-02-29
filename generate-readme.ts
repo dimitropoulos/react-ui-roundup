@@ -8,7 +8,6 @@ import {
   map,
   pipe,
   pluck,
-  prepend,
   prop,
   reject,
   sortBy,
@@ -18,9 +17,9 @@ import {
 } from 'ramda';
 import { compact, concatAll } from 'ramda-adjunct';
 import { componentInfo } from './components';
-import { frameworks, frameworkInfo, frameworksById } from './frameworks';
+import { frameworks, frameworkInfo } from './frameworks';
 import { writeFile } from 'fs';
-import { lines, h1, h2, link, p, table, disclaimerLines, website, disclaimer, criteria } from './markdownUtils';
+import { lines, h1, h2, link, p, table, website, disclaimer, criteria, quote } from './markdownUtils';
 import { removeProtocol, getRepoInfo, noValue, toStablePairs, issueURL } from './utils';
 import { Component, Framework } from './entities';
 
@@ -29,13 +28,13 @@ const pleaseFileIssue = link({
   href: issueURL,
 });
 
-const headerMarkdown = disclaimerLines([
+const headerMarkdown = lines([
   h1('React UI Roundup'),
   p('Are you a frontend developer or designer?  Do you wish you had a one-stop-shop you could go to see the various implementations of common components?  If so - React UI Roundup is for you!'),
   p(`An even more better version of this exact document is available at ${website}.  It has special "Open All" buttons that allow you to open every link in a table with one click!`)
 ])
 
-const frameworksSectionMarkdown = (repoInfo: any) => disclaimerLines([
+const frameworksSectionMarkdown = (repoInfo: any) => lines([
   h2('Framework Statistics'),
   table({
     headers: [
@@ -59,7 +58,7 @@ const frameworksSectionMarkdown = (repoInfo: any) => disclaimerLines([
   }),
 ]);
 
-const frameworkFeaturesSectionMarkdown = disclaimerLines([
+const frameworkFeaturesSectionMarkdown = lines([
   h2('Framework Features'),
   criteria(map(({ name, criteria }) => [name, criteria], frameworkInfo)),
   table({
@@ -77,7 +76,7 @@ const frameworkFeaturesSectionMarkdown = disclaimerLines([
   })
 ])
 
-const frameworksMarkdown = (repoInfo: any) => disclaimerLines([
+const frameworksMarkdown = (repoInfo: any) => lines([
   h1('Frameworks'),
   frameworksSectionMarkdown(repoInfo),
   frameworkFeaturesSectionMarkdown,
@@ -85,7 +84,7 @@ const frameworksMarkdown = (repoInfo: any) => disclaimerLines([
 
 type EnhancedComponent = Component & Pick<Framework, 'frameworkName' | 'frameworkId'>;
 
-const componentsMarkdown = disclaimerLines([
+const componentsMarkdown = lines([
   h1('Components'),
   ...chain(({ componentId, cannonicalName, indefiniteArticle, optionsById }) => {
     const optionsArray = pipe(
@@ -149,8 +148,8 @@ const componentsMarkdown = disclaimerLines([
         ` appear${elements.length === 1 ? 's' : ''} to be missing ${indefiniteArticle} ${cannonicalName} component. ${pleaseFileIssue} if one now exists.\n`,
         elements,
       ) : [],
-      elements => elements.length > 0 ? prepend('> ', elements) : [],
       concatAll,
+      line => line && line.length > 0 ? quote(line) : '',
     )(enhancedComponents)
 
     return [
