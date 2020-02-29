@@ -13,29 +13,29 @@ An even more better version of this exact document is available at [react-ui-rou
 
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 57,001 | 20,551 | 470 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 57,052 | 20,558 | 461 | MIT |
 | Atlaskit | [atlaskit.atlassian.com](https://atlaskit.atlassian.com) | [bitbucket.org/atlassian/atlaskit-mk-2/src/master](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,719 | 1,530 | 469 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,658 | 593 | 373 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 5,138 | 301 | 81 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,647 | 299 | 300 | Apache 2.0 |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 43,955 | 9,953 | 1,567 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,293 | 242 | 50 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 9,156 | 481 | 71 | MIT |
-| Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,409 | 228 | 7 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 54,904 | 14,622 | 373 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,850 | 897 | 106 | Apache 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 417 | 46 | 44 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,253 | 310 | 138 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 17,108 | 2,787 | 138 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,573 | 1,051 | 260 | MIT |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,720 | 1,530 | 471 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,662 | 593 | 374 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 5,148 | 303 | 80 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,651 | 299 | 302 | Apache 2.0 |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 43,961 | 9,956 | 1,571 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,293 | 242 | 51 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 9,156 | 481 | 72 | MIT |
+| Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,413 | 228 | 8 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 54,921 | 14,630 | 373 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,851 | 897 | 106 | Apache 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 417 | 45 | 46 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,253 | 310 | 139 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 17,107 | 2,787 | 139 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,573 | 1,051 | 261 | MIT |
 | Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,385 | 130 | 17 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,410 | 5,014 | 990 | MIT |
-| Smooth UI | [www.smooth-code.com/open-source/smooth-ui](https://www.smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,483 | 109 | 7 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,785 | 1,397 | 467 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 725 | 46 | 9 | Apache 2.0 |
-| grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,026 | 705 | 201 | Apache 2.0 |
-| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,075 | 303 | 120 | MIT |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,413 | 5,014 | 991 | MIT |
+| Smooth UI | [www.smooth-code.com/open-source/smooth-ui](https://www.smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,484 | 108 | 8 | MIT |
+| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,788 | 1,397 | 469 | Other |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 725 | 46 | 10 | Apache 2.0 |
+| grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,029 | 705 | 204 | Apache 2.0 |
+| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,075 | 303 | 121 | MIT |
 
 <!-- THIS FILE IS AUTOGENERATED!!! PLEASE SEE `generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes -->
 ## Framework Features
@@ -50,7 +50,7 @@ An even more better version of this exact document is available at [react-ui-rou
 
 | Name | Native Dark Mode | Design Kits | RTL Support | Themer | Native TypeScript |
 | --- | --- | --- | --- | --- | --- |
-| Ant Design | :x: | [Figma](https://ant.design/docs/spec/download), [Sketch](https://ant.design/docs/spec/download) | :x: | :x: | :heavy_check_mark: |
+| Ant Design | :heavy_check_mark: | [Figma](https://ant.design/docs/spec/download), [Sketch](https://ant.design/docs/spec/download) | :heavy_check_mark: | [True](https://antdtheme.com/aliyun) | :heavy_check_mark: |
 | Atlaskit | :x: | [Sketch](https://atlassian.design/guidelines/product/resources/web-product-gui-pack) | :x: | :x: | :x: |
 | Blueprint | :heavy_check_mark: | [Sketch](https://blueprintjs.com/docs/#resources) | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | Carbon Design | :x: | :x: | :heavy_check_mark: | :x: | :x: |

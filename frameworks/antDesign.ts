@@ -8,7 +8,7 @@ export const antDesign: Framework = {
   repoURL: 'https://github.com/ant-design/ant-design',
   frameworkName: 'Ant Design',
   frameworkFeaturesById: {
-    darkMode: false,
+    darkMode: true,
     designKits: [
       {
         type: 'Sketch',
@@ -19,8 +19,8 @@ export const antDesign: Framework = {
         href: `${frameworkHomepage}/docs/spec/download`,
       },
     ],
-    rtlSupport: false,
-    themer: false,
+    rtlSupport: true,
+    themer: 'https://antdtheme.com/aliyun',
     typeScript: true,
   },
   components: [
