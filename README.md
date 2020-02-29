@@ -50,7 +50,7 @@ An even more better version of this exact document is available at [react-ui-rou
 
 | Name | Native Dark Mode | Design Kits | RTL Support | Themer | Native TypeScript |
 | --- | --- | --- | --- | --- | --- |
-| Ant Design | :x: | [Figma](https://ant.design/docs/spec/download), [Sketch](https://ant.design/docs/spec/download) | :x: | :x: | :heavy_check_mark: |
+| Ant Design | :heavy_check_mark: | [Figma](https://ant.design/docs/spec/download), [Sketch](https://ant.design/docs/resources-cn) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Atlaskit | :x: | [Sketch](https://atlassian.design/guidelines/product/resources/web-product-gui-pack) | :x: | :x: | :x: |
 | Blueprint | :heavy_check_mark: | [Sketch](https://blueprintjs.com/docs/#resources) | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | Carbon Design | :x: | :x: | :heavy_check_mark: | :x: | :x: |
