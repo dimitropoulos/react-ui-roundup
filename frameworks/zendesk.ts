@@ -39,7 +39,7 @@ export const zendesk: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/css-components/forms/#checkbox`,
+      componentURL: `${frameworkHomepage}/react-components/forms/#checkbox`,
       options: {
         customIcon: false,
         disabled: true,
