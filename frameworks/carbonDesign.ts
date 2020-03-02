@@ -9,7 +9,12 @@ export const carbonDesign: Framework = {
   frameworkName: 'Carbon Design',
   frameworkFeaturesById: {
     darkMode: false,
-    designKits: false,
+    designKits: [
+      {
+        href: 'https://www.carbondesignsystem.com/resources#theme-libraries',
+        type: 'Sketch',
+      },
+    ],
     rtlSupport: true,
     themer: false,
     typeScript: false,
