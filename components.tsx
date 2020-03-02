@@ -1,13 +1,16 @@
+import React, { Fragment } from 'react';
 import { indexBy, prop, sortBy } from 'ramda';
 import { ComponentInfo, Option } from './entities';
 import {
   stringArray as markdownStringArray,
   checkmark as markdownCheckmark,
+  link,
 } from './markdown/utils';
 import {
   checkmark as jsxCheckmark,
   stringArray as jsxStringArray,
 } from './website/utils';
+import { Link } from '@material-ui/core';
 
 const indexByOptionId = indexBy<Option>(prop('optionId'))
 
@@ -16,7 +19,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     componentId: 'alert',
     cannonicalName: 'Alert',
     indefiniteArticle: 'an',
-    description: 'used to show an important message to users',
+    description: 'Alerts are used to show an important message to users.',
     optionsById: indexByOptionId([
       {
         criteria: 'The alert has ready-made variations.',
@@ -38,7 +41,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     componentId: 'button',
     cannonicalName: 'Button',
     indefiniteArticle: 'a',
-    description: 'users trigger actions by clicking on buttons',
+    description: 'Users trigger actions by clicking on buttons.',
     optionsById: indexByOptionId([
       {
         criteria: 'The button can be easily sized between different (and consistent) major sizes.',
@@ -81,7 +84,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     componentId: 'checkbox',
     cannonicalName: 'Checkbox',
     indefiniteArticle: 'a',
-    description: 'users toggle between checked, unchecked (or indeterminate) values with checkboxes',
+    description: 'Users toggle between checked, unchecked (or indeterminate) values with checkboxes.',
     optionsById: indexByOptionId([
       {
         criteria: 'A custom icon can be provided in place of the checkbox itself via a prop or a child.',
@@ -121,10 +124,42 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
+    componentId: 'errorBoundary',
+    cannonicalName: 'ErrorBoundary',
+    indefiniteArticle: 'an',
+    description: {
+      jsx: <Fragment><Link href="https://reactjs.org/docs/error-boundaries.html">ErrorBoundaries</Link> are a React 16+ specific feature that uses the <Link href="https://reactjs.org/docs/react-component.html#componentdidcatch">componentDidCatch</Link> API for handling uncaught errors without unmounting the whole React component tree.</Fragment>,
+      markdown: `${link({ href: 'https://reactjs.org/docs/error-boundaries.html', text: 'ErrorBoundaries'})} are a React 16+ specific feature that uses the ${link({ href: 'https://reactjs.org/docs/react-component.html#componentdidcatch', text: 'componentDidCatch' })} API for handling uncaught errors without unmounting the whole React component tree.`,
+    },
+    optionsById: indexByOptionId([
+      {
+        criteria: 'Has a prop or props that can be used to provide a custom title and/or description (as a string, not a ReactNode).',
+        optionId: 'customText',
+        name: 'Custom Text',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        criteria: 'Has a prop that can be used to provide a custom ReactNode fallback that does not receive the date of `componentDidCatch`.',
+        optionId: 'dropInFallback',
+        name: 'Drop-In JSX Fallback',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        criteria: 'Has a prop that can be used to provide a custom ReactNode for fallback which receives the data of `componentDidCatch`.',
+        optionId: 'wrapperFallback',
+        name: 'Wrapper JSX Fallback',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+    ]),
+  },
+  {
     componentId: 'switch',
     cannonicalName: 'Switch',
     indefiniteArticle: 'a',
-    description: 'used to toggle between two states: on and off.',
+    description: 'Used to toggle between two states: on and off.',
     optionsById: indexByOptionId([
       {
         criteria: 'The switch has a `disabled` state, indicating that the user cannot interact with it.',
@@ -174,7 +209,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     componentId: 'tabs',
     cannonicalName: 'Tabs',
     indefiniteArticle: 'a',
-    description: 'users switch between different views with tabs',
+    description: 'Users switch between different views with tabs.',
     optionsById: indexByOptionId([
       {
         criteria: 'The tabs can be stacked vertically.',

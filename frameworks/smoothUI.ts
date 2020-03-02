@@ -1,6 +1,6 @@
 import { Framework } from "../entities";
 
-const frameworkHomepage = 'https://www.smooth-code.com/open-source/smooth-ui';
+const frameworkHomepage = 'https://smooth-code.com/open-source/smooth-ui';
 
 export const smoothUI: Framework = {
   frameworkHomepage,

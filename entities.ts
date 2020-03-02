@@ -14,6 +14,11 @@ type OptionsById = {
   [optionId in OptionId]: Option;
 }
 
+export type SuperString = string | {
+  jsx: ReactNode;
+  markdown: string;
+};
+
 export interface ComponentInfo {
   componentId: string;
 
@@ -21,8 +26,8 @@ export interface ComponentInfo {
   cannonicalName: string;
 
   /** The English indefinte article to be used to refer to this Component */
-  indefiniteArticle: 'an' | 'a',
-  description: string;
+  indefiniteArticle: 'an' | 'a';
+  description: SuperString;
   optionsById: OptionsById;
 }
 
@@ -67,8 +72,17 @@ export interface Checkbox extends BaseComponent {
   };
 }
 
+export interface ErrorBoundary extends BaseComponent {
+  componentId: 'errorBoundary';
+  options: {
+    customText: boolean;
+    dropInFallback: boolean;
+    wrapperFallback: boolean;
+  };
+}
+
 export interface Switch extends BaseComponent {
-  componentId: 'switch',
+  componentId: 'switch';
   options: {
     disabled: boolean;
     internalIcons: boolean;
@@ -86,7 +100,14 @@ export interface Tabs extends BaseComponent {
   };
 }
 
-export type Component = Alert | Button | Checkbox | Switch | Tabs;
+export type Component =
+  | Alert
+  | Button
+  | Checkbox
+  | ErrorBoundary
+  | Switch
+  | Tabs
+  ;
 
 export interface DesignKit {
   type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure',

@@ -53,6 +53,16 @@ export const carbonDesign: Framework = {
       },
     },
     {
+      componentId: 'errorBoundary',
+      componentName: 'ErrorBoundary',
+      componentURL: `${frameworkHomepage}/?path=/story/errorboundary--default`,
+      options: {
+        customText: false,
+        dropInFallback: true,
+        wrapperFallback: false,
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/?path=/story/tabs--default`,

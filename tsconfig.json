@@ -9,6 +9,6 @@
     "strict": true,
   },
   "include": [
-    "*.ts"
+    "*.ts",
   ]
 }

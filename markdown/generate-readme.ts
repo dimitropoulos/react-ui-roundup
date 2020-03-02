@@ -93,7 +93,7 @@ type EnhancedComponent = Component & Pick<Framework, 'frameworkName' | 'framewor
 
 const componentsMarkdown = lines([
   h1('Components'),
-  ...chain(({ componentId, cannonicalName, indefiniteArticle, optionsById }) => {
+  ...chain(({ componentId, cannonicalName, description, indefiniteArticle, optionsById }) => {
     const optionsArray = pipe(
       values,
       sortBy(prop('name')),
@@ -161,6 +161,7 @@ const componentsMarkdown = lines([
 
     return [
       h2(cannonicalName),
+      p(typeof description === 'string' ? description : description.markdown),
       criteria(map(([key, value]) => (
         [value.name, value.criteria]
       ), toStablePairs(optionsById))),

@@ -2,6 +2,8 @@ import { URL, Framework } from './entities';
 import { map, pipe, toPairs, sortBy, head } from 'ramda';
 import fetch from 'cross-fetch';
 
+export const SHOULD_FETCH = true;
+
 export const noValue = '--';
 export const issueURL = 'https://github.com/dimitropoulos/react-ui-roundup/issues/new';
 
@@ -19,6 +21,10 @@ export const getGithubFullName = (repoURL: URL) => (
 );
 
 export const getRepoInfo = async (repoURL: URL) => {
+  if (!SHOULD_FETCH) {
+    return null;
+  }
+
   if (repoURL.match('github.com')) {
     const fullName = getGithubFullName(repoURL);
     const response = await fetch(`https://api.github.com/repos/${fullName}`)

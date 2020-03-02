@@ -58,6 +58,16 @@ export const antDesign: Framework = {
       },
     },
     {
+      componentId: 'errorBoundary',
+      componentName: 'Alert.ErrorBoundary',
+      componentURL: `${frameworkHomepage}/components/alert/#components-alert-demo-error-boundary`,
+      options: {
+        customText: true,
+        dropInFallback: false,
+        wrapperFallback: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/components/switch`,

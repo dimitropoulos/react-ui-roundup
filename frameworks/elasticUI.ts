@@ -45,6 +45,16 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'errorBoundary',
+      componentName: 'ErrorBoundary',
+      componentURL: `${frameworkHomepage}/#/utilities/error-boundary`,
+      options: {
+        customText: false,
+        dropInFallback: false,
+        wrapperFallback: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/#/forms/form-controls`,

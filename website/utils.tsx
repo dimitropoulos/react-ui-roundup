@@ -2,7 +2,7 @@ import React, { ReactNode, FC } from 'react';
 import { withStyles, Box, Link, Typography, Toolbar } from "@material-ui/core";
 import { HelpOutline, Check as MuiCheck, Close as MuiClose } from '@material-ui/icons';
 import { pipe, sortBy, prop, map } from 'ramda';
-import { DesignKit, FrameworkFeaturesById } from '../entities';
+import { DesignKit, FrameworkFeaturesById, SuperString } from '../entities';
 import { noValue } from '../utils';
 
 export const TitleWrapper = withStyles({
@@ -16,16 +16,22 @@ export const TitleWrapper = withStyles({
 
 interface GroupTitleProps {
   title: string;
-  subtitle?: string;
+  subtitle?: SuperString;
   actions?: JSX.Element;
 }
 
 export const GroupTitle: FC<GroupTitleProps> = ({ title, subtitle, actions }) => {
+  const subtitleSection = subtitle && (
+    <Typography variant="subtitle2">
+      {typeof subtitle === 'string' ? subtitle : subtitle.jsx}
+    </Typography>
+  );
+
   return (
     <Toolbar>
       <TitleWrapper>
-        <Typography variant="h5">{title}</Typography>
-        {subtitle && <Typography variant="subtitle2">{subtitle}</Typography>}
+        {<Typography variant="h5">{title}</Typography>}
+        {subtitleSection}
       </TitleWrapper>
       {actions}
     </Toolbar>
