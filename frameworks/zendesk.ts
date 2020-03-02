@@ -10,7 +10,7 @@ export const zendesk: Framework = {
   frameworkFeaturesById: {
     darkMode: false,
     designKits: false,
-    rtlSupport: false,
+    rtlSupport: true,
     themer: false,
     typeScript: true,
   },
@@ -39,13 +39,26 @@ export const zendesk: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/css-components/forms/checkbox`,
+      componentURL: `${frameworkHomepage}/css-components/forms/#checkbox`,
       options: {
         customIcon: false,
         disabled: true,
         indeterminate: true,
         invalid: false,
         labelPlacement: ['right'],
+      },
+    },
+    {
+      componentId: 'switch',
+      componentName: 'Toggle',
+      componentURL: `${frameworkHomepage}/react-components/forms/#toggle`,
+      options: {
+        disabled: false,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['above', 'below'],
+        loading: false,
+        sizes: [],
       },
     },
     {
