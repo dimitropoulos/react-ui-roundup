@@ -8,7 +8,7 @@ export const carbonDesign: Framework = {
   repoURL: 'https://github.com/carbon-design-system/carbon',
   frameworkName: 'Carbon Design',
   frameworkFeaturesById: {
-    darkMode: false,
+    darkMode: true,
     designKits: [
       {
         href: 'https://www.carbondesignsystem.com/resources#theme-libraries',
@@ -16,7 +16,7 @@ export const carbonDesign: Framework = {
       },
     ],
     rtlSupport: true,
-    themer: false,
+    themer: 'https://themes.carbondesignsystem.com/?nav=button',
     typeScript: false,
   },
   components: [
