@@ -56,17 +56,17 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | --- | --- | --- | --- | --- | --- | --- |
 | Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 57,695 | 20,826 | 411 | MIT |
 | Atlaskit | [atlaskit.atlassian.com](https://atlaskit.atlassian.com) | [bitbucket.org/atlassian/atlaskit-mk-2/src/master](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,808 | 1,548 | 475 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,761 | 620 | 367 | Apache 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 15,809 | 1,548 | 475 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 2,762 | 620 | 367 | Apache 2.0 |
 | Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 5,427 | 336 | 79 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,739 | 316 | 324 | Apache 2.0 |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 1,739 | 316 | 323 | Apache 2.0 |
 | Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 44,206 | 10,041 | 1,630 | MIT |
 | Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,301 | 243 | 52 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 9,190 | 485 | 69 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 9,192 | 485 | 69 | MIT |
 | Gestalt | [pinterest.github.io/gestalt](https://pinterest.github.io/gestalt) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,439 | 231 | 7 | Apache 2.0 |
-| grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,093 | 711 | 199 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 55,438 | 14,900 | 394 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,862 | 905 | 110 | Apache 2.0 |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,093 | 711 | 200 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 55,437 | 14,900 | 395 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 7,862 | 905 | 111 | Apache 2.0 |
 | Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit-components](https://github.com/kiwicom/orbit-components) | 578 | 54 | 28 | MIT |
 | Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,273 | 310 | 112 | MIT |
 | React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 17,202 | 2,800 | 91 | MIT |
@@ -75,7 +75,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,389 | 130 | 11 | Apache 2.0 |
 | Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 47,504 | 5,025 | 993 | MIT |
 | Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,492 | 109 | 7 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,900 | 1,419 | 515 | Other |
+| UI Fabric | [developer.microsoft.com/en-us/fabric](https://developer.microsoft.com/en-us/fabric) | [OfficeDev/office-ui-fabric-react](https://github.com/OfficeDev/office-ui-fabric-react) | 6,900 | 1,419 | 514 | Other |
 | Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 730 | 49 | 9 | Apache 2.0 |
 
 <!--
@@ -84,7 +84,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Mon, 16 Mar 2020 17:52:21 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Mon, 16 Mar 2020 18:53:09 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************
@@ -126,7 +126,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elemental UI | :x: | :x: | :x: | :x: | :x: |
 | Evergreen | :x: | [Sketch](https://evergreen.segment.com/for-designers) | :x: | :x: | :x: |
 | Gestalt | :x: | :x: | :heavy_check_mark: | :x: | :x: |
-| grommet | :x: | [Custom](https://designer.grommet.io/), [Framer X](https://github.com/grommet/design-kit/blob/master/grommet-2-open-theme.framerx), [Sketch](https://github.com/grommet/design-kit) | :heavy_check_mark: | [Link](https://theme-designer.grommet.io/Dashboard) | :heavy_check_mark: |
+| Grommet | :x: | [Custom](https://designer.grommet.io/), [Framer X](https://github.com/grommet/design-kit/blob/master/grommet-2-open-theme.framerx), [Sketch](https://github.com/grommet/design-kit) | :heavy_check_mark: | [Link](https://theme-designer.grommet.io/Dashboard) | :heavy_check_mark: |
 | Material UI | :heavy_check_mark: | [Figma](https://material-ui.com/discover-more/related-projects/#design-resources), [Sketch](https://material-ui.com/discover-more/related-projects/#design-resources) | :heavy_check_mark: | [Link](https://material-ui.com/discover-more/related-projects/#theming) | :heavy_check_mark: |
 | Onsen UI | :heavy_check_mark: | :x: | :x: | :x: | :heavy_check_mark: |
 | Orbit | :x: | [Abstract](https://orbit.kiwi/getting-started/for-designers), [Sketch](https://orbit.kiwi/getting-started/for-designers) | :heavy_check_mark: | [Link](https://themer.orbit.kiwi/) | :x: |
@@ -204,7 +204,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> [Blueprint](https://github.com/palantir/blueprint), [Carbon Design](https://github.com/carbon-design-system/carbon), [Elastic UI](https://github.com/elastic/eui), [Gestalt](https://github.com/pinterest/gestalt), [grommet](https://github.com/grommet/grommet), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Prime React](https://github.com/primefaces/primereact), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) appear to be missing an Alert component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+> [Blueprint](https://github.com/palantir/blueprint), [Carbon Design](https://github.com/carbon-design-system/carbon), [Elastic UI](https://github.com/elastic/eui), [Gestalt](https://github.com/pinterest/gestalt), [Grommet](https://github.com/grommet/grommet), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Prime React](https://github.com/primefaces/primereact), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) appear to be missing an Alert component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 
 <!--
@@ -255,7 +255,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elemental UI | [Button](http://elemental-ui.com/buttons) | :x: | :heavy_check_mark: |  | :x: | `default`, `extra small`, `large`, `small` |
 | Evergreen | [Button](https://evergreen.segment.com/components/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `arbitrary pixel sizes` |
 | Gestalt | [Button](https://pinterest.github.io/gestalt/#/Button) | :heavy_check_mark: | :x: | `only` | :x: | `lg`, `md`, `sm` |
-| grommet | [Button](https://v2.grommet.io/button) | :heavy_check_mark: | :x: | `left`, `only`, `right` | :x: |  |
+| Grommet | [Button](https://v2.grommet.io/button) | :heavy_check_mark: | :x: | `left`, `only`, `right` | :x: |  |
 | Material UI | [Button](https://material-ui.com/components/buttons) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :x: | `large`, `medium`, `small` |
 | Onsen UI | [Button](https://onsen.io/v2/api/react/Button.html) | :heavy_check_mark: | :x: |  | :x: | `default`, `large` |
 | Orbit | [Button](https://orbit.kiwi/components/button/) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `large`, `normal`, `small` |
@@ -318,7 +318,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elemental UI | [Checkbox](http://elemental-ui.com/components/checkbox) | :x: | :x: | :x: | :x: | `right` |
 | Evergreen | [Checkbox](https://evergreen.segment.com/components/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Gestalt | [Checkbox](https://pinterest.github.io/gestalt/#/Checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
-| grommet | [Checkbox](https://v2.grommet.io/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
+| Grommet | [Checkbox](https://v2.grommet.io/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | Material UI | [Checkbox](https://material-ui.com/components/checkboxes) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | `above`, `below`, `left`, `right` |
 | Onsen UI | [Checkbox](https://onsen.io/v2/api/react/Checkbox.html) | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Orbit | [Checkbox](https://orbit.kiwi/components/checkbox) | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | `right` |
@@ -379,7 +379,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> [Atlaskit](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master), [Blueprint](https://github.com/palantir/blueprint), [Chakra UI](https://github.com/chakra-ui/chakra-ui), [Element](https://github.com/ElemeFE/element), [Elemental UI](https://github.com/elementalui/elemental), [Evergreen](https://github.com/segmentio/evergreen), [Gestalt](https://github.com/pinterest/gestalt), [grommet](https://github.com/grommet/grommet), [Material UI](https://github.com/mui-org/material-ui), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Orbit](https://github.com/kiwicom/orbit-components), [Prime React](https://github.com/primefaces/primereact), [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), [Ring UI](https://github.com/JetBrains/ring-ui), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), [Smooth UI](https://github.com/smooth-code/smooth-ui), [UI Fabric](https://github.com/OfficeDev/office-ui-fabric-react), and [Zendesk Garden](https://github.com/zendeskgarden/react-components) appear to be missing an ErrorBoundary component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+> [Atlaskit](https://bitbucket.org/atlassian/atlaskit-mk-2/src/master), [Blueprint](https://github.com/palantir/blueprint), [Chakra UI](https://github.com/chakra-ui/chakra-ui), [Element](https://github.com/ElemeFE/element), [Elemental UI](https://github.com/elementalui/elemental), [Evergreen](https://github.com/segmentio/evergreen), [Gestalt](https://github.com/pinterest/gestalt), [Grommet](https://github.com/grommet/grommet), [Material UI](https://github.com/mui-org/material-ui), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Orbit](https://github.com/kiwicom/orbit-components), [Prime React](https://github.com/primefaces/primereact), [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), [Ring UI](https://github.com/JetBrains/ring-ui), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), [Smooth UI](https://github.com/smooth-code/smooth-ui), [UI Fabric](https://github.com/OfficeDev/office-ui-fabric-react), and [Zendesk Garden](https://github.com/zendeskgarden/react-components) appear to be missing an ErrorBoundary component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 
 <!--
@@ -446,7 +446,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> [Elemental UI](https://github.com/elementalui/elemental), [grommet](https://github.com/grommet/grommet), [Orbit](https://github.com/kiwicom/orbit-components), [react-md](https://github.com/mlaursen/react-md), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) appear to be missing a Switch component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+> [Elemental UI](https://github.com/elementalui/elemental), [Grommet](https://github.com/grommet/grommet), [Orbit](https://github.com/kiwicom/orbit-components), [react-md](https://github.com/mlaursen/react-md), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) appear to be missing a Switch component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 
 <!--
@@ -492,7 +492,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Element | [Tabs](https://element.eleme.io/#/en-US/component/tabs) | :heavy_check_mark: |
 | Evergreen | [Tablist](https://evergreen.segment.com/components/tab) | :heavy_check_mark: |
 | Gestalt | [Tabs](https://pinterest.github.io/gestalt/#/Tabs) | :x: |
-| grommet | [Tabs](https://v2.grommet.io/tabs) | :x: |
+| Grommet | [Tabs](https://v2.grommet.io/tabs) | :x: |
 | Material UI | [Tabs](https://material-ui.com/components/tabs) | :heavy_check_mark: |
 | Onsen UI | [Tabbar](https://onsen.io/v2/api/react/Tabbar.html) | :x: |
 | Prime React | [TabView](https://primefaces.org/primereact/#/tabview) | :x: |

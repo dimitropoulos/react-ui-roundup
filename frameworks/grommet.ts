@@ -6,7 +6,7 @@ export const grommet: Framework = {
   frameworkHomepage,
   frameworkId: 'grommet',
   repoURL: 'https://github.com/grommet/grommet',
-  frameworkName: 'grommet',
+  frameworkName: 'Grommet',
   frameworkFeaturesById: {
     darkMode: false,
     designKits: [
