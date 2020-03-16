@@ -9,9 +9,22 @@ export const grommet: Framework = {
   frameworkName: 'grommet',
   frameworkFeaturesById: {
     darkMode: false,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
+    designKits: [
+      {
+        type: 'Sketch',
+        href: `https://github.com/grommet/design-kit`,
+      },
+      {
+        type: 'FramerX',
+        href: `https://github.com/grommet/design-kit/blob/master/grommet-2-open-theme.framerx`,
+      },
+            {
+        type: 'Design Tool',
+        href: `https://designer.grommet.io/`,
+      }
+    ],
+    rtlSupport: true,
+    themer: 'https://theme-designer.grommet.io/Dashboard',
     typeScript: true,
   },
   components: [
