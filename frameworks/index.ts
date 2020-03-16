@@ -1,5 +1,5 @@
 import { Framework, FrameworkFeatureInfo } from '../entities';
-import { indexBy, prop, sortBy } from 'ramda';
+import { indexBy, prop, sort, ascend, sortBy, toLower, pipe } from 'ramda';
 
 import { antDesign } from './antDesign';
 import { atlaskit } from './atlaskit';
@@ -36,7 +36,7 @@ import {
   designKits as jsxDesignKits,
 } from '../website/utils';
 
-export const frameworks: Framework[] = sortBy(prop('frameworkName'), [
+export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), toLower)), [
   antDesign,
   atlaskit,
   blueprint,
