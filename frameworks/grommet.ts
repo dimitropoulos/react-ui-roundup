@@ -15,11 +15,11 @@ export const grommet: Framework = {
         href: `https://github.com/grommet/design-kit`,
       },
       {
-        type: 'FramerX',
+        type: 'Framer X',
         href: `https://github.com/grommet/design-kit/blob/master/grommet-2-open-theme.framerx`,
       },
-            {
-        type: 'Design Tool',
+      {
+        type: 'Custom',
         href: `https://designer.grommet.io/`,
       }
     ],

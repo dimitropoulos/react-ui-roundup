@@ -110,7 +110,7 @@ export type Component =
   ;
 
 export interface DesignKit {
-  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure',
+  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Custom',
   href: URL;
 }
 
