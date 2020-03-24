@@ -5,7 +5,7 @@ const frameworkHomepage = 'https://atlaskit.atlassian.com';
 export const atlaskit: Framework = {
   frameworkHomepage,
   frameworkId: 'atlaskit',
-  repoURL: 'https://bitbucket.org/atlassian/atlaskit-mk-2/src/master',
+  repoURL: 'https://bitbucket.org/atlassian/atlaskit-mk-2',
   frameworkName: 'Atlaskit',
   frameworkFeaturesById: {
     darkMode: false,
