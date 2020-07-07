@@ -45,6 +45,7 @@ export const reactToolbox: Framework = {
       componentURL: `${frameworkHomepage}/#/components/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['right'],

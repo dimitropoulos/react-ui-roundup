@@ -63,6 +63,7 @@ export const materialUI: Framework = {
       componentURL: `${frameworkHomepage}/components/switches`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['above', 'below', 'left', 'right'],

@@ -85,6 +85,7 @@ export interface Switch extends BaseComponent {
   componentId: 'switch';
   options: {
     disabled: boolean;
+    indeterminate: boolean;
     internalIcons: boolean;
     internalText: boolean;
     labelPlacement: ('above' | 'right' | 'left' | 'below')[];

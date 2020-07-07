@@ -50,6 +50,7 @@ export const blueprint: Framework = {
       componentURL: `${frameworkHomepage}/docs/#core/components/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: true,
         labelPlacement: ['left', 'right'],

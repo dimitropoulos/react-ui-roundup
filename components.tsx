@@ -129,7 +129,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     indefiniteArticle: 'an',
     description: {
       jsx: <Fragment><Link href="https://reactjs.org/docs/error-boundaries.html">ErrorBoundaries</Link> are a React 16+ specific feature that uses the <Link href="https://reactjs.org/docs/react-component.html#componentdidcatch">componentDidCatch</Link> API for handling uncaught errors without unmounting the whole React component tree.</Fragment>,
-      markdown: `${link({ href: 'https://reactjs.org/docs/error-boundaries.html', text: 'ErrorBoundaries'})} are a React 16+ specific feature that uses the ${link({ href: 'https://reactjs.org/docs/react-component.html#componentdidcatch', text: 'componentDidCatch' })} API for handling uncaught errors without unmounting the whole React component tree.`,
+      markdown: `${link({ href: 'https://reactjs.org/docs/error-boundaries.html', text: 'ErrorBoundaries' })} are a React 16+ specific feature that uses the ${link({ href: 'https://reactjs.org/docs/react-component.html#componentdidcatch', text: 'componentDidCatch' })} API for handling uncaught errors without unmounting the whole React component tree.`,
     },
     optionsById: indexByOptionId([
       {
@@ -165,6 +165,13 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
         criteria: 'The switch has a `disabled` state, indicating that the user cannot interact with it.',
         name: 'Disabled',
         optionId: 'disabled',
+        toJsx: jsxCheckmark,
+        toMarkdown: markdownCheckmark,
+      },
+      {
+        criteria: 'The switch has an ability to display an indeterminate state.',
+        name: 'Indeterminate',
+        optionId: 'indeterminate',
         toJsx: jsxCheckmark,
         toMarkdown: markdownCheckmark,
       },

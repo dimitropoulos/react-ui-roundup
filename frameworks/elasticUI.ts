@@ -60,6 +60,7 @@ export const elasticUI: Framework = {
       componentURL: `${frameworkHomepage}/#/forms/form-controls`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['right'],

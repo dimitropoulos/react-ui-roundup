@@ -73,6 +73,7 @@ export const antDesign: Framework = {
       componentURL: `${frameworkHomepage}/components/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: true,
         internalText: true,
         labelPlacement: [],

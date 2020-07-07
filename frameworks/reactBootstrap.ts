@@ -54,6 +54,7 @@ export const reactBootstrap: Framework = {
       componentURL: `${frameworkHomepage}/components/forms/#forms-custom-switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['right'],

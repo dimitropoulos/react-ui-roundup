@@ -58,6 +58,7 @@ export const grommet: Framework = {
       componentURL: `${frameworkHomepage}/checkbox`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['left', 'right'],

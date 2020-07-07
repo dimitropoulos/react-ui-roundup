@@ -45,6 +45,7 @@ export const primeReact: Framework = {
       componentURL: `${frameworkHomepage}/#/inputswitch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: [],

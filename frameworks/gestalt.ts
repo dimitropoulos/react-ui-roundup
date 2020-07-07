@@ -45,6 +45,7 @@ export const gestalt: Framework = {
       componentURL: `${frameworkHomepage}/#/Switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: [],

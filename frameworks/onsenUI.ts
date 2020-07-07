@@ -45,6 +45,7 @@ export const onsenUI: Framework = {
       componentURL: `${frameworkHomepage}/v2/api/react/Switch.html`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: [],

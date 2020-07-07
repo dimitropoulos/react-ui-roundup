@@ -63,6 +63,7 @@ export const element: Framework = {
       componentURL: `${frameworkHomepage}/#/en-US/component/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['left', 'right'],

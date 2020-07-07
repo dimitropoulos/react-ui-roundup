@@ -50,6 +50,7 @@ export const carbonDesign: Framework = {
       componentURL: `${frameworkHomepage}/?path=/story/toggle--toggled`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['right'],

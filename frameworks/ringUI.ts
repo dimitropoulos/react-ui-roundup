@@ -54,6 +54,7 @@ export const ringUI: Framework = {
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-toggle--basic`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['right', 'left'],

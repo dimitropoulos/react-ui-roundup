@@ -68,6 +68,7 @@ export const atlaskit: Framework = {
       componentURL: `${frameworkHomepage}/packages/core/toggle`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: [],

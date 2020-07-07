@@ -54,6 +54,7 @@ export const chakra: Framework = {
       componentURL: `${frameworkHomepage}/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['left', 'right'],

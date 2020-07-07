@@ -16,6 +16,7 @@ import { materialUI } from './materialUI';
 import { onsenUI } from './onsenUI';
 import { orbit } from './orbit';
 import { primeReact } from './primeReact';
+import { quasar } from './quasar';
 import { reactBootstrap } from './reactBootstrap';
 import { reactMD } from './reactMD';
 import { reactToolbox } from './reactToolbox';
@@ -52,6 +53,7 @@ export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), t
   onsenUI,
   orbit,
   primeReact,
+  quasar,
   reactBootstrap,
   reactMD,
   reactToolbox,

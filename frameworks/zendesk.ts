@@ -54,6 +54,7 @@ export const zendesk: Framework = {
       componentURL: `${frameworkHomepage}/react-components/forms/#toggle`,
       options: {
         disabled: false,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['above', 'below'],

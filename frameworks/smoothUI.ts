@@ -54,6 +54,7 @@ export const smoothUI: Framework = {
       componentURL: `${frameworkHomepage}/docs/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: true,
         labelPlacement: [],

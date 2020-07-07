@@ -63,6 +63,7 @@ export const uiFabric: Framework = {
       componentURL: `${frameworkHomepage}#/controls/web/toggle`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: ['left', 'right'],

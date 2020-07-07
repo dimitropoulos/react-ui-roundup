@@ -59,6 +59,7 @@ export const evergreen: Framework = {
       componentURL: `${frameworkHomepage}/components/switch`,
       options: {
         disabled: true,
+        indeterminate: false,
         internalIcons: false,
         internalText: false,
         labelPlacement: [],
