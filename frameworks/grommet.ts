@@ -42,7 +42,7 @@ export const grommet: Framework = {
     },
     {
       componentId: 'checkbox',
-      componentName: 'Checkbox',
+      componentName: 'CheckBox',
       componentURL: `${frameworkHomepage}/checkbox`,
       options: {
         customIcon: false,
@@ -50,6 +50,19 @@ export const grommet: Framework = {
         indeterminate: true,
         invalid: false,
         labelPlacement: ['right'],
+      },
+    },
+    {
+      componentId: 'switch',
+      componentName: 'CheckBox',
+      componentURL: `${frameworkHomepage}/checkbox`,
+      options: {
+        disabled: true,
+        internalIcons: false,
+        internalText: false,
+        labelPlacement: ['left', 'right'],
+        loading: false,
+        sizes: [],
       },
     },
     {
