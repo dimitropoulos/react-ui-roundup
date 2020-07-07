@@ -62,7 +62,7 @@ const frameworksSectionMarkdown = (repoInfo: any) => lines([
       repoInfo[repoURL]?.license?.name?.replace(/ License/, '') ?? noValue,
     ], frameworks),
   }),
-  quote(`all of the above statistics were last updated ${new Date().toUTCString()}.  For real-time data, ${link({ href: websiteHref, text: 'see the website'})}.`),
+  quote(`all of the above statistics were last updated ${new Date().toUTCString()}.  For real-time data, ${link({ href: websiteHref, text: 'see the website' })}.`),
 ]);
 
 const frameworkFeaturesSectionMarkdown = lines([
@@ -76,7 +76,7 @@ const frameworkFeaturesSectionMarkdown = lines([
     rows: map(({ frameworkName, frameworkFeaturesById }) => [
       frameworkName,
       ...map(({ toMarkdown, featureId }) => (
-        // @ts-ignore @ROBBBBBBBBBBBBBBB
+        // @ts-expect-error
         toMarkdown(frameworkFeaturesById[featureId])
       ), frameworkInfo),
     ], frameworks),
@@ -114,19 +114,19 @@ const componentsMarkdown = lines([
     ), frameworks);
 
     const rows = pipe(
-      // @ts-ignore
+      // @ts-expect-error
       filter(whereEq({ componentId })),
       map(({ componentName, frameworkName, componentURL, options }) => [
         frameworkName,
         link({ text: componentName, href: componentURL }),
-        // @ts-ignore @ROBBBBBBBBBBBBBBB
         ...map(({ optionId, toMarkdown }) => toMarkdown(options[optionId]), optionsArray),
       ]),
-    )(enhancedComponents);
+      // @ts-expect-error
+    )(enhancedComponents) as string[][];
 
     const missingFrameworks = pipe(
       filter(whereEq({ componentId })),
-      // @ts-ignore
+      // @ts-expect-error
       pluck('frameworkId'),
       (frameworkIds: string[]) => reject(
         framework => includes(framework.frameworkId, frameworkIds),
@@ -157,6 +157,7 @@ const componentsMarkdown = lines([
       ) : [],
       concatAll,
       line => line && line.length > 0 ? quote(line) : '',
+      // @ts-expect-error
     )(enhancedComponents)
 
     return [

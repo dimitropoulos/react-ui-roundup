@@ -1,13 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
-import * as ramda from 'ramda';
-import * as ramdaAdjunct from 'ramda-adjunct';
+import * as R from 'ramda';
+import * as RA from 'ramda-adjunct';
 
-// @ts-ignore
-window.R = ramda;
-// @ts-ignore
-window.RA = ramdaAdjunct;
+window.R = R;
+// @ts-expect-error
+window.RA = RA;
 
 ReactDOM.render(
   <App />,
