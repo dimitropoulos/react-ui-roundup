@@ -18,7 +18,7 @@ export const zendesk: Framework = {
     {
       componentId: 'alert',
       componentName: 'Notification',
-      componentURL: `${frameworkHomepage}/react-components/notifications`,
+      componentURL: `${frameworkHomepage}/react-components/notifications/`,
       options: {
         closable: true,
         types: ['success', 'info', 'warning', 'error'],
@@ -27,7 +27,7 @@ export const zendesk: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/react-components/buttons`,
+      componentURL: `${frameworkHomepage}/components/buttons`,
       options: {
         disabled: true,
         groupable: true,
@@ -39,7 +39,7 @@ export const zendesk: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/react-components/forms/#checkbox`,
+      componentURL: `${frameworkHomepage}/components/checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -49,9 +49,21 @@ export const zendesk: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Stepper',
+      componentURL: 'https://zendeskgarden.github.io/react-components/accordions/#stepper',
+      options: {
+        canBeVertical: false,
+        clickable: false,
+        stepDescription: false,
+        stepIcon: false,
+        stepError: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Toggle',
-      componentURL: `${frameworkHomepage}/react-components/forms/#toggle`,
+      componentURL: `${frameworkHomepage}/components/toggle`,
       options: {
         disabled: false,
         indeterminate: false,
@@ -65,7 +77,7 @@ export const zendesk: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/react-components/tabs`,
+      componentURL: `${frameworkHomepage}/components/tabs`,
       options: {
         canBeVertical: true,
       },

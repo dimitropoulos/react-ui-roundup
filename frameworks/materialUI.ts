@@ -58,6 +58,18 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Stepper',
+      componentURL: `${frameworkHomepage}/components/steppers`,
+      options: {
+        canBeVertical: true,
+        clickable: true,
+        stepDescription: true,
+        stepIcon: true,
+        stepError: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/components/switches`,

@@ -55,6 +55,18 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Steps',
+      componentURL: `${frameworkHomepage}/#/navigation/steps`,
+      options: {
+        canBeVertical: true,
+        clickable: false,
+        stepDescription: false,
+        stepIcon: false,
+        stepError: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/#/forms/form-controls`,

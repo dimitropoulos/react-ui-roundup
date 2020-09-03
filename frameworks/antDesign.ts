@@ -68,6 +68,18 @@ export const antDesign: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Steps',
+      componentURL: `${frameworkHomepage}/components/steps`,
+      options: {
+        canBeVertical: true,
+        clickable: true,
+        stepDescription: true,
+        stepIcon: true,
+        stepError: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/components/switch`,

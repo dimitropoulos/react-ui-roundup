@@ -6,26 +6,28 @@
   "scripts": {
     "build": "yarn parcel build website/index.html --no-cache",
     "generate": "yarn ts-node markdown/generate-readme.ts",
-    "start": "yarn parcel website/index.html --no-cache"
+    "generate:dev": "SHOULD_FETCH=false yarn ts-node markdown/generate-readme.ts",
+    "start": "yarn parcel website/index.html --no-cache",
+    "start:dev": "SHOULD_FETCH=false yarn start"
   },
   "dependencies": {
     "@material-ui/core": "4.11.0",
     "@material-ui/icons": "4.9.1",
     "@material-ui/lab": "4.0.0-alpha.56",
-    "@types/node": "14.0.18",
+    "@types/node": "14.6.3",
     "@types/node-fetch": "2.5.7",
-    "@types/ramda": "0.27.7",
+    "@types/ramda": "0.27.14",
     "@types/webpack-env": "1.15.2",
     "cross-fetch": "3.0.5",
     "node-fetch": "2.6.0",
     "parcel": "1.12.4",
-    "ramda": "0.27.0",
+    "ramda": "0.27.1",
     "ramda-adjunct": "2.27.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "ts-node": "8.10.2"
+    "ts-node": "9.0.0"
   },
   "devDependencies": {
-    "typescript": "3.9.6"
+    "typescript": "4.0.2"
   }
 }

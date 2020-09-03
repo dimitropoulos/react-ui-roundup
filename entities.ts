@@ -81,6 +81,17 @@ export interface ErrorBoundary extends BaseComponent {
   };
 }
 
+export interface Stepper extends BaseComponent {
+  componentId: 'stepper';
+  options: {
+    canBeVertical: boolean;
+    clickable: boolean;
+    stepDescription: boolean;
+    stepError: boolean;
+    stepIcon: boolean;
+  };
+}
+
 export interface Switch extends BaseComponent {
   componentId: 'switch';
   options: {
@@ -106,6 +117,7 @@ export type Component =
   | Button
   | Checkbox
   | ErrorBoundary
+  | Stepper
   | Switch
   | Tabs
   ;

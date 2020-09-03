@@ -1,11 +1,11 @@
 import { Framework } from "../entities";
 
-const frameworkHomepage = 'https://developer.microsoft.com/en-us/fabric';
+const frameworkHomepage = 'https://developer.microsoft.com/en-us/fluentui';
 
 export const uiFabric: Framework = {
   frameworkHomepage,
   frameworkId: 'uiFabric',
-  repoURL: 'https://github.com/OfficeDev/office-ui-fabric-react',
+  repoURL: 'https://github.com/microsoft/fluentui',
   frameworkName: 'UI Fabric',
   frameworkFeaturesById: {
     darkMode: true,

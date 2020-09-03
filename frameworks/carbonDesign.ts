@@ -45,6 +45,18 @@ export const carbonDesign: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'ProgressIndicator',
+      componentURL: `${frameworkHomepage}/?path=/story/progressindicator--default`,
+      options: {
+        canBeVertical: true,
+        clickable: true,
+        stepDescription: true,
+        stepIcon: false,
+        stepError: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/?path=/story/toggle--toggled`,

@@ -1,6 +1,6 @@
 import { Framework } from '../entities';
 
-const frameworkHomepage = 'https://atlaskit.atlassian.com';
+const frameworkHomepage = 'https://atlassian.design';
 
 export const atlaskit: Framework = {
   frameworkHomepage,
@@ -23,7 +23,7 @@ export const atlaskit: Framework = {
     {
       componentId: 'alert',
       componentName: 'SectionMessage',
-      componentURL: `${frameworkHomepage}/packages/core/section-message`,
+      componentURL: `${frameworkHomepage}/components/section-message`,
       options: {
         closable: false,
         types: ['info', 'warning', 'error', 'confirmation', 'change'],
@@ -32,7 +32,7 @@ export const atlaskit: Framework = {
     {
       componentId: 'alert',
       componentName: 'Flag',
-      componentURL: `${frameworkHomepage}/packages/core/flag`,
+      componentURL: `${frameworkHomepage}/components/flag`,
       options: {
         closable: false,
         types: ['info', 'warning', 'error', 'confirmation', 'change'],
@@ -41,7 +41,7 @@ export const atlaskit: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/packages/core/button`,
+      componentURL: `${frameworkHomepage}/components/button`,
       options: {
         disabled: true,
         groupable: true,
@@ -53,7 +53,7 @@ export const atlaskit: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/packages/core/checkbox`,
+      componentURL: `${frameworkHomepage}/components/checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -63,9 +63,21 @@ export const atlaskit: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'ProgressTracker',
+      componentURL: `${frameworkHomepage}/components/progress-tracker`,
+      options: {
+        canBeVertical: false,
+        clickable: true,
+        stepDescription: false,
+        stepIcon: false,
+        stepError: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Toggle',
-      componentURL: `${frameworkHomepage}/packages/core/toggle`,
+      componentURL: `${frameworkHomepage}/components/toggle`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -79,7 +91,7 @@ export const atlaskit: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/packages/core/tabs`,
+      componentURL: `${frameworkHomepage}/components/tabs`,
       options: {
         canBeVertical: false,
       },

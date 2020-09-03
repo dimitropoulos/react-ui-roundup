@@ -58,6 +58,18 @@ export const element: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Steps',
+      componentURL: `${frameworkHomepage}/#/en-US/component/steps`,
+      options: {
+        canBeVertical: true,
+        clickable: false,
+        stepDescription: true,
+        stepIcon: true,
+        stepError: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/#/en-US/component/switch`,

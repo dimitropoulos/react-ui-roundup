@@ -5,7 +5,7 @@ const frameworkHomepage = 'https://orbit.kiwi';
 export const orbit: Framework = {
   frameworkHomepage,
   frameworkId: 'orbit',
-  repoURL: 'https://github.com/kiwicom/orbit-components',
+  repoURL: 'https://github.com/kiwicom/orbit',
   frameworkName: 'Orbit',
   frameworkFeaturesById: {
     darkMode: false,

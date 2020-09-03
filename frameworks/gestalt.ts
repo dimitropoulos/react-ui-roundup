@@ -1,6 +1,6 @@
 import { Framework } from "../entities";
 
-const frameworkHomepage = 'https://pinterest.github.io/gestalt';
+const frameworkHomepage = 'https://gestalt.netlify.app';
 
 export const gestalt: Framework = {
   frameworkHomepage,
@@ -18,7 +18,7 @@ export const gestalt: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/#/Button`,
+      componentURL: `${frameworkHomepage}/Button`,
       options: {
         disabled: true,
         groupable: false,
@@ -30,7 +30,7 @@ export const gestalt: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/#/Checkbox`,
+      componentURL: `${frameworkHomepage}/Checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -42,7 +42,7 @@ export const gestalt: Framework = {
     {
       componentId: 'switch',
       componentName: 'Switch',
-      componentURL: `${frameworkHomepage}/#/Switch`,
+      componentURL: `${frameworkHomepage}/Switch`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -56,7 +56,7 @@ export const gestalt: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/#/Tabs`,
+      componentURL: `${frameworkHomepage}/Tabs`,
       options: {
         canBeVertical: false,
       },

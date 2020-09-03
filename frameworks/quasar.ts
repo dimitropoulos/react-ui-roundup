@@ -49,6 +49,18 @@ export const quasar: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Stepper',
+      componentURL: `${frameworkHomepage}/vue-components/stepper`,
+      options: {
+        canBeVertical: true,
+        clickable: true,
+        stepDescription: true,
+        stepIcon: true,
+        stepError: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'toggle',
       componentURL: `${frameworkHomepage}/vue-components/toggle`,

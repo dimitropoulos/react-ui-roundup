@@ -2,7 +2,8 @@ import { URL, Framework } from './entities';
 import { map, pipe, toPairs, sortBy, head } from 'ramda';
 import fetch from 'cross-fetch';
 
-export const SHOULD_FETCH = true;
+const envShouldFetch = process.env.SHOULD_FETCH
+export const SHOULD_FETCH = envShouldFetch === undefined ? true : envShouldFetch === 'false' ? false : true;
 
 export const noValue = '--';
 export const issueURL = 'https://github.com/dimitropoulos/react-ui-roundup/issues/new';

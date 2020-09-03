@@ -45,6 +45,18 @@ export const semanticUI: Framework = {
       },
     },
     {
+      componentId: 'stepper',
+      componentName: 'Steps',
+      componentURL: `${frameworkHomepage}/elements/step.html`,
+      options: {
+        canBeVertical: true,
+        clickable: true,
+        stepDescription: true,
+        stepIcon: true,
+        stepError: false,
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/modules/tab.html`,
