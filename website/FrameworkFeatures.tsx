@@ -28,10 +28,10 @@ const Feature: FC<Framework> = ({ frameworkFeaturesById, frameworkId, frameworkN
 };
 
 export const FrameworkFeatures: FC = () => {
+  const scrollId = 'FrameworkFeatures';
   return (
-    <Card>
-
-      <GroupTitle title="Framework Features" />
+    <Card id={scrollId}>
+      <GroupTitle scrollId={scrollId} title="Framework Features" />
 
       <Criteria
         items={map(([key, value]) => (

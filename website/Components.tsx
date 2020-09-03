@@ -156,10 +156,13 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
     }, components);
   };
 
+  const scrollId = `${cannonicalName.replace(' ', '')}`;
+
   return (
-    <Card key={componentId}>
+    <Card key={componentId} id={scrollId}>
       <GroupTitle
         title={cannonicalName}
+        scrollId={scrollId}
         subtitle={description}
         actions={<Button onClick={openAll}>Open All In New Tabs</Button>}
       />

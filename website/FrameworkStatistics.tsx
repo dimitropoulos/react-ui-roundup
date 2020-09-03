@@ -59,9 +59,12 @@ export const FrameworkStatistics: FC = () => {
     }, frameworks);
   };
 
+  const scrollId = 'FrameworkStatistics';
+
   return (
-    <Card>
+    <Card id={scrollId}>
       <GroupTitle
+        scrollId={scrollId}
         title="Framework Statistics"
         actions={(
           <>
