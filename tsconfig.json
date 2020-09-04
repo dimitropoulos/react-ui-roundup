@@ -1,6 +1,8 @@
 {
   "compilerOptions": {
     "types": [
+      "jest",
+      "mocha",
       "node",
       "webpack-env"
     ],

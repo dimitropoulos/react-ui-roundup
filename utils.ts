@@ -43,3 +43,5 @@ export const toStablePairs = pipe(
   toPairs,
   sortBy(head),
 );
+
+export const createScrollId = (cannonicalName: string) => `${cannonicalName.replace(' ', '')}`;

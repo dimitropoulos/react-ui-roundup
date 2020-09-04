@@ -18,6 +18,7 @@ import {
   noValue,
   toStablePairs,
   unwrapFrameworks,
+  createScrollId,
 } from '../utils';
 import { frameworks, frameworksById } from '../frameworks';
 import {
@@ -156,7 +157,7 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
     }, components);
   };
 
-  const scrollId = `${cannonicalName.replace(' ', '')}`;
+  const scrollId = createScrollId(cannonicalName);
 
   return (
     <Card key={componentId} id={scrollId}>
