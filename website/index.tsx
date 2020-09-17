@@ -5,14 +5,13 @@ import * as R from 'ramda';
 import * as RA from 'ramda-adjunct';
 
 window.R = R;
-// @ts-expect-error
 window.RA = RA;
 
 ReactDOM.render(
   <App />,
   document.getElementById('root'),
-)
+);
 
 if (module.hot) {
-  module.hot.accept()
+  module.hot.accept();
 }

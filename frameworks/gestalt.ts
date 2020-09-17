@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://gestalt.netlify.app';
 
 export const gestalt: Framework = {
-  frameworkHomepage,
-  frameworkId: 'gestalt',
-  repoURL: 'https://github.com/pinterest/gestalt',
-  frameworkName: 'Gestalt',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: false,
-    rtlSupport: true,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'button',
@@ -62,4 +51,15 @@ export const gestalt: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: false,
+    rtlSupport: true,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'gestalt',
+  frameworkName: 'Gestalt',
+  repoURL: 'https://github.com/pinterest/gestalt',
 };

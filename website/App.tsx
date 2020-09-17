@@ -10,8 +10,8 @@ import { scrollIntoView } from './utils';
 
 export const App: FC = () => {
   useEffect(() => {
-    scrollIntoView(window.location.hash.replace('#', ''))()
-  }, [window.location.hash])
+    scrollIntoView(window.location.hash.replace('#', ''))();
+  }, []);
 
   return (
     <ThemeProvider theme={theme}>
@@ -22,5 +22,5 @@ export const App: FC = () => {
         <Components />
       </Container>
     </ThemeProvider>
-  )
+  );
 };

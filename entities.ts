@@ -1,4 +1,7 @@
-import { ReactNode } from "react";
+import { ReactNode } from 'react';
+import { Endpoints } from '@octokit/types';
+
+export type RepoInfo = Endpoints['GET /repos/:owner/:repo']['response']['data'];
 
 type OptionId = string;
 
@@ -12,7 +15,7 @@ export interface Option {
 
 type OptionsById = {
   [optionId in OptionId]: Option;
-}
+};
 
 export type SuperString = string | {
   jsx: ReactNode;
@@ -119,15 +122,13 @@ export type Component =
   | ErrorBoundary
   | Stepper
   | Switch
-  | Tabs
-  ;
-
+  | Tabs;
 export interface DesignKit {
-  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Custom',
+  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Custom';
   href: URL;
 }
 
-export type FrameworkFeaturesById = {
+export interface FrameworkFeaturesById {
   /** criteria: an out-of-the-box dark mode */
   darkMode: boolean;
 
@@ -143,7 +144,7 @@ export type FrameworkFeaturesById = {
   typeScript: boolean;
 }
 
-export type FrameworkFeatureInfoGeneric<T extends keyof FrameworkFeaturesById> = {
+export interface FrameworkFeatureInfoGeneric<T extends keyof FrameworkFeaturesById> {
   featureId: T;
   criteria: string;
   name: string;
@@ -156,7 +157,7 @@ export type FrameworkFeatureInfo =
   | FrameworkFeatureInfoGeneric<'designKits'>
   | FrameworkFeatureInfoGeneric<'rtlSupport'>
   | FrameworkFeatureInfoGeneric<'themer'>
-  | FrameworkFeatureInfoGeneric<'typeScript'>
+  | FrameworkFeatureInfoGeneric<'typeScript'>;
 
 export interface Framework {
   /** must not end with a trailing forward slash */

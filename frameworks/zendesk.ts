@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://garden.zendesk.com';
 
 export const zendesk: Framework = {
-  frameworkHomepage,
-  frameworkId: 'zendesk',
-  repoURL: 'https://github.com/zendeskgarden/react-components',
-  frameworkName: 'Zendesk Garden',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: false,
-    rtlSupport: true,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'alert',
@@ -56,8 +45,8 @@ export const zendesk: Framework = {
         canBeVertical: false,
         clickable: false,
         stepDescription: false,
-        stepIcon: false,
         stepError: false,
+        stepIcon: false,
       },
     },
     {
@@ -83,4 +72,15 @@ export const zendesk: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: false,
+    rtlSupport: true,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'zendesk',
+  frameworkName: 'Zendesk Garden',
+  repoURL: 'https://github.com/zendeskgarden/react-components',
 };

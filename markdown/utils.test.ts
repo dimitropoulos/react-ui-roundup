@@ -3,12 +3,11 @@ import {
   h2,
   h3,
   h4,
-  p,
+  paragraph,
   link,
   comment,
   quote,
   checkmark,
-  list,
   unorderedList,
   lines,
   orderedList,
@@ -21,32 +20,32 @@ describe('tests markdown utils', () => {
     expect(h2('Ziltoid')).toEndWith('## Ziltoid\n');
     expect(h3('Ziltoid')).toEndWith('### Ziltoid\n');
     expect(h4('Ziltoid')).toEndWith('#### Ziltoid\n');
-    expect(p('Ziltoid')).toEndWith('Ziltoid\n');
+    expect(paragraph('Ziltoid')).toEndWith('Ziltoid\n');
     expect(link({
-      text: 'Ziltoid',
       href: 'http://ziltoid.theomniscient.com',
-    })).toEqual('[Ziltoid](http://ziltoid.theomniscient.com)');
-    expect(comment('Ziltoid')).toEqual('<!--Ziltoid-->');
+      text: 'Ziltoid',
+    })).toStrictEqual('[Ziltoid](http://ziltoid.theomniscient.com)');
+    expect(comment('Ziltoid')).toStrictEqual('<!--Ziltoid-->');
     expect(quote('Ziltoid')).toEndWith('> Ziltoid\n');
-    expect(checkmark(undefined)).toEqual(':question:');
-    expect(checkmark(true)).toEqual(':heavy_check_mark:');
-    expect(checkmark(false)).toEqual(':x:');
+    expect(checkmark(undefined)).toStrictEqual(':question:');
+    expect(checkmark(true)).toStrictEqual(':heavy_check_mark:');
+    expect(checkmark(false)).toStrictEqual(':x:');
   });
 
   it('renders lines', () => {
-    expect(lines(['a', 'b', 'c'])).toEqual('a\nb\nc\n')
-  })
+    expect(lines(['a', 'b', 'c'])).toStrictEqual('a\nb\nc\n');
+  });
 
   it('renders a table of contents', () => {
     const table = [
       {
-        text: 'Ziltoid',
         href: 'http://localhost:1234/#Ziltoid',
+        text: 'Ziltoid',
       },
       [
         {
-          text: 'The Omniscient',
           href: 'http://localhost:1234/#TheOmniscient',
+          text: 'The Omniscient',
         },
       ],
     ];
@@ -57,9 +56,9 @@ describe('tests markdown utils', () => {
   });
 
   it('renders a list', () => {
-    expect(unorderedList(['a', 'b', 'c'])).toEqual(`- a\n- b\n- c\n`);
-    expect(unorderedList(['a', 'b', 'c', ['d']])).toEqual(`- a\n- b\n- c\n  - d\n`);
-    expect(orderedList(['a', 'b', 'c', ['d', ['e']], 'f'])).toEqual(`1. a\n1. b\n1. c\n  1. d\n    1. e\n1. f\n`);
+    expect(unorderedList(['a', 'b', 'c'])).toStrictEqual('- a\n- b\n- c\n');
+    expect(unorderedList(['a', 'b', 'c', ['d']])).toStrictEqual('- a\n- b\n- c\n  - d\n');
+    expect(orderedList(['a', 'b', 'c', ['d', ['e']], 'f'])).toStrictEqual('1. a\n1. b\n1. c\n  1. d\n    1. e\n1. f\n');
   });
 
 });

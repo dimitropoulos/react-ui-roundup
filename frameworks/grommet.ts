@@ -1,32 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://v2.grommet.io';
 
 export const grommet: Framework = {
-  frameworkHomepage,
-  frameworkId: 'grommet',
-  repoURL: 'https://github.com/grommet/grommet',
-  frameworkName: 'Grommet',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `https://github.com/grommet/design-kit`,
-      },
-      {
-        type: 'Framer X',
-        href: `https://github.com/grommet/design-kit/blob/master/grommet-2-open-theme.framerx`,
-      },
-      {
-        type: 'Custom',
-        href: `https://designer.grommet.io/`,
-      }
-    ],
-    rtlSupport: true,
-    themer: 'https://theme-designer.grommet.io/Dashboard',
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'button',
@@ -75,4 +51,28 @@ export const grommet: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: [
+      {
+        href: 'https://github.com/grommet/design-kit',
+        type: 'Sketch',
+      },
+      {
+        href: 'https://github.com/grommet/design-kit/blob/master/grommet-2-open-theme.framerx',
+        type: 'Framer X',
+      },
+      {
+        href: 'https://designer.grommet.io/',
+        type: 'Custom',
+      },
+    ],
+    rtlSupport: true,
+    themer: 'https://theme-designer.grommet.io/Dashboard',
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'grommet',
+  frameworkName: 'Grommet',
+  repoURL: 'https://github.com/grommet/grommet',
 };

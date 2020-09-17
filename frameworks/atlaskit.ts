@@ -3,22 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'https://atlassian.design';
 
 export const atlaskit: Framework = {
-  frameworkHomepage,
-  frameworkId: 'atlaskit',
-  repoURL: 'https://bitbucket.org/atlassian/atlaskit-mk-2',
-  frameworkName: 'Atlaskit',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `https://atlassian.design/guidelines/product/resources/web-product-gui-pack`,
-      }
-    ],
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -70,8 +54,8 @@ export const atlaskit: Framework = {
         canBeVertical: false,
         clickable: true,
         stepDescription: false,
-        stepIcon: false,
         stepError: false,
+        stepIcon: false,
       },
     },
     {
@@ -97,4 +81,20 @@ export const atlaskit: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: [
+      {
+        href: 'https://atlassian.design/guidelines/product/resources/web-product-gui-pack',
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'atlaskit',
+  frameworkName: 'Atlaskit',
+  repoURL: 'https://bitbucket.org/atlassian/atlaskit-mk-2',
 };

@@ -29,7 +29,7 @@ import { zendesk } from './zendesk';
 import {
   checkmark as markdownCheckmark,
   themer as markdownThemer,
-  designKits as markdownDesignKits
+  designKits as markdownDesignKits,
 } from '../markdown/utils';
 import {
   checkmark as jsxCheckmark,
@@ -68,36 +68,36 @@ export const frameworksById = indexBy(prop('frameworkId'), frameworks);
 
 export const frameworkInfo: FrameworkFeatureInfo[] = sortBy(prop('featureId'), [
   {
-    featureId: 'darkMode',
     criteria: 'The project is made with dark-mode styling in mind.  An out-of-the-box dark mode is either used on the docs site itself or well documented and easy to configure.',
+    featureId: 'darkMode',
     name: 'Native Dark Mode',
     toJsx: jsxCheckmark,
     toMarkdown: markdownCheckmark,
   },
   {
-    featureId: 'designKits',
     criteria: 'Ready-made resources exist for designers such as Sketch or Figma download packs.',
+    featureId: 'designKits',
     name: 'Design Kits',
     toJsx: jsxDesignKits,
     toMarkdown: markdownDesignKits,
   },
   {
-    featureId: 'rtlSupport',
     criteria: 'Explicit right-to-Left support for use in apps with languages like Arabic, Hebrew, or Persian.',
+    featureId: 'rtlSupport',
     name: 'RTL Support',
     toJsx: jsxCheckmark,
     toMarkdown: markdownCheckmark,
   },
   {
-    featureId: 'themer',
     criteria: 'A user-interactable theming area where designers and developers can play around with look and feel without needing to do any programming.',
+    featureId: 'themer',
     name: 'Themer',
     toJsx: jsxThemer,
     toMarkdown: markdownThemer,
   },
   {
-    featureId: 'typeScript',
     criteria: 'Is either written in TypeScript (ideally) or has TypeScript definitions directly in the project.  DefinitelyTyped does not qualify.',
+    featureId: 'typeScript',
     name: 'Native TypeScript',
     toJsx: jsxCheckmark,
     toMarkdown: markdownCheckmark,

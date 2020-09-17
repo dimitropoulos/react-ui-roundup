@@ -11,6 +11,7 @@
     "strict": true,
   },
   "include": [
-    "*.ts",
+    "**/*.ts",
+    "**/*.tsx"
   ]
 }

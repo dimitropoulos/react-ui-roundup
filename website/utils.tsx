@@ -1,5 +1,5 @@
-import React, { ReactNode, FC, useState } from 'react';
-import { withStyles, Box, Link, Typography, Toolbar } from "@material-ui/core";
+import React, { ReactNode, FC, useState, Fragment, ElementType } from 'react';
+import { withStyles, Box, Link, Typography, Toolbar } from '@material-ui/core';
 import { HelpOutline, Check as MuiCheck, Close as MuiClose, LinkSharp } from '@material-ui/icons';
 import { pipe, sortBy, prop, map } from 'ramda';
 import { DesignKit, FrameworkFeaturesById, SuperString } from '../entities';
@@ -10,26 +10,26 @@ export const scrollIntoView = (scrollId: string) => () => {
   try {
     element = document.querySelector(`#${scrollId}`);
   } catch {}
-  
+
   if (!element) {
     window.history.pushState('', '/', window.location.pathname);
     return;
   }
 
-  parent.location.hash = scrollId;
+  window.parent.location.hash = scrollId;
   element.scrollIntoView();
-}
+};
 
 export const LinkIcon = withStyles({
   root: {
-    opacity: 0.5,
     cursor: 'pointer',
+    fontSize: '1.25em',
     left: '-1em',
+    opacity: 0.5,
+    position: 'absolute',
     top: '15%',
     transform: 'rotate(-45deg)',
-    position: 'absolute',
-    fontSize: '1.25em',
-  }
+  },
 })(LinkSharp);
 
 export const TitleSection = withStyles({
@@ -43,12 +43,12 @@ export const TitleSection = withStyles({
 
 export const TitleWrapper = withStyles({
   root: {
-    display: 'flex',
-    alignItems: 'center',
-    position: 'relative',
     '&:hover': {
       cursor: 'pointer',
     },
+    alignItems: 'center',
+    display: 'flex',
+    position: 'relative',
   },
 })(Box);
 
@@ -57,18 +57,18 @@ export const Title = withStyles({
     '&:hover': {
       cursor: 'pointer',
     },
-  }
+  },
 })(Typography);
 
 interface GroupTitleProps {
   title: string;
   scrollId: string;
   subtitle?: SuperString;
-  actions?: JSX.Element;
+  actions?: ElementType;
 }
 
 export const GroupTitle: FC<GroupTitleProps> = ({ title, scrollId, subtitle, actions }) => {
-  const subtitleSection = subtitle && (
+  const subtitleSection = subtitle !== undefined && (
     <Typography variant="subtitle2">
       {typeof subtitle === 'string' ? subtitle : subtitle.jsx}
     </Typography>
@@ -83,7 +83,7 @@ export const GroupTitle: FC<GroupTitleProps> = ({ title, scrollId, subtitle, act
   const onMouseLeave = () => {
     setShowLink(false);
   };
-  
+
   const onClick = scrollIntoView(scrollId);
 
   return (
@@ -105,13 +105,13 @@ export const GroupTitle: FC<GroupTitleProps> = ({ title, scrollId, subtitle, act
 export const Check = withStyles({
   root: {
     fill: 'green',
-  }
+  },
 })(MuiCheck);
 
 export const Close = withStyles({
   root: {
     fill: 'red',
-  }
+  },
 })(MuiClose);
 
 export const checkmark = (value: boolean | undefined) => {
@@ -126,18 +126,18 @@ export const checkmark = (value: boolean | undefined) => {
   // return null;
 };
 
-export const stringArray = (sizes: string[] | null) => sizes ? sizes.sort().join(', ') : noValue;
+export const stringArray = (sizes: string[] | null) => (sizes ? sizes.sort().join(', ') : noValue);
 
-export const designKits = (designKits: FrameworkFeaturesById['designKits']) => designKits !== false ? (
+export const designKits = (designKits: FrameworkFeaturesById['designKits']) => (designKits === false ? checkmark(false) : (
   pipe<DesignKit[], DesignKit[], ReactNode[], ReactNode>(
     sortBy(prop('type')),
     map(({ href, type }) => (
       <Link href={href} key={type} style={{ marginRight: 8 }}>{type}</Link>
     )),
-    kits => <>{kits}</>,
+    kits => <Fragment key="kits">{kits}</Fragment>,
   )(designKits)
-) : checkmark(false);
+));
 
-export const themer = (themer: FrameworkFeaturesById['themer']) => themer !== false ? (
+export const themer = (themer: FrameworkFeaturesById['themer']) => (themer === false ? checkmark(themer) : (
   <Link href={themer as unknown as string}>Link</Link>
-) : checkmark(themer);
+));

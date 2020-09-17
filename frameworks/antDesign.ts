@@ -1,28 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://ant.design';
 
 export const antDesign: Framework = {
-  frameworkHomepage,
-  frameworkId: 'antDesign',
-  repoURL: 'https://github.com/ant-design/ant-design',
-  frameworkName: 'Ant Design',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/docs/spec/download`,
-      },
-      {
-        type: 'Figma',
-        href: `${frameworkHomepage}/docs/spec/download`,
-      },
-    ],
-    rtlSupport: true,
-    themer: 'https://antdtheme.com/aliyun',
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'alert',
@@ -75,8 +55,8 @@ export const antDesign: Framework = {
         canBeVertical: true,
         clickable: true,
         stepDescription: true,
-        stepIcon: true,
         stepError: true,
+        stepIcon: true,
       },
     },
     {
@@ -102,4 +82,24 @@ export const antDesign: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/docs/spec/download`,
+        type: 'Sketch',
+      },
+      {
+        href: `${frameworkHomepage}/docs/spec/download`,
+        type: 'Figma',
+      },
+    ],
+    rtlSupport: true,
+    themer: 'https://antdtheme.com/aliyun',
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'antDesign',
+  frameworkName: 'Ant Design',
+  repoURL: 'https://github.com/ant-design/ant-design',
 };

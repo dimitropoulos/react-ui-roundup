@@ -81,30 +81,30 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 63,051 | 23,943 | 500 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 63,405 | 24,196 | 496 | MIT |
 | Atlaskit | [atlassian.design](https://atlassian.design) | [bitbucket.org/atlassian/atlaskit-mk-2](https://bitbucket.org/atlassian/atlaskit-mk-2) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 16,658 | 1,717 | 527 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 3,431 | 765 | 414 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 10,205 | 676 | 86 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 2,197 | 384 | 358 | Apache 2.0 |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 47,088 | 11,328 | 2,018 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,317 | 248 | 50 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 10,011 | 569 | 78 | MIT |
-| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,616 | 261 | 14 | Apache 2.0 |
-| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,597 | 791 | 227 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 60,655 | 17,832 | 465 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,073 | 918 | 141 | Apache 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 697 | 66 | 55 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,510 | 372 | 214 | MIT |
-| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 16,067 | 1,868 | 228 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 18,211 | 2,909 | 97 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,629 | 1,049 | 262 | MIT |
-| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,118 | 308 | 41 | MIT |
-| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,483 | 131 | 12 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 48,416 | 5,080 | 1,016 | MIT |
-| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,530 | 111 | 10 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 9,317 | 1,684 | 957 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 788 | 51 | 10 | Apache 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 16,705 | 1,727 | 536 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 3,470 | 778 | 443 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 10,541 | 710 | 85 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 2,225 | 391 | 364 | Apache 2.0 |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 47,276 | 11,432 | 1,966 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,319 | 247 | 50 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 10,056 | 578 | 53 | MIT |
+| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,630 | 264 | 12 | Apache 2.0 |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,631 | 796 | 227 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 61,033 | 18,046 | 463 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,084 | 919 | 141 | Apache 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 701 | 67 | 42 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,541 | 376 | 203 | MIT |
+| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 16,209 | 1,890 | 234 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 18,277 | 2,921 | 107 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,635 | 1,047 | 262 | MIT |
+| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,122 | 309 | 42 | MIT |
+| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,494 | 132 | 8 | Apache 2.0 |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 48,463 | 5,076 | 1,021 | MIT |
+| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,532 | 113 | 11 | MIT |
+| UI Fabric | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 9,429 | 1,695 | 991 | Other |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 793 | 53 | 10 | Apache 2.0 |
 
 <!--
 ********************************************************************************
@@ -112,7 +112,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Fri, 04 Sep 2020 01:59:55 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Thu, 17 Sep 2020 13:24:42 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************

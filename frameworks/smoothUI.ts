@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://smooth-code.com/open-source/smooth-ui';
 
 export const smoothUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'smoothUI',
-  repoURL: 'https://github.com/smooth-code/smooth-ui',
-  frameworkName: 'Smooth UI',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -63,4 +52,15 @@ export const smoothUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'smoothUI',
+  frameworkName: 'Smooth UI',
+  repoURL: 'https://github.com/smooth-code/smooth-ui',
 };

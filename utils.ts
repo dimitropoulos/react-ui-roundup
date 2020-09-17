@@ -1,9 +1,9 @@
-import { URL, Framework } from './entities';
+import { URL, Framework, RepoInfo } from './entities';
 import { map, pipe, toPairs, sortBy, head } from 'ramda';
 import fetch from 'cross-fetch';
 
-const envShouldFetch = process.env.SHOULD_FETCH
-export const SHOULD_FETCH = envShouldFetch === undefined ? true : envShouldFetch === 'false' ? false : true;
+const envShouldFetch = process.env.SHOULD_FETCH;
+export const SHOULD_FETCH = envShouldFetch === undefined ? true : envShouldFetch !== 'false';
 
 export const noValue = '--';
 export const issueURL = 'https://github.com/dimitropoulos/react-ui-roundup/issues/new';
@@ -26,10 +26,10 @@ export const getRepoInfo = async (repoURL: URL) => {
     return null;
   }
 
-  if (repoURL.match('github.com')) {
+  if ((/github\.com/).exec(repoURL)) {
     const fullName = getGithubFullName(repoURL);
-    const response = await fetch(`https://api.github.com/repos/${fullName}`)
-    return response.json()
+    const response = await fetch(`https://api.github.com/repos/${fullName}`);
+    return (response.json()) as unknown as RepoInfo;
   }
   return null;
 };

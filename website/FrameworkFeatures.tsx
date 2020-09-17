@@ -3,8 +3,7 @@ import { frameworks, frameworkInfo, frameworkInfoById } from '../frameworks';
 import { map } from 'ramda';
 import { Framework } from '../entities';
 import { toStablePairs } from '../utils';
-import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell } from '@material-ui/core';
-import { withStyles } from '@material-ui/styles';
+import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell, withStyles } from '@material-ui/core';
 import { GroupTitle } from './utils';
 import { Criteria } from './Criteria';
 
@@ -14,18 +13,16 @@ const Card = withStyles({
   },
 })(MuiCard);
 
-const Feature: FC<Framework> = ({ frameworkFeaturesById, frameworkId, frameworkName }) => {
-  return (
-    <TableRow key={frameworkId} hover>
-      <TableCell>{frameworkName}</TableCell>
-      {map(([featureId, value]) => (
-        <TableCell key={featureId}>
-          {frameworkInfoById[featureId].toJsx(value)}
-        </TableCell>
-      ), toStablePairs(frameworkFeaturesById))}
-    </TableRow>
-  )
-};
+const Feature: FC<Framework> = ({ frameworkFeaturesById, frameworkId, frameworkName }) => (
+  <TableRow hover key={frameworkId}>
+    <TableCell>{frameworkName}</TableCell>
+    {map(([featureId, value]) => (
+      <TableCell key={featureId}>
+        {frameworkInfoById[featureId].toJsx(value)}
+      </TableCell>
+    ), toStablePairs(frameworkFeaturesById))}
+  </TableRow>
+);
 
 export const FrameworkFeatures: FC = () => {
   const scrollId = 'FrameworkFeatures';
@@ -34,7 +31,7 @@ export const FrameworkFeatures: FC = () => {
       <GroupTitle scrollId={scrollId} title="Framework Features" />
 
       <Criteria
-        items={map(([key, value]) => (
+        items={map(([, value]) => (
           [value.name, value.criteria]
         ), toStablePairs(frameworkInfoById))}
       />

@@ -1,28 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://orbit.kiwi';
 
 export const orbit: Framework = {
-  frameworkHomepage,
-  frameworkId: 'orbit',
-  repoURL: 'https://github.com/kiwicom/orbit',
-  frameworkName: 'Orbit',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: [
-      {
-        type: 'Abstract',
-        href: `${frameworkHomepage}/getting-started/for-designers`,
-      },
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/getting-started/for-designers`,
-      },
-    ],
-    rtlSupport: true,
-    themer: 'https://themer.orbit.kiwi/',
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -58,4 +38,24 @@ export const orbit: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/getting-started/for-designers`,
+        type: 'Abstract',
+      },
+      {
+        href: `${frameworkHomepage}/getting-started/for-designers`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: true,
+    themer: 'https://themer.orbit.kiwi/',
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'orbit',
+  frameworkName: 'Orbit',
+  repoURL: 'https://github.com/kiwicom/orbit',
 };

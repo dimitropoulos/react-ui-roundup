@@ -33,17 +33,17 @@ import {
   Link,
   Button,
   Typography,
+  withStyles,
 } from '@material-ui/core';
-import { UnwrapedComponent, Component, Framework } from '../entities';
+import { UnwrapedComponent, Component as ComponentType, Framework } from '../entities';
 import { componentInfoById } from '../components';
-import { withStyles } from '@material-ui/styles';
 import { GroupTitle } from './utils';
 import { Criteria } from './Criteria';
 
 const Card = withStyles({
   root: {
     margin: '2em',
-  }
+  },
 })(MuiCard);
 
 const Wrapper = withStyles({
@@ -55,9 +55,9 @@ const Wrapper = withStyles({
 
 const pleaseFileIssue = (
   <Link
-    target="_blank"
-    rel="noopener noreferrer"
     href={issueURL}
+    rel="noopener noreferrer"
+    target="_blank"
   >
     Please file an issue
   </Link>
@@ -74,7 +74,7 @@ const Component: FC<UnwrapedComponent> = ({
   const { frameworkName } = frameworksById[frameworkId];
 
   return (
-    <TableRow key={key} hover>
+    <TableRow hover key={key}>
       <TableCell>{frameworkName}</TableCell>
 
       <TableCell>
@@ -82,13 +82,13 @@ const Component: FC<UnwrapedComponent> = ({
       </TableCell>
 
       {map(([key, value]) => {
-        const formattedValue = componentInfoById[componentId].optionsById[key].toJsx(value) || noValue;
+        const formattedValue = componentInfoById[componentId].optionsById[key].toJsx(value) ?? noValue;
         return (
           <TableCell key={key}>{formattedValue}</TableCell>
         );
       }, toStablePairs(options))}
     </TableRow>
-  )
+  );
 };
 
 const MissingFramework: FC<Framework> = ({ frameworkId, frameworkName, repoURL }: Framework) => (
@@ -99,7 +99,7 @@ const MissingFramework: FC<Framework> = ({ frameworkId, frameworkName, repoURL }
 
 const MissingFrameworks: FC<{
   componentId: string;
-  components: Component[];
+  components: ComponentType[];
 }> = ({ componentId, components }) => {
   const { cannonicalName, indefiniteArticle } = componentInfoById[componentId];
   const missingFrameworks = pipe(
@@ -119,18 +119,18 @@ const MissingFrameworks: FC<{
           return elements;
 
         case 3:
-          return update(1, ' and ', elements)
+          return update(1, ' and ', elements);
 
         default:
           return update(elements.length - 2, ', and ', elements);
       }
     },
-    elements => elements.length > 0 ? append<ReactElement | null | string>(
+    elements => (elements.length > 0 ? append<ReactElement | null | string>(
       <Fragment key="text">
         {' '}appear{elements.length === 1 ? 's' : ''} to be missing {indefiniteArticle} {cannonicalName} component. {pleaseFileIssue} if one now exists.
       </Fragment>,
       elements,
-    ) : null,
+    ) : null),
   )(components);
 
   if (missingFrameworks === null) {
@@ -143,8 +143,8 @@ const MissingFrameworks: FC<{
         {missingFrameworks}
       </Typography>
     </Wrapper>
-  )
-}
+  );
+};
 
 const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, components]) => {
   const { cannonicalName, description, optionsById } = componentInfoById[componentId];
@@ -152,7 +152,7 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
   const options = toStablePairs(optionsById);
 
   const openAll = () => {
-    forEach(({ componentURL, }) => {
+    forEach(({ componentURL }) => {
       window.open(componentURL);
     }, components);
   };
@@ -160,16 +160,16 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
   const scrollId = createScrollId(cannonicalName);
 
   return (
-    <Card key={componentId} id={scrollId}>
+    <Card id={scrollId} key={componentId}>
       <GroupTitle
-        title={cannonicalName}
+        actions={<Button onClick={openAll}>Open All In New Tabs</Button>}
         scrollId={scrollId}
         subtitle={description}
-        actions={<Button onClick={openAll}>Open All In New Tabs</Button>}
+        title={cannonicalName}
       />
 
       <Criteria
-        items={map(([key, value]) => (
+        items={map(([, value]) => (
           [value.name, value.criteria]
         ), options)}
       />
@@ -199,8 +199,8 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
         components={components}
       />
     </Card>
-  )
-}
+  );
+};
 
 export const Components: FC = () => {
   const componentGroups = pipe(
@@ -211,5 +211,5 @@ export const Components: FC = () => {
     map(ComponentGroup),
   )(frameworks);
 
-  return <>{componentGroups}</>;
-}
+  return <Fragment key="components">{componentGroups}</Fragment>;
+};

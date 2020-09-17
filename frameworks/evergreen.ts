@@ -3,22 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'https://evergreen.segment.com';
 
 export const evergreen: Framework = {
-  frameworkId: 'evergreen',
-  repoURL: 'https://github.com/segmentio/evergreen',
-  frameworkHomepage: 'https://evergreen.segment.com',
-  frameworkName: 'Evergreen',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/for-designers`,
-      },
-    ],
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -39,7 +23,7 @@ export const evergreen: Framework = {
         icon: ['left', 'right', 'only'],
         loading: true,
         sizes: ['arbitrary pixel sizes'],
-      }
+      },
     },
     {
       componentId: 'checkbox',
@@ -75,5 +59,21 @@ export const evergreen: Framework = {
         canBeVertical: true,
       },
     },
-  ]
-}
+  ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/for-designers`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage: 'https://evergreen.segment.com',
+  frameworkId: 'evergreen',
+  frameworkName: 'Evergreen',
+  repoURL: 'https://github.com/segmentio/evergreen',
+};

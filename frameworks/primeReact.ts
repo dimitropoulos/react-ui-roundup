@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://primefaces.org/primereact';
 
 export const primeReact: Framework = {
-  frameworkHomepage,
-  frameworkId: 'primeReact',
-  repoURL: 'https://github.com/primefaces/primereact',
-  frameworkName: 'Prime React',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'button',
@@ -47,8 +36,8 @@ export const primeReact: Framework = {
         canBeVertical: false,
         clickable: true,
         stepDescription: false,
-        stepIcon: false,
         stepError: false,
+        stepIcon: false,
       },
     },
     {
@@ -74,4 +63,15 @@ export const primeReact: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'primeReact',
+  frameworkName: 'Prime React',
+  repoURL: 'https://github.com/primefaces/primereact',
 };

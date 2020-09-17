@@ -1,24 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://semantic-ui.com';
 
 export const semanticUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'semanticUI',
-  repoURL: 'https://github.com/Semantic-Org/Semantic-UI',
-  frameworkName: 'Semantic UI',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/introduction/advanced-usage.html#sketch-files`,
-      },
-    ],
-    rtlSupport: true,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'button',
@@ -52,8 +36,8 @@ export const semanticUI: Framework = {
         canBeVertical: true,
         clickable: true,
         stepDescription: true,
-        stepIcon: true,
         stepError: false,
+        stepIcon: true,
       },
     },
     {
@@ -65,4 +49,20 @@ export const semanticUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/introduction/advanced-usage.html#sketch-files`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: true,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'semanticUI',
+  frameworkName: 'Semantic UI',
+  repoURL: 'https://github.com/Semantic-Org/Semantic-UI',
 };

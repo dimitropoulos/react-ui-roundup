@@ -3,17 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'http://react-toolbox.io';
 
 export const reactToolbox: Framework = {
-  frameworkHomepage,
-  frameworkId: 'reactToolbox',
-  repoURL: 'https://github.com/react-toolbox/react-toolbox',
-  frameworkName: 'React Toolbox',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'button',
@@ -62,4 +51,15 @@ export const reactToolbox: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'reactToolbox',
+  frameworkName: 'React Toolbox',
+  repoURL: 'https://github.com/react-toolbox/react-toolbox',
 };

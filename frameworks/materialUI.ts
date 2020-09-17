@@ -1,28 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://material-ui.com';
 
 export const materialUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'materialUI',
-  repoURL: 'https://github.com/mui-org/material-ui',
-  frameworkName: 'Material UI',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: [
-      {
-        type: 'Figma',
-        href: `${frameworkHomepage}/discover-more/related-projects/#design-resources`
-      },
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/discover-more/related-projects/#design-resources`
-      },
-    ],
-    rtlSupport: true,
-    themer: `${frameworkHomepage}/discover-more/related-projects/#theming`,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'alert',
@@ -31,7 +11,7 @@ export const materialUI: Framework = {
       options: {
         closable: true,
         types: ['error', 'warning', 'info', 'success'],
-      }
+      },
     },
     {
       componentId: 'button',
@@ -65,8 +45,8 @@ export const materialUI: Framework = {
         canBeVertical: true,
         clickable: true,
         stepDescription: true,
-        stepIcon: true,
         stepError: true,
+        stepIcon: true,
       },
     },
     {
@@ -92,4 +72,24 @@ export const materialUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/discover-more/related-projects/#design-resources`,
+        type: 'Figma',
+      },
+      {
+        href: `${frameworkHomepage}/discover-more/related-projects/#design-resources`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: true,
+    themer: `${frameworkHomepage}/discover-more/related-projects/#theming`,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'materialUI',
+  frameworkName: 'Material UI',
+  repoURL: 'https://github.com/mui-org/material-ui',
 };

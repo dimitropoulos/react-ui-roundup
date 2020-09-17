@@ -1,28 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://developer.microsoft.com/en-us/fluentui';
 
 export const uiFabric: Framework = {
-  frameworkHomepage,
-  frameworkId: 'uiFabric',
-  repoURL: 'https://github.com/microsoft/fluentui',
-  frameworkName: 'UI Fabric',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}#/resources`,
-      },
-      {
-        type: 'Figma',
-        href: `${frameworkHomepage}#/resources`,
-      },
-    ],
-    rtlSupport: false,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'alert',
@@ -80,4 +60,24 @@ export const uiFabric: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: [
+      {
+        href: `${frameworkHomepage}#/resources`,
+        type: 'Sketch',
+      },
+      {
+        href: `${frameworkHomepage}#/resources`,
+        type: 'Figma',
+      },
+    ],
+    rtlSupport: false,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'uiFabric',
+  frameworkName: 'UI Fabric',
+  repoURL: 'https://github.com/microsoft/fluentui',
 };

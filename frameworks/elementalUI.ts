@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'http://elemental-ui.com';
 
 export const elementalUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'elementalUI',
-  repoURL: 'https://github.com/elementalui/elemental',
-  frameworkName: 'Elemental UI',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -49,4 +38,15 @@ export const elementalUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'elementalUI',
+  frameworkName: 'Elemental UI',
+  repoURL: 'https://github.com/elementalui/elemental',
 };

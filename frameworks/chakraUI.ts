@@ -3,17 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'https://chakra-ui.com';
 
 export const chakra: Framework = {
-  frameworkHomepage,
-  frameworkId: 'chakra',
-  repoURL: 'https://github.com/chakra-ui/chakra-ui',
-  frameworkName: 'Chakra UI',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -71,4 +60,15 @@ export const chakra: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'chakra',
+  frameworkName: 'Chakra UI',
+  repoURL: 'https://github.com/chakra-ui/chakra-ui',
 };

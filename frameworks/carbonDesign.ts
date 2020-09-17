@@ -1,24 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'http://react.carbondesignsystem.com';
 
 export const carbonDesign: Framework = {
-  frameworkHomepage,
-  frameworkId: 'carbonDesign',
-  repoURL: 'https://github.com/carbon-design-system/carbon',
-  frameworkName: 'Carbon Design',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: [
-      {
-        href: 'https://www.carbondesignsystem.com/resources#theme-libraries',
-        type: 'Sketch',
-      },
-    ],
-    rtlSupport: true,
-    themer: 'https://themes.carbondesignsystem.com/?nav=button',
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'button',
@@ -52,8 +36,8 @@ export const carbonDesign: Framework = {
         canBeVertical: true,
         clickable: true,
         stepDescription: true,
-        stepIcon: false,
         stepError: true,
+        stepIcon: false,
       },
     },
     {
@@ -89,4 +73,20 @@ export const carbonDesign: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: [
+      {
+        href: 'https://www.carbondesignsystem.com/resources#theme-libraries',
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: true,
+    themer: 'https://themes.carbondesignsystem.com/?nav=button',
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'carbonDesign',
+  frameworkName: 'Carbon Design',
+  repoURL: 'https://github.com/carbon-design-system/carbon',
 };

@@ -3,17 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'https://jetbrains.github.io/ring-ui';
 
 export const ringUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'ringUI',
-  repoURL: 'https://github.com/JetBrains/ring-ui',
-  frameworkName: 'Ring UI',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -71,4 +60,15 @@ export const ringUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'ringUI',
+  frameworkName: 'Ring UI',
+  repoURL: 'https://github.com/JetBrains/ring-ui',
 };

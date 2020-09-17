@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://quasar.dev';
 
 export const quasar: Framework = {
-  frameworkHomepage,
-  frameworkId: 'quasar',
-  repoURL: 'https://github.com/quasarframework/quasar',
-  frameworkName: 'Quasar',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: false,
-    rtlSupport: true,
-    themer: 'https://quasar.dev/style/theme-builder',
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'alert',
@@ -56,8 +45,8 @@ export const quasar: Framework = {
         canBeVertical: true,
         clickable: true,
         stepDescription: true,
-        stepIcon: true,
         stepError: true,
+        stepIcon: true,
       },
     },
     {
@@ -83,4 +72,15 @@ export const quasar: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: false,
+    rtlSupport: true,
+    themer: 'https://quasar.dev/style/theme-builder',
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'quasar',
+  frameworkName: 'Quasar',
+  repoURL: 'https://github.com/quasarframework/quasar',
 };

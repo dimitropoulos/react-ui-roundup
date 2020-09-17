@@ -1,24 +1,15 @@
 import React, { FC } from 'react';
 import { map } from 'ramda';
-import { Typography, Box, withStyles, Chip as MuiChip } from '@material-ui/core';
+import { Typography, withStyles, Chip as MuiChip } from '@material-ui/core';
 
-const Wrapper = withStyles({
-  root: {
-    margin: 16,
-  },
-})(Box);
+const Wrapper: FC = ({ children }) => <div style={{ margin: 16 }}>{children}</div>;
+const Row: FC = ({ children }) => <div style={{ marginBottom: 8 }}>{children}</div>;
 
 const Title = withStyles({
   root: {
     marginBottom: 8,
   },
 })(Typography);
-
-const Row = withStyles({
-  root: {
-    marginBottom: 8,
-  },
-})(Box);
 
 const Chip = withStyles({
   root: {
@@ -34,10 +25,10 @@ export const Criteria: FC<Props> = ({ items }) => (
   <Wrapper>
     <Title variant="h6">Criteria</Title>
     {map(([name, description]) => (
-      <Row key={name}>
+      <Row key={name} >
         <Chip label={name} size="small" />
-        <Typography component="span">{description}</Typography>
+        <Typography variant="caption">{description}</Typography>
       </Row>
     ), items)}
   </Wrapper>
-)
+);

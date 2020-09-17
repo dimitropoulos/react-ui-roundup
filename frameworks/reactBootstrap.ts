@@ -3,17 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'https://react-bootstrap.github.io';
 
 export const reactBootstrap: Framework = {
-  frameworkHomepage,
-  frameworkId: 'reactBootstrap',
-  repoURL: 'https://github.com/react-bootstrap/react-bootstrap',
-  frameworkName: 'React Bootstrap',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'alert',
@@ -71,4 +60,15 @@ export const reactBootstrap: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'reactBootstrap',
+  frameworkName: 'React Bootstrap',
+  repoURL: 'https://github.com/react-bootstrap/react-bootstrap',
 };

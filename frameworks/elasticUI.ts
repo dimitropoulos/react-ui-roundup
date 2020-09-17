@@ -3,22 +3,6 @@ import { Framework } from '../entities';
 const frameworkHomepage = 'https://elastic.github.io/eui';
 
 export const elasticUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'elasticUI',
-  repoURL: 'https://github.com/elastic/eui',
-  frameworkName: 'Elastic UI',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}`
-      },
-    ],
-    rtlSupport: false,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'button',
@@ -62,8 +46,8 @@ export const elasticUI: Framework = {
         canBeVertical: true,
         clickable: false,
         stepDescription: false,
-        stepIcon: false,
         stepError: false,
+        stepIcon: false,
       },
     },
     {
@@ -89,4 +73,20 @@ export const elasticUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: [
+      {
+        href: `${frameworkHomepage}`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: false,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'elasticUI',
+  frameworkName: 'Elastic UI',
+  repoURL: 'https://github.com/elastic/eui',
 };

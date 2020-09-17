@@ -1,15 +1,10 @@
-import { createMuiTheme } from "@material-ui/core";
+import { createMuiTheme } from '@material-ui/core';
 
 export const reactBackground = '#282c34';
 export const reactLightBlue = '#61dafb';
 export const kubernetesBlue = '#326ce5';
 
 export const theme = createMuiTheme({
-  palette: {
-    primary: {
-      main: kubernetesBlue,
-    },
-  },
   overrides: {
     MuiTableRow: {
       root: {
@@ -25,6 +20,11 @@ export const theme = createMuiTheme({
       subtitle2: {
         fontWeight: 400,
       },
+    },
+  },
+  palette: {
+    primary: {
+      main: kubernetesBlue,
     },
   },
 });

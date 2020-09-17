@@ -15,22 +15,20 @@ const Toolbar = withStyles({
   },
 })(MuiToolbar);
 
-export const Header: FC = () => {
-  return (
-    <AppBar position="static">
-      <Toolbar>
-        <Typography variant="h6">React UI Roundup</Typography>
-        <div style={{ flex: '1 1 auto' }} />
+export const Header: FC = () => (
+  <AppBar position="static">
+    <Toolbar>
+      <Typography variant="h6">React UI Roundup</Typography>
+      <div style={{ flex: '1 1 auto' }} />
 
-        <Tooltip title="GitHub" enterDelay={300}>
-          <IconButton
-            color="inherit"
-            href="https://github.com/dimitropoulos/react-ui-roundup"
-          >
-            <GitHub />
-          </IconButton>
-        </Tooltip>
-      </Toolbar>
-    </AppBar>
-  );
-}
+      <Tooltip enterDelay={300} title="GitHub">
+        <IconButton
+          color="inherit"
+          href="https://github.com/dimitropoulos/react-ui-roundup"
+        >
+          <GitHub />
+        </IconButton>
+      </Tooltip>
+    </Toolbar>
+  </AppBar>
+);

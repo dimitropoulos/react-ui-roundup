@@ -1,24 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://blueprintjs.com';
 
 export const blueprint: Framework = {
-  frameworkHomepage,
-  frameworkId: 'blueprint',
-  frameworkName: 'Blueprint',
-  repoURL: 'https://github.com/palantir/blueprint',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: [
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/docs/#resources`,
-      },
-    ],
-    rtlSupport: true,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'button',
@@ -67,4 +51,20 @@ export const blueprint: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/docs/#resources`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: true,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'blueprint',
+  frameworkName: 'Blueprint',
+  repoURL: 'https://github.com/palantir/blueprint',
 };

@@ -1,10 +1,9 @@
-import React, { FC, useState, useEffect } from 'react';
+import React, { FC, useState, useEffect, Fragment } from 'react';
 import { frameworks } from '../frameworks';
 import { map, forEach } from 'ramda';
-import { Framework } from '../entities';
-import { getRepoInfo, removeProtocol, noValue, SHOULD_FETCH } from '../utils';
-import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Link, Button } from '@material-ui/core';
-import { withStyles } from '@material-ui/styles';
+import { Framework as FrameworkType, RepoInfo } from '../entities';
+import { getRepoInfo, removeProtocol, noValue } from '../utils';
+import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Link, Button, withStyles } from '@material-ui/core';
 import { GroupTitle } from './utils';
 
 const Card = withStyles({
@@ -13,19 +12,22 @@ const Card = withStyles({
   },
 })(MuiCard);
 
-const Framework: FC<Framework> = ({ frameworkName: name, frameworkId, frameworkHomepage, repoURL }: Framework) => {
-  const [repoInfo, setRepoInfo] = useState<any | null>(null)
+const Framework: FC<FrameworkType> = ({
+  frameworkName: name,
+  frameworkId,
+  frameworkHomepage,
+  repoURL,
+}) => {
+  const [repoInfo, setRepoInfo] = useState<RepoInfo | null>(null);
 
   useEffect(() => {
-    const fetchData = async () => {
-      const repoInfo = await getRepoInfo(repoURL);
-      setRepoInfo(repoInfo);
-    }
-    fetchData();
+    getRepoInfo(repoURL)
+      .then(setRepoInfo)
+      .catch(() => {});
   }, [repoURL]);
 
   return (
-    <TableRow key={frameworkId} hover>
+    <TableRow hover key={frameworkId}>
       <TableCell>{name}</TableCell>
 
       <TableCell>
@@ -38,12 +40,12 @@ const Framework: FC<Framework> = ({ frameworkName: name, frameworkId, frameworkH
         </Link>
       </TableCell>
 
-      <TableCell>{repoInfo?.stargazers_count?.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.forks_count?.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.open_issues_count?.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.license?.name?.replace(/ License/, '') ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.stargazers_count.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.forks_count.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.open_issues_count.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.license.name.replace(/ License/, '') ?? noValue}</TableCell>
     </TableRow>
-  )
+  );
 };
 
 export const FrameworkStatistics: FC = () => {
@@ -64,14 +66,14 @@ export const FrameworkStatistics: FC = () => {
   return (
     <Card id={scrollId}>
       <GroupTitle
-        scrollId={scrollId}
-        title="Framework Statistics"
         actions={(
-          <>
+          <Fragment>
             <Button onClick={openAll('homepages')}>Open All Homepages</Button>
             <Button onClick={openAll('repositories')}>Open All Repositories</Button>
-          </>
+          </Fragment>
         )}
+        scrollId={scrollId}
+        title="Framework Statistics"
       />
       <TableContainer>
         <Table size="small">

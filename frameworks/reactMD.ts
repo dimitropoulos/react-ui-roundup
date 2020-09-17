@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://react-md.mlaursen.com';
 
 export const reactMD: Framework = {
-  frameworkHomepage,
-  frameworkId: 'reactMD',
-  repoURL: 'https://github.com/mlaursen/react-md',
-  frameworkName: 'react-md',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'button',
@@ -48,4 +37,15 @@ export const reactMD: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'reactMD',
+  frameworkName: 'react-md',
+  repoURL: 'https://github.com/mlaursen/react-md',
 };

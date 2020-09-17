@@ -1,19 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://onsen.io';
 
 export const onsenUI: Framework = {
-  frameworkHomepage,
-  frameworkId: 'onsenUI',
-  repoURL: 'https://github.com/OnsenUI/OnsenUI',
-  frameworkName: 'Onsen UI',
-  frameworkFeaturesById: {
-    darkMode: true,
-    designKits: false,
-    rtlSupport: false,
-    themer: false,
-    typeScript: true,
-  },
   components: [
     {
       componentId: 'button',
@@ -62,4 +51,15 @@ export const onsenUI: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: true,
+    designKits: false,
+    rtlSupport: false,
+    themer: false,
+    typeScript: true,
+  },
+  frameworkHomepage,
+  frameworkId: 'onsenUI',
+  frameworkName: 'Onsen UI',
+  repoURL: 'https://github.com/OnsenUI/OnsenUI',
 };

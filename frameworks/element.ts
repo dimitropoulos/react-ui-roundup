@@ -1,28 +1,8 @@
-import { Framework } from "../entities";
+import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://element.eleme.io';
 
 export const element: Framework = {
-  frameworkHomepage,
-  frameworkId: 'element',
-  repoURL: 'https://github.com/ElemeFE/element',
-  frameworkName: 'Element',
-  frameworkFeaturesById: {
-    darkMode: false,
-    designKits: [
-      {
-        type: 'Axure',
-        href: `${frameworkHomepage}/#/en-US/resource`,
-      },
-      {
-        type: 'Sketch',
-        href: `${frameworkHomepage}/#/en-US/resource`,
-      },
-    ],
-    rtlSupport: false,
-    themer: `${frameworkHomepage}/#/en-US/theme/preview`,
-    typeScript: false,
-  },
   components: [
     {
       componentId: 'alert',
@@ -65,8 +45,8 @@ export const element: Framework = {
         canBeVertical: true,
         clickable: false,
         stepDescription: true,
-        stepIcon: true,
         stepError: true,
+        stepIcon: true,
       },
     },
     {
@@ -92,4 +72,24 @@ export const element: Framework = {
       },
     },
   ],
+  frameworkFeaturesById: {
+    darkMode: false,
+    designKits: [
+      {
+        href: `${frameworkHomepage}/#/en-US/resource`,
+        type: 'Axure',
+      },
+      {
+        href: `${frameworkHomepage}/#/en-US/resource`,
+        type: 'Sketch',
+      },
+    ],
+    rtlSupport: false,
+    themer: `${frameworkHomepage}/#/en-US/theme/preview`,
+    typeScript: false,
+  },
+  frameworkHomepage,
+  frameworkId: 'element',
+  frameworkName: 'Element',
+  repoURL: 'https://github.com/ElemeFE/element',
 };

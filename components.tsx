@@ -12,14 +12,14 @@ import {
 } from './website/utils';
 import { Link } from '@material-ui/core';
 
-const indexByOptionId = indexBy<Option>(prop('optionId'))
+const indexByOptionId = indexBy<Option>(prop('optionId'));
 
 export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   {
-    componentId: 'alert',
     cannonicalName: 'Alert',
-    indefiniteArticle: 'an',
+    componentId: 'alert',
     description: 'Alerts are used to show an important message to users.',
+    indefiniteArticle: 'an',
     optionsById: indexByOptionId([
       {
         criteria: 'The alert has ready-made variations.',
@@ -38,10 +38,10 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
-    componentId: 'button',
     cannonicalName: 'Button',
-    indefiniteArticle: 'a',
+    componentId: 'button',
     description: 'Users trigger actions by clicking on buttons.',
+    indefiniteArticle: 'a',
     optionsById: indexByOptionId([
       {
         criteria: 'The button can be easily sized between different (and consistent) major sizes.',
@@ -81,10 +81,10 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
-    componentId: 'checkbox',
     cannonicalName: 'Checkbox',
-    indefiniteArticle: 'a',
+    componentId: 'checkbox',
     description: 'Users toggle between checked, unchecked (or indeterminate) values with checkboxes.',
+    indefiniteArticle: 'a',
     optionsById: indexByOptionId([
       {
         criteria: 'A custom icon can be provided in place of the checkbox itself via a prop or a child.',
@@ -124,42 +124,42 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
-    componentId: 'errorBoundary',
     cannonicalName: 'ErrorBoundary',
-    indefiniteArticle: 'an',
+    componentId: 'errorBoundary',
     description: {
       jsx: <Fragment><Link href="https://reactjs.org/docs/error-boundaries.html">ErrorBoundaries</Link> are a React 16+ specific feature that uses the <Link href="https://reactjs.org/docs/react-component.html#componentdidcatch">componentDidCatch</Link> API for handling uncaught errors without unmounting the whole React component tree.</Fragment>,
       markdown: `${link({ href: 'https://reactjs.org/docs/error-boundaries.html', text: 'ErrorBoundaries' })} are a React 16+ specific feature that uses the ${link({ href: 'https://reactjs.org/docs/react-component.html#componentdidcatch', text: 'componentDidCatch' })} API for handling uncaught errors without unmounting the whole React component tree.`,
     },
+    indefiniteArticle: 'an',
     optionsById: indexByOptionId([
       {
         criteria: 'Has a prop or props that can be used to provide a custom title and/or description (as a string, not a ReactNode).',
-        optionId: 'customText',
         name: 'Custom Text',
+        optionId: 'customText',
         toJsx: jsxCheckmark,
         toMarkdown: markdownCheckmark,
       },
       {
         criteria: 'Has a prop that can be used to provide a custom ReactNode fallback that does not receive the date of `componentDidCatch`.',
-        optionId: 'dropInFallback',
         name: 'Drop-In JSX Fallback',
+        optionId: 'dropInFallback',
         toJsx: jsxCheckmark,
         toMarkdown: markdownCheckmark,
       },
       {
         criteria: 'Has a prop that can be used to provide a custom ReactNode for fallback which receives the data of `componentDidCatch`.',
-        optionId: 'wrapperFallback',
         name: 'Wrapper JSX Fallback',
+        optionId: 'wrapperFallback',
         toJsx: jsxCheckmark,
         toMarkdown: markdownCheckmark,
       },
     ]),
   },
   {
-    componentId: 'stepper',
     cannonicalName: 'Stepper',
-    indefiniteArticle: 'a',
+    componentId: 'stepper',
     description: 'Navigation that guides users through the steps of a task.',
+    indefiniteArticle: 'a',
     optionsById: indexByOptionId([
       {
         criteria: 'The steps can be stacked vertically.',
@@ -199,10 +199,10 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
-    componentId: 'switch',
     cannonicalName: 'Switch',
-    indefiniteArticle: 'a',
+    componentId: 'switch',
     description: 'Used to toggle between two states: on and off.',
+    indefiniteArticle: 'a',
     optionsById: indexByOptionId([
       {
         criteria: 'The switch has a `disabled` state, indicating that the user cannot interact with it.',
@@ -256,10 +256,10 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
     ]),
   },
   {
-    componentId: 'tabs',
     cannonicalName: 'Tabs',
-    indefiniteArticle: 'a',
+    componentId: 'tabs',
     description: 'Users switch between different views with tabs.',
+    indefiniteArticle: 'a',
     optionsById: indexByOptionId([
       {
         criteria: 'The tabs can be stacked vertically.',
