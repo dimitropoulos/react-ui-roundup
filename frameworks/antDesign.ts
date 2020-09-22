@@ -14,6 +14,26 @@ export const antDesign: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/components/avatar`,
+      options: {
+        badge: true,
+        shapes: ['circle', 'square'],
+        sizes: ['number', 'large', 'small', 'default'],
+        types: ['icon', 'image', 'text'],
+      },
+    },
+    {
+      componentId: 'avatarGroup',
+      componentName: 'Avatar.Group',
+      componentURL: `${frameworkHomepage}/components/avatar`,
+      options: {
+        expandableGroup: true,
+        maxCount: true,
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/button`,

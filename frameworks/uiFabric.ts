@@ -14,6 +14,26 @@ export const uiFabric: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Persona',
+      componentURL: `${frameworkHomepage}#/controls/web/persona`,
+      options: {
+        badge: true,
+        shapes: ['circle', 'rounded-square'],
+        sizes: ['number'],
+        types: ['icon', 'image', 'text'],
+      },
+    },
+    {
+      componentId: 'avatarGroup',
+      componentName: 'Facepile',
+      componentURL: `${frameworkHomepage}#/controls/web/facepile`,
+      options: {
+        expandableGroup: true,
+        maxCount: true,
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}#/controls/web/button`,

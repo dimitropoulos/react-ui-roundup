@@ -14,6 +14,26 @@ export const chakra: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/avatar`,
+      options: {
+        badge: true,
+        shapes: ['circle'],
+        sizes: ['2xs', 'xs', 'sm', 'md', 'lg', 'xl', '2xl'],
+        types: null,
+      },
+    },
+    {
+      componentId: 'avatarGroup',
+      componentName: 'AvatarGroup',
+      componentURL: `${frameworkHomepage}/avatar`,
+      options: {
+        expandableGroup: false,
+        maxCount: true,
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/button`,

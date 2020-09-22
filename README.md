@@ -25,6 +25,8 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 - [Framework Features](#Framework-Features)
 - [Components](#Components)
   - [Alert](#Alert)
+  - [Avatar](#Avatar)
+  - [AvatarGroup](#AvatarGroup)
   - [Button](#Button)
   - [Checkbox](#Checkbox)
   - [ErrorBoundary](#ErrorBoundary)
@@ -81,30 +83,30 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 63,405 | 24,196 | 496 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 63,543 | 24,280 | 491 | MIT |
 | Atlaskit | [atlassian.design](https://atlassian.design) | [bitbucket.org/atlassian/atlaskit-mk-2](https://bitbucket.org/atlassian/atlaskit-mk-2) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 16,705 | 1,727 | 536 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 3,470 | 778 | 443 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 10,541 | 710 | 85 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 2,225 | 391 | 364 | Apache 2.0 |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 47,276 | 11,432 | 1,966 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,319 | 247 | 50 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 10,056 | 578 | 53 | MIT |
-| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,630 | 264 | 12 | Apache 2.0 |
-| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,631 | 796 | 227 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 61,033 | 18,046 | 463 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,084 | 919 | 141 | Apache 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 701 | 67 | 42 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,541 | 376 | 203 | MIT |
-| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 16,209 | 1,890 | 234 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 18,277 | 2,921 | 107 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,635 | 1,047 | 262 | MIT |
-| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,122 | 309 | 42 | MIT |
-| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,494 | 132 | 8 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 48,463 | 5,076 | 1,021 | MIT |
-| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,532 | 113 | 11 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 9,429 | 1,695 | 991 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 793 | 53 | 10 | Apache 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 16,734 | 1,732 | 527 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 3,494 | 780 | 460 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 10,630 | 718 | 85 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 2,230 | 391 | 304 | Apache 2.0 |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 47,344 | 11,453 | 1,958 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,320 | 247 | 50 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 10,079 | 580 | 58 | MIT |
+| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,636 | 264 | 11 | Apache 2.0 |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 6,640 | 797 | 203 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 61,145 | 18,142 | 449 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,089 | 917 | 142 | Apache 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 703 | 67 | 48 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,551 | 377 | 185 | MIT |
+| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 16,260 | 1,898 | 245 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 18,302 | 2,922 | 106 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,634 | 1,048 | 262 | MIT |
+| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,126 | 308 | 46 | MIT |
+| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,495 | 133 | 0 | Apache 2.0 |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 48,477 | 5,083 | 1,022 | MIT |
+| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,533 | 112 | 11 | MIT |
+| UI Fabric | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 9,468 | 1,700 | 993 | Other |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 792 | 53 | 12 | Apache 2.0 |
 
 <!--
 ********************************************************************************
@@ -112,7 +114,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Thu, 17 Sep 2020 13:24:42 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Tue, 22 Sep 2020 19:44:49 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************
@@ -226,7 +228,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ring UI | [Alert](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-alert--simple) | :heavy_check_mark: | `error`, `loading`, `message`, `success`, `warning` |
 | Smooth UI | [Alert](https://smooth-code.com/open-source/smooth-ui/docs/alert) | :x: | `danger`, `dark`, `info`, `light`, `primary`, `secondary`, `success`, `warning` |
 | UI Fabric | [MessageBar](https://developer.microsoft.com/en-us/fluentui#/controls/web/messagebar) | :heavy_check_mark: | `blocked`, `error`, `info`, `remove`, `severeWarning`, `success`, `warning` |
-| Zendesk Garden | [Notification](https://garden.zendesk.com/react-components/notifications/) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
+| Zendesk Garden | [Notification](https://zendeskgarden.github.io/react-components/notifications) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 
 <!--
 ********************************************************************************
@@ -235,6 +237,113 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 ********************************************************************************
 -->
 > [Blueprint](https://github.com/palantir/blueprint), [Carbon Design](https://github.com/carbon-design-system/carbon), [Elastic UI](https://github.com/elastic/eui), [Gestalt](https://github.com/pinterest/gestalt), [Grommet](https://github.com/grommet/grommet), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Prime React](https://github.com/primefaces/primereact), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), and [Semantic UI](https://github.com/Semantic-Org/Semantic-UI) appear to be missing an Alert component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+## Avatar
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+Avatars can be used to represent people or objects.
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+#### Criteria
+
+- `Badge`: A custom badge or status is available or easily configurable.
+- `Shapes`: Avatars can be easily formed into different styles using a prop or similar mechanism (not custom CSS).
+- `Sizes`: Avatars can be easily sized between different (and consistent) major sizes.
+- `Types`: Avatars can be presented to users as icons (i.e. generic fallback illustrations), custom images, or can contain text.
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+| Framework | Name | Badge | Shapes | Sizes | Types |
+| --- | --- | --- | --- | --- | --- |
+| Ant Design | [Avatar](https://ant.design/components/avatar) | :heavy_check_mark: | `circle`, `square` | `default`, `large`, `number`, `small` | `icon`, `image`, `text` |
+| Atlaskit | [Avatar](https://atlassian.design/components/avatar) | :x: | `circle`, `square` | `large`, `medium`, `small`, `xlarge`, `xsmall`, `xxlarge` | `icon`, `image` |
+| Chakra UI | [Avatar](https://chakra-ui.com/avatar) | :heavy_check_mark: | `circle` | `2xl`, `2xs`, `lg`, `md`, `sm`, `xl`, `xs` |  |
+| Element | [Avatar](https://element.eleme.io/#/en-US/component/avatar) | :x: | `circle`, `square` | `large`, `medium`, `number`, `small` | `image`, `image`, `text` |
+| Evergreen | [Avatar](https://evergreen.segment.com/components/avatar) | :x: | `circle` | `number` | `image`, `text` |
+| Material UI | [Avatar](https://material-ui.com/components/avatars) | :heavy_check_mark: | `circle`, `rounded-square`, `square` | `number` | `icon`, `image`, `text` |
+| Quasar | [Avatar](https://quasar.dev/vue-components/avatar) | :heavy_check_mark: | `circle`, `rounded-square`, `square` | `lg`, `md`, `number`, `sm`, `xl`, `xs` | `icon`, `image`, `text` |
+| Ring UI | [Avatar](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-avatar--basic) | :x: | `circle`, `rounded-square` | `18`, `20`, `24`, `32`, `40`, `48`, `56`, `number` | `image` |
+| UI Fabric | [Persona](https://developer.microsoft.com/en-us/fluentui#/controls/web/persona) | :heavy_check_mark: | `circle`, `rounded-square` | `number` | `icon`, `image`, `text` |
+| Zendesk Garden | [Avatar](https://garden.zendesk.com/components/avatar) | :heavy_check_mark: | `circle`, `rounded-square` | `extraextrasmall`, `extrasmall`, `large`, `medium`, `small` | `icon`, `image`, `text` |
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+> [Blueprint](https://github.com/palantir/blueprint), [Carbon Design](https://github.com/carbon-design-system/carbon), [Elastic UI](https://github.com/elastic/eui), [Elemental UI](https://github.com/elementalui/elemental), [Gestalt](https://github.com/pinterest/gestalt), [Grommet](https://github.com/grommet/grommet), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Orbit](https://github.com/kiwicom/orbit), [Prime React](https://github.com/primefaces/primereact), [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), and [Smooth UI](https://github.com/smooth-code/smooth-ui) appear to be missing an Avatar component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
+
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+## AvatarGroup
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+AvatarGroups stack a set of Avatars into a customized list, often with customized animations and options.
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+#### Criteria
+
+- `Expandable Group`: Avatar groups support expandable lists where a user can click to see more members in the list.
+- `Max Count`: A custom number can be set representing the number of avatars shown.
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+| Framework | Name | Expandable Group | Max Count |
+| --- | --- | --- | --- |
+| Ant Design | [Avatar.Group](https://ant.design/components/avatar) | :heavy_check_mark: | :heavy_check_mark: |
+| Atlaskit | [AvatarGroup](https://atlassian.design/components/avatar-group) | :heavy_check_mark: | :heavy_check_mark: |
+| Chakra UI | [AvatarGroup](https://chakra-ui.com/avatar) | :x: | :heavy_check_mark: |
+| Material UI | [AvatarGroup](https://material-ui.com/components/avatars) | :x: | :heavy_check_mark: |
+| UI Fabric | [Facepile](https://developer.microsoft.com/en-us/fluentui#/controls/web/facepile) | :heavy_check_mark: | :heavy_check_mark: |
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+> [Blueprint](https://github.com/palantir/blueprint), [Carbon Design](https://github.com/carbon-design-system/carbon), [Elastic UI](https://github.com/elastic/eui), [Element](https://github.com/ElemeFE/element), [Elemental UI](https://github.com/elementalui/elemental), [Evergreen](https://github.com/segmentio/evergreen), [Gestalt](https://github.com/pinterest/gestalt), [Grommet](https://github.com/grommet/grommet), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Orbit](https://github.com/kiwicom/orbit), [Prime React](https://github.com/primefaces/primereact), [Quasar](https://github.com/quasarframework/quasar), [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap), [React Toolbox](https://github.com/react-toolbox/react-toolbox), [react-md](https://github.com/mlaursen/react-md), [Ring UI](https://github.com/JetBrains/ring-ui), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), [Smooth UI](https://github.com/smooth-code/smooth-ui), and [Zendesk Garden](https://github.com/zendeskgarden/react-components) appear to be missing an AvatarGroup component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 
 <!--

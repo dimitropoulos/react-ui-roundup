@@ -14,6 +14,17 @@ export const ringUI: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-avatar--basic`,
+      options: {
+        badge: false,
+        shapes: ['circle', 'rounded-square'],
+        sizes: ['18', '20', '24', '32', '40', '48', '56', 'number'],
+        types: ['image'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-button--basic`,

@@ -14,6 +14,26 @@ export const atlaskit: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/components/avatar`,
+      options: {
+        badge: false,
+        shapes: ['circle', 'square'],
+        sizes: ['xxlarge', 'xlarge', 'large', 'medium', 'small', 'xsmall'],
+        types: ['icon', 'image'],
+      },
+    },
+    {
+      componentId: 'avatarGroup',
+      componentName: 'AvatarGroup',
+      componentURL: `${frameworkHomepage}/components/avatar-group`,
+      options: {
+        expandableGroup: true,
+        maxCount: true,
+      },
+    },
+    {
       componentId: 'alert',
       componentName: 'Flag',
       componentURL: `${frameworkHomepage}/components/flag`,

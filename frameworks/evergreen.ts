@@ -14,6 +14,17 @@ export const evergreen: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/components/avatar`,
+      options: {
+        badge: false,
+        shapes: ['circle'],
+        sizes: ['number'],
+        types: ['text', 'image'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/button`,

@@ -14,6 +14,17 @@ export const element: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/#/en-US/component/avatar`,
+      options: {
+        badge: false,
+        shapes: ['circle', 'square'],
+        sizes: ['number', 'large', 'medium', 'small'],
+        types: ['image', 'image', 'text'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/#/en-US/component/button`,

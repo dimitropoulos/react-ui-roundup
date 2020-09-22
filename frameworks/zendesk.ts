@@ -7,10 +7,21 @@ export const zendesk: Framework = {
     {
       componentId: 'alert',
       componentName: 'Notification',
-      componentURL: `${frameworkHomepage}/react-components/notifications/`,
+      componentURL: 'https://zendeskgarden.github.io/react-components/notifications',
       options: {
         closable: true,
         types: ['success', 'info', 'warning', 'error'],
+      },
+    },
+    {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/components/avatar`,
+      options: {
+        badge: true,
+        shapes: ['circle', 'rounded-square'],
+        sizes: ['extraextrasmall', 'extrasmall', 'small', 'medium', 'large'],
+        types: ['image', 'icon', 'text'],
       },
     },
     {

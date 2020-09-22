@@ -14,6 +14,26 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/components/avatars`,
+      options: {
+        badge: true,
+        shapes: ['circle', 'square', 'rounded-square'],
+        sizes: ['number'],
+        types: ['image', 'icon', 'text'],
+      },
+    },
+    {
+      componentId: 'avatarGroup',
+      componentName: 'AvatarGroup',
+      componentURL: `${frameworkHomepage}/components/avatars`,
+      options: {
+        expandableGroup: false,
+        maxCount: true,
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'Button',
       componentURL: `${frameworkHomepage}/components/buttons`,

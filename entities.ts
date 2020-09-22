@@ -53,6 +53,24 @@ export interface Alert extends BaseComponent {
   };
 }
 
+export interface Avatar extends BaseComponent {
+  componentId: 'avatar';
+  options: {
+    badge: boolean;
+    shapes: ('circle' | 'square' | 'rounded-square')[] | null;
+    sizes: string[] | null;
+    types: ('icon' | 'image' | 'text')[] | null;
+  };
+}
+
+export interface AvatarGroup extends BaseComponent {
+  componentId: 'avatarGroup';
+  options: {
+    expandableGroup: boolean;
+    maxCount: boolean;
+  };
+}
+
 export interface Button extends BaseComponent {
   componentId: 'button';
   options: {
@@ -117,6 +135,8 @@ export interface Tabs extends BaseComponent {
 
 export type Component =
   | Alert
+  | Avatar
+  | AvatarGroup
   | Button
   | Checkbox
   | ErrorBoundary

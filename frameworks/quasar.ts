@@ -14,6 +14,17 @@ export const quasar: Framework = {
       },
     },
     {
+      componentId: 'avatar',
+      componentName: 'Avatar',
+      componentURL: `${frameworkHomepage}/vue-components/avatar`,
+      options: {
+        badge: true,
+        shapes: ['circle', 'square', 'rounded-square'],
+        sizes: ['number', 'xs', 'sm', 'md', 'lg', 'xl'],
+        types: ['image', 'icon', 'text'],
+      },
+    },
+    {
       componentId: 'button',
       componentName: 'btn',
       componentURL: `${frameworkHomepage}/vue-components/button`,
