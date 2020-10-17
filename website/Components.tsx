@@ -22,7 +22,6 @@ import {
 } from '../utils';
 import { frameworks, frameworksById } from '../frameworks';
 import {
-  Card as MuiCard,
   TableContainer,
   TableHead,
   TableRow,
@@ -37,14 +36,8 @@ import {
 } from '@material-ui/core';
 import { UnwrapedComponent, Component as ComponentType, Framework } from '../entities';
 import { componentInfoById } from '../components';
-import { GroupTitle } from './utils';
+import { GroupTitle, Card } from './utils';
 import { Criteria } from './Criteria';
-
-const Card = withStyles({
-  root: {
-    margin: '2em',
-  },
-})(MuiCard);
 
 const Wrapper = withStyles({
   root: {

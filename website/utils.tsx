@@ -1,5 +1,5 @@
 import React, { ReactNode, FC, useState, Fragment, ElementType } from 'react';
-import { withStyles, Box, Link, Typography, Toolbar } from '@material-ui/core';
+import { withStyles, Box, Link, Typography, Toolbar as MuiToolbar, Card as MuiCard } from '@material-ui/core';
 import { HelpOutline, Check as MuiCheck, Close as MuiClose, LinkSharp } from '@material-ui/icons';
 import { pipe, sortBy, prop, map } from 'ramda';
 import { DesignKit, FrameworkFeaturesById, SuperString } from '../entities';
@@ -59,6 +59,12 @@ export const Title = withStyles({
     },
   },
 })(Typography);
+
+export const Toolbar = withStyles({
+  root: {
+    paddingLeft: 24,
+  },
+})(MuiToolbar);
 
 interface GroupTitleProps {
   title: string;
@@ -141,3 +147,19 @@ export const designKits = (designKits: FrameworkFeaturesById['designKits']) => (
 export const themer = (themer: FrameworkFeaturesById['themer']) => (themer === false ? checkmark(themer) : (
   <Link href={themer as unknown as string}>Link</Link>
 ));
+
+export const Card = withStyles(theme => ({
+  root: {
+    margin: '2em',
+  },
+  [theme.breakpoints.down('sm')]: {
+    root: {
+      marginBottom: theme.spacing(2),
+      marginLeft: theme.spacing(1),
+      marginRight: theme.spacing(1),
+      marginTop: theme.spacing(1),
+      paddingLeft: 0,
+      paddingRight: 0,
+    },
+  },
+}))(MuiCard);

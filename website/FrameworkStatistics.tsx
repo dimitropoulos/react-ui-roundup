@@ -3,14 +3,8 @@ import { frameworks } from '../frameworks';
 import { map, forEach } from 'ramda';
 import { Framework as FrameworkType, RepoInfo } from '../entities';
 import { getRepoInfo, removeProtocol, noValue } from '../utils';
-import { Card as MuiCard, TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Link, Button, withStyles } from '@material-ui/core';
-import { GroupTitle } from './utils';
-
-const Card = withStyles({
-  root: {
-    margin: '2em',
-  },
-})(MuiCard);
+import { TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Link, Button } from '@material-ui/core';
+import { GroupTitle, Card } from './utils';
 
 const Framework: FC<FrameworkType> = ({
   frameworkName: name,
