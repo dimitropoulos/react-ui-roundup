@@ -1,3 +1,4 @@
+import { promises as fs } from 'fs';
 import {
   append,
   chain,
@@ -16,12 +17,26 @@ import {
   whereEq,
 } from 'ramda';
 import { compact, concatAll } from 'ramda-adjunct';
+
 import { componentInfo } from '../components';
-import { frameworks, frameworkInfo } from '../frameworks';
-import { promises as fs } from 'fs';
-import { lines, h1, h2, link, paragraph, table, website, criteria, quote, inlineCode, websiteHref, ContentGroup, tableOfContents } from './utils';
-import { removeProtocol, getRepoInfo, noValue, toStablePairs, issueURL, createScrollId } from '../utils';
 import { Component, Framework, RepoInfo } from '../entities';
+import { frameworkInfo, frameworks } from '../frameworks';
+import { createScrollId, getRepoInfo, issueURL, noValue, removeProtocol, toStablePairs } from '../utils';
+import {
+  ContentGroup,
+  criteria,
+  h1,
+  h2,
+  inlineCode,
+  lines,
+  link,
+  paragraph,
+  quote,
+  table,
+  tableOfContents,
+  website,
+  websiteHref,
+} from './utils';
 
 interface RepoInfoByHtmlUrl {
   [htmlUrl: string]: RepoInfo;

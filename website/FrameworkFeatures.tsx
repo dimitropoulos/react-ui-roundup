@@ -1,34 +1,49 @@
-import React, { FC } from 'react';
-import { frameworks, frameworkInfo, frameworkInfoById } from '../frameworks';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
 import { map } from 'ramda';
-import { Framework } from '../entities';
+import React, { FC } from 'react';
+
+import { Framework, FrameworkFeatureInfo, FrameworkInfoByFeatureId } from '../entities';
 import { toStablePairs } from '../utils';
-import { TableContainer, TableBody, TableHead, Table, TableRow, TableCell } from '@material-ui/core';
-import { GroupTitle, Card } from './utils';
 import { Criteria } from './Criteria';
+import { Card, GroupTitle } from './utils';
 
-
-const Feature: FC<Framework> = ({ frameworkFeaturesById, frameworkId, frameworkName }) => (
+const feature = (frameworkInfoByFeatureId: FrameworkInfoByFeatureId): FC<Framework> => ({
+  frameworkId,
+  frameworkName,
+  frameworkFeaturesById,
+}) => (
   <TableRow hover key={frameworkId}>
     <TableCell>{frameworkName}</TableCell>
-    {map(([featureId, value]) => (
-      <TableCell key={featureId}>
-        {frameworkInfoById[featureId].toJsx(value)}
-      </TableCell>
-    ), toStablePairs(frameworkFeaturesById))}
+    {map(([featureId, value]) => {
+      // @ts-expect-error - TypeScript has no way to statically prove that then entry key matches the interface of the entry value but I know that it does because of the defined behavior of `Object.entries`.
+      const children = frameworkInfoByFeatureId[featureId].toJsx(value);
+      return (
+        <TableCell key={featureId}>
+          {children}
+        </TableCell>
+      );
+    }, toStablePairs(frameworkFeaturesById))}
   </TableRow>
 );
 
-export const FrameworkFeatures: FC = () => {
+interface Props {
+  frameworks: Framework[];
+  frameworkInfo: FrameworkFeatureInfo[];
+  frameworkInfoByFeatureId: FrameworkInfoByFeatureId;
+}
+
+export const FrameworkFeatures: FC<Props> = ({
+  frameworkInfo,
+  frameworkInfoByFeatureId,
+  frameworks,
+}) => {
   const scrollId = 'FrameworkFeatures';
   return (
     <Card id={scrollId}>
       <GroupTitle scrollId={scrollId} title="Framework Features" />
 
       <Criteria
-        items={map(([, value]) => (
-          [value.name, value.criteria]
-        ), toStablePairs(frameworkInfoById))}
+        items={map(({ criteria, name }) => [name, criteria], frameworkInfo)}
       />
 
       <TableContainer>
@@ -42,7 +57,7 @@ export const FrameworkFeatures: FC = () => {
             </TableRow>
           </TableHead>
           <TableBody>
-            {map(Feature, frameworks)}
+            {map(feature(frameworkInfoByFeatureId), frameworks)}
           </TableBody>
         </Table>
       </TableContainer>

@@ -1,4 +1,16 @@
-import React, { FC, ReactElement, Fragment } from 'react';
+import {
+  Box,
+  Button,
+  Link,
+  Table,
+  TableBody,
+  TableCell,
+  TableContainer,
+  TableHead,
+  TableRow,
+  Typography,
+  withStyles,
+} from '@material-ui/core';
 import {
   append,
   flatten,
@@ -8,36 +20,24 @@ import {
   intersperse,
   map,
   pipe,
-  pluck,
   prop,
   reject,
   update,
 } from 'ramda';
+import React, { FC, Fragment, ReactElement, ReactNode } from 'react';
+import { Entry } from 'type-fest';
+
+import { componentInfoById } from '../components';
+import { Framework, UnwrapedComponent } from '../entities';
 import {
+  createScrollId,
   issueURL,
   noValue,
   toStablePairs,
   unwrapFrameworks,
-  createScrollId,
 } from '../utils';
-import { frameworks, frameworksById } from '../frameworks';
-import {
-  TableContainer,
-  TableHead,
-  TableRow,
-  Table,
-  TableCell,
-  TableBody,
-  Box,
-  Link,
-  Button,
-  Typography,
-  withStyles,
-} from '@material-ui/core';
-import { UnwrapedComponent, Component as ComponentType, Framework } from '../entities';
-import { componentInfoById } from '../components';
-import { GroupTitle, Card } from './utils';
 import { Criteria } from './Criteria';
+import { Card, GroupTitle } from './utils';
 
 const Wrapper = withStyles({
   root: {
@@ -59,13 +59,25 @@ const pleaseFileIssue = (
 const Component: FC<UnwrapedComponent> = ({
   componentId,
   componentName,
-  frameworkId,
+  frameworkInfo: {
+    frameworkId,
+    frameworkName,
+  },
   componentURL,
   options,
 }) => {
-  const key = `${componentId}:${frameworkId}:${componentName}`;
-  const { frameworkName } = frameworksById[frameworkId];
+  const valueCells = map<Entry<typeof options>, ReactNode>(entry => {
+    const [optionId, value] = entry;
+    const componentInfo = componentInfoById[componentId];
+    const option = componentInfo.optionsById[optionId];
+    const cellValue = option.toJsx(value) ?? noValue;
 
+    return (
+      <TableCell key={optionId}>{cellValue}</TableCell>
+    );
+  }, toStablePairs(options));
+
+  const key = `${componentId}:${frameworkId}:${componentName}`;
   return (
     <TableRow hover key={key}>
       <TableCell>{frameworkName}</TableCell>
@@ -74,12 +86,7 @@ const Component: FC<UnwrapedComponent> = ({
         <Link href={componentURL}>{componentName}</Link>
       </TableCell>
 
-      {map(([key, value]) => {
-        const formattedValue = componentInfoById[componentId].optionsById[key].toJsx(value) ?? noValue;
-        return (
-          <TableCell key={key}>{formattedValue}</TableCell>
-        );
-      }, toStablePairs(options))}
+      {valueCells}
     </TableRow>
   );
 };
@@ -92,11 +99,13 @@ const MissingFramework: FC<Framework> = ({ frameworkId, frameworkName, repoURL }
 
 const MissingFrameworks: FC<{
   componentId: string;
-  components: ComponentType[];
-}> = ({ componentId, components }) => {
+  components: UnwrapedComponent[];
+  frameworks: Framework[];
+}> = ({ componentId, components, frameworks }) => {
   const { cannonicalName, indefiniteArticle } = componentInfoById[componentId];
+
   const missingFrameworks = pipe(
-    pluck('frameworkId'),
+    (components: UnwrapedComponent[]) => map(({ frameworkInfo: { frameworkId }}) => frameworkId, components),
     frameworkIds => reject(
       framework => includes(framework.frameworkId, frameworkIds),
       frameworks,
@@ -139,7 +148,7 @@ const MissingFrameworks: FC<{
   );
 };
 
-const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, components]) => {
+const componentGroup = (frameworks: Framework[]): FC<[string, UnwrapedComponent[]]> => ([componentId, components]) => {
   const { cannonicalName, description, optionsById } = componentInfoById[componentId];
 
   const options = toStablePairs(optionsById);
@@ -190,18 +199,23 @@ const ComponentGroup: FC<[string, UnwrapedComponent[]]> = ([componentId, compone
       <MissingFrameworks
         componentId={componentId}
         components={components}
+        frameworks={frameworks}
       />
     </Card>
   );
 };
 
-export const Components: FC = () => {
+interface Props {
+  frameworks: Framework[];
+}
+
+export const Components: FC<Props> = ({ frameworks }) => {
   const componentGroups = pipe(
     unwrapFrameworks,
     flatten,
     groupBy(prop('componentId')),
-    toStablePairs,
-    map(ComponentGroup),
+    (x: any) => toStablePairs(x) as [string, UnwrapedComponent[]][],
+    map(componentGroup(frameworks)),
   )(frameworks);
 
   return <Fragment key="components">{componentGroups}</Fragment>;

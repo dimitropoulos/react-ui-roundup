@@ -1,6 +1,7 @@
-import React, { FC } from 'react';
-import { AppBar as MuiAppBar, Toolbar as MuiToolbar, Typography, IconButton, withStyles, Tooltip } from '@material-ui/core';
+import { AppBar as MuiAppBar, IconButton, Toolbar as MuiToolbar, Tooltip, Typography, withStyles } from '@material-ui/core';
 import { GitHub } from '@material-ui/icons';
+import React, { FC } from 'react';
+
 import { kubernetesBlue } from './theme';
 
 const AppBar = withStyles({

@@ -1,10 +1,10 @@
-import React, { FC, useState, useEffect, Fragment } from 'react';
-import { frameworks } from '../frameworks';
-import { map, forEach } from 'ramda';
+import { Button, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
+import { forEach, map } from 'ramda';
+import React, { FC, Fragment, useEffect, useState } from 'react';
+
 import { Framework as FrameworkType, RepoInfo } from '../entities';
-import { getRepoInfo, removeProtocol, noValue } from '../utils';
-import { TableContainer, TableBody, TableHead, Table, TableRow, TableCell, Link, Button } from '@material-ui/core';
-import { GroupTitle, Card } from './utils';
+import { getRepoInfo, noValue, removeProtocol } from '../utils';
+import { Card, GroupTitle } from './utils';
 
 const Framework: FC<FrameworkType> = ({
   frameworkName: name,
@@ -42,7 +42,11 @@ const Framework: FC<FrameworkType> = ({
   );
 };
 
-export const FrameworkStatistics: FC = () => {
+interface Props {
+  frameworks: FrameworkType[];
+}
+
+export const FrameworkStatistics: FC<Props> = ({ frameworks }) => {
   const openAll = (type: 'homepages' | 'repositories') => () => {
     forEach(({ frameworkHomepage, repoURL }) => {
       if (type === 'homepages') {

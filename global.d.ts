@@ -1,7 +1,8 @@
-import * as React from 'react';
+import 'jest-extended';
+
 import * as R from 'ramda';
 import * as RA from 'ramda-adjunct';
-import 'jest-extended';
+import * as React from 'react';
 
 declare global {
   namespace JSX {

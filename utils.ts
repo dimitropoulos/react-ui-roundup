@@ -1,6 +1,8 @@
-import { URL, Framework, RepoInfo } from './entities';
-import { map, pipe, toPairs, sortBy, head } from 'ramda';
 import fetch from 'cross-fetch';
+import { head, map, pipe, sortBy, toPairs } from 'ramda';
+import { Entries } from 'type-fest';
+
+import { Framework, RepoInfo, URL } from './entities';
 
 const envShouldFetch = process.env.SHOULD_FETCH;
 export const SHOULD_FETCH = envShouldFetch === undefined ? true : envShouldFetch !== 'false';
@@ -8,10 +10,10 @@ export const SHOULD_FETCH = envShouldFetch === undefined ? true : envShouldFetch
 export const noValue = '--';
 export const issueURL = 'https://github.com/dimitropoulos/react-ui-roundup/issues/new';
 
-/** adds `frameworkId` to all `Component`s in a `Framework` */
+/** adds framework info to all `Component`s in a `Framework` */
 export const unwrapFrameworks = (frameworks: Framework[]) => (
-  map(({ components, frameworkId }) => (
-    map(component => ({ ...component, frameworkId }), components)
+  map(({ components, ...frameworkInfo }) => (
+    map(component => ({ ...component, frameworkInfo }), components)
   ), frameworks)
 );
 
@@ -39,9 +41,16 @@ export const pipeLog = <T>(input: T) => {
   return input;
 };
 
-export const toStablePairs = pipe(
-  toPairs,
-  sortBy(head),
+export const toStablePairs = <T extends { [key: string]: any }>(input: T) => (
+  pipe(
+    (input: T) => toPairs(input) as Entries<T>,
+    entries => sortBy(head, entries) as Entries<T>,
+  )(input)
 );
+
+// export const toStablePairs = pipe(
+//   toPairs,
+//   sortBy(head),
+// );
 
 export const createScrollId = (cannonicalName: string) => `${cannonicalName.replace(' ', '')}`;

@@ -1,17 +1,17 @@
 import {
+  checkmark,
+  comment,
   h1,
   h2,
   h3,
   h4,
-  paragraph,
-  link,
-  comment,
-  quote,
-  checkmark,
-  unorderedList,
   lines,
+  link,
   orderedList,
+  paragraph,
+  quote,
   tableOfContents,
+  unorderedList,
 } from './utils';
 
 describe('tests markdown utils', () => {

@@ -1,16 +1,17 @@
-import React, { Fragment } from 'react';
+import { Link } from '@material-ui/core';
 import { indexBy, prop, sortBy } from 'ramda';
+import React, { Fragment } from 'react';
+
 import { ComponentInfo, Option } from './entities';
 import {
-  stringArray as markdownStringArray,
   checkmark as markdownCheckmark,
   link,
+  stringArray as markdownStringArray,
 } from './markdown/utils';
 import {
   checkmark as jsxCheckmark,
   stringArray as jsxStringArray,
 } from './website/utils';
-import { Link } from '@material-ui/core';
 
 const indexByOptionId = indexBy<Option>(prop('optionId'));
 

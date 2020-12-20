@@ -1,6 +1,16 @@
-import { Framework, FrameworkFeatureInfo } from '../entities';
-import { indexBy, prop, sort, ascend, sortBy, toLower, pipe } from 'ramda';
+import { ascend, indexBy, pipe, prop, sort, sortBy, toLower } from 'ramda';
 
+import { Framework, FrameworkFeatureInfo, FrameworkInfoByFeatureId, FrameworksById } from '../entities';
+import {
+  checkmark as markdownCheckmark,
+  designKits as markdownDesignKits,
+  themer as markdownThemer,
+} from '../markdown/utils';
+import {
+  checkmark as jsxCheckmark,
+  designKits as jsxDesignKits,
+  themer as jsxThemer,
+} from '../website/utils';
 import { antDesign } from './antDesign';
 import { atlaskit } from './atlaskit';
 import { blueprint } from './blueprint';
@@ -25,17 +35,6 @@ import { semanticUI } from './semanticUI';
 import { smoothUI } from './smoothUI';
 import { uiFabric } from './uiFabric';
 import { zendesk } from './zendesk';
-
-import {
-  checkmark as markdownCheckmark,
-  themer as markdownThemer,
-  designKits as markdownDesignKits,
-} from '../markdown/utils';
-import {
-  checkmark as jsxCheckmark,
-  themer as jsxThemer,
-  designKits as jsxDesignKits,
-} from '../website/utils';
 
 export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), toLower)), [
   antDesign,
@@ -64,7 +63,7 @@ export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), t
   zendesk,
 ]);
 
-export const frameworksById = indexBy(prop('frameworkId'), frameworks);
+export const frameworksById: FrameworksById = indexBy(prop('frameworkId'), frameworks);
 
 export const frameworkInfo: FrameworkFeatureInfo[] = sortBy(prop('featureId'), [
   {
@@ -104,4 +103,4 @@ export const frameworkInfo: FrameworkFeatureInfo[] = sortBy(prop('featureId'), [
   },
 ]);
 
-export const frameworkInfoById = indexBy(prop('featureId'), frameworkInfo);
+export const frameworkInfoByFeatureId: FrameworkInfoByFeatureId = indexBy(prop('featureId'), frameworkInfo);

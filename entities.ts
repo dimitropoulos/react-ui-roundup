@@ -1,5 +1,5 @@
-import { ReactNode } from 'react';
 import { Endpoints } from '@octokit/types';
+import { ReactNode } from 'react';
 
 export type RepoInfo = Endpoints['GET /repos/:owner/:repo']['response']['data'];
 
@@ -143,6 +143,7 @@ export type Component =
   | Stepper
   | Switch
   | Tabs;
+
 export interface DesignKit {
   type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Custom';
   href: URL;
@@ -179,11 +180,17 @@ export type FrameworkFeatureInfo =
   | FrameworkFeatureInfoGeneric<'themer'>
   | FrameworkFeatureInfoGeneric<'typeScript'>;
 
+export type FrameworkInfoByFeatureId = {
+  [featureId in keyof FrameworkFeaturesById]: FrameworkFeatureInfo;
+};
+
+export type FrameworkId = string;
+
 export interface Framework {
   /** must not end with a trailing forward slash */
   frameworkHomepage: string;
 
-  frameworkId: string;
+  frameworkId: FrameworkId;
 
   frameworkName: string;
 
@@ -194,4 +201,10 @@ export interface Framework {
   frameworkFeaturesById: FrameworkFeaturesById;
 }
 
-export type UnwrapedComponent = Component & Pick<Framework, 'frameworkId'>;
+export type UnwrapedComponent = Component & {
+  frameworkInfo: Omit<Framework, 'components'>;
+};
+
+export type FrameworksById = {
+  [frameworkId in FrameworkId]: Framework;
+};

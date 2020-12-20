@@ -1,9 +1,10 @@
+import { Container as MuiContainer, ThemeProvider, withStyles } from '@material-ui/core';
 import React, { FC, useEffect } from 'react';
-import { ThemeProvider, Container as MuiContainer, withStyles } from '@material-ui/core';
 
+import { frameworkInfo, frameworkInfoByFeatureId, frameworks } from '../frameworks';
 import { Components } from './Components';
-import { FrameworkStatistics } from './FrameworkStatistics';
 import { FrameworkFeatures } from './FrameworkFeatures';
+import { FrameworkStatistics } from './FrameworkStatistics';
 import { Header } from './Header';
 import { theme } from './theme';
 import { scrollIntoView } from './utils';
@@ -28,9 +29,17 @@ export const App: FC = () => {
     <ThemeProvider theme={theme}>
       <Header />
       <Container maxWidth="lg">
-        <FrameworkStatistics />
-        <FrameworkFeatures />
-        <Components />
+        <FrameworkStatistics
+          frameworks={frameworks}
+        />
+        <FrameworkFeatures
+          frameworkInfo={frameworkInfo}
+          frameworkInfoByFeatureId={frameworkInfoByFeatureId}
+          frameworks={frameworks}
+        />
+        <Components
+          frameworks={frameworks}
+        />
       </Container>
     </ThemeProvider>
   );

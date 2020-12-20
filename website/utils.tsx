@@ -1,7 +1,8 @@
-import React, { ReactNode, FC, useState, Fragment, ElementType } from 'react';
-import { withStyles, Box, Link, Typography, Toolbar as MuiToolbar, Card as MuiCard } from '@material-ui/core';
-import { HelpOutline, Check as MuiCheck, Close as MuiClose, LinkSharp } from '@material-ui/icons';
-import { pipe, sortBy, prop, map } from 'ramda';
+import { Box, Card as MuiCard, Link, Toolbar as MuiToolbar, Typography, withStyles } from '@material-ui/core';
+import { Check as MuiCheck, Close as MuiClose, HelpOutline, LinkSharp } from '@material-ui/icons';
+import { map, pipe, prop, sortBy } from 'ramda';
+import React, { FC, Fragment, ReactNode, useState } from 'react';
+
 import { DesignKit, FrameworkFeaturesById, SuperString } from '../entities';
 import { noValue } from '../utils';
 
@@ -67,10 +68,10 @@ export const Toolbar = withStyles({
 })(MuiToolbar);
 
 interface GroupTitleProps {
-  title: string;
+  actions?: ReactNode;
   scrollId: string;
   subtitle?: SuperString;
-  actions?: ElementType;
+  title: string;
 }
 
 export const GroupTitle: FC<GroupTitleProps> = ({ title, scrollId, subtitle, actions }) => {
