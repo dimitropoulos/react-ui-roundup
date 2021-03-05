@@ -145,7 +145,7 @@ export type Component =
   | Tabs;
 
 export interface DesignKit {
-  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Custom';
+  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Adobe XD' | 'Custom';
   href: URL;
 }
 
