@@ -103,6 +103,10 @@ export const materialUI: Framework = {
         href: `${frameworkHomepage}/discover-more/related-projects/#design-resources`,
         type: 'Sketch',
       },
+      {
+        href: `${frameworkHomepage}/discover-more/related-projects/#design-resources`,
+        type: 'Adobe XD',
+      },
     ],
     rtlSupport: true,
     themer: `${frameworkHomepage}/discover-more/related-projects/#theming`,
