@@ -227,7 +227,7 @@ const fetchAll = async () => {
 
 fetchAll()
   .then(() => {
-    console.log('readmen generated sucessfully');
+    console.log('readme generated successfully');
   })
   .catch(error => {
     console.error(error);
