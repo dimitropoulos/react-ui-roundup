@@ -83,9 +83,9 @@ export const chakra: Framework = {
   frameworkFeaturesById: {
     darkMode: true,
     designKits: false,
-    rtlSupport: false,
+    rtlSupport: true,
     themer: false,
-    typeScript: false,
+    typeScript: true,
   },
   frameworkHomepage,
   frameworkId: 'chakra',
