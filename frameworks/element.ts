@@ -49,6 +49,20 @@ export const element: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/#/en-US/component/date-picker`,
+      options: {
+        clearable: true,
+        customLocale: false,
+        minMax: true,
+        modes: ['day', 'month', 'week', 'year'],
+        presets: true,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Steps',
       componentURL: `${frameworkHomepage}/#/en-US/component/steps`,

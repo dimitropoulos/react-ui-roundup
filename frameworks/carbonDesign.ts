@@ -55,6 +55,20 @@ export const carbonDesign: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/?path=/story/components-datepicker--simple`,
+      options: {
+        clearable: false,
+        customLocale: false,
+        minMax: true,
+        modes: ['day', 'year'],
+        presets: false,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'errorBoundary',
       componentName: 'ErrorBoundary',
       componentURL: `${frameworkHomepage}/?path=/story/errorboundary--default`,

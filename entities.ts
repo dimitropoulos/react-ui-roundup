@@ -93,6 +93,19 @@ export interface Checkbox extends BaseComponent {
   };
 }
 
+export interface DatePicker extends BaseComponent {
+  componentId: 'datePicker';
+  options: {
+    clearable: boolean;
+    customLocale: boolean;
+    minMax: boolean;
+    modes: ('day' | 'month' | 'quarter' | 'week' | 'year')[];
+    presets: boolean;
+    range: boolean;
+    time: boolean;
+  };
+}
+
 export interface ErrorBoundary extends BaseComponent {
   componentId: 'errorBoundary';
   options: {
@@ -139,6 +152,7 @@ export type Component =
   | AvatarGroup
   | Button
   | Checkbox
+  | DatePicker
   | ErrorBoundary
   | Stepper
   | Switch

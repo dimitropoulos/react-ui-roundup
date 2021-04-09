@@ -29,6 +29,20 @@ export const reactToolbox: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/#/components/date_picker`,
+      options: {
+        clearable: false,
+        customLocale: true,
+        minMax: true,
+        modes: ['day', 'month', 'year'],
+        presets: false,
+        range: false,
+        time: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/#/components/switch`,

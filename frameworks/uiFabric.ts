@@ -58,6 +58,20 @@ export const uiFabric: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}#/controls/web/datepicker`,
+      options: {
+        clearable: false,
+        customLocale: false,
+        minMax: true,
+        modes: ['day', 'month', 'year'],
+        presets: false,
+        range: true,
+        time: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Toggle',
       componentURL: `${frameworkHomepage}#/controls/web/toggle`,

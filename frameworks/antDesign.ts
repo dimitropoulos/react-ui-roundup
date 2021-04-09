@@ -58,6 +58,20 @@ export const antDesign: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/components/date-picker`,
+      options: {
+        clearable: true,
+        customLocale: true,
+        minMax: false,
+        modes: ['day', 'month', 'quarter', 'week', 'year'],
+        presets: true,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'errorBoundary',
       componentName: 'Alert.ErrorBoundary',
       componentURL: `${frameworkHomepage}/components/alert/#components-alert-demo-error-boundary`,

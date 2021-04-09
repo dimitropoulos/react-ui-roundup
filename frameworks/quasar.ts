@@ -49,6 +49,20 @@ export const quasar: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/vue-components/date`,
+      options: {
+        clearable: false,
+        customLocale: false,
+        minMax: true,
+        modes: ['day', 'month', 'year'],
+        presets: false,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Stepper',
       componentURL: `${frameworkHomepage}/vue-components/stepper`,

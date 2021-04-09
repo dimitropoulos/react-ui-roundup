@@ -49,6 +49,20 @@ export const zendesk: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/components/date-picker`,
+      options: {
+        clearable: false,
+        customLocale: true,
+        minMax: true,
+        modes: ['day'],
+        presets: false,
+        range: true,
+        time: false,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Stepper',
       componentURL: `${frameworkHomepage}/components/stepper`,

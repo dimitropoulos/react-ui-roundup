@@ -29,6 +29,20 @@ export const blueprint: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/docs/#datetime/daterangepicker`,
+      options: {
+        clearable: false,
+        customLocale: true,
+        minMax: true,
+        modes: ['day', 'month', 'year'],
+        presets: true,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/docs/#core/components/switch`,

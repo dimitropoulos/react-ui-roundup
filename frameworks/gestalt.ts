@@ -29,6 +29,20 @@ export const gestalt: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/DatePicker`,
+      options: {
+        clearable: false,
+        customLocale: true,
+        minMax: true,
+        modes: ['day'],
+        presets: false,
+        range: true,
+        time: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/Switch`,

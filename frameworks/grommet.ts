@@ -43,6 +43,20 @@ export const grommet: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DateInput',
+      componentURL: `${frameworkHomepage}/dateinput`,
+      options: {
+        clearable: false,
+        customLocale: false,
+        minMax: false,
+        modes: ['day'],
+        presets: false,
+        range: false,
+        time: false,
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
       componentURL: `${frameworkHomepage}/tabs`,

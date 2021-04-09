@@ -29,6 +29,20 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/#/forms/date-picker`,
+      options: {
+        clearable: true,
+        customLocale: true,
+        minMax: true,
+        modes: ['day'],
+        presets: false,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'errorBoundary',
       componentName: 'ErrorBoundary',
       componentURL: `${frameworkHomepage}/#/utilities/error-boundary`,

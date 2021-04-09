@@ -58,6 +58,20 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/components/pickers`,
+      options: {
+        clearable: false,
+        customLocale: false,
+        minMax: false,
+        modes: ['day'],
+        presets: false,
+        range: false,
+        time: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Stepper',
       componentURL: `${frameworkHomepage}/components/steppers`,

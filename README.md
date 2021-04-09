@@ -29,6 +29,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
   - [AvatarGroup](#AvatarGroup)
   - [Button](#Button)
   - [Checkbox](#Checkbox)
+  - [DatePicker](#DatePicker)
   - [ErrorBoundary](#ErrorBoundary)
   - [Stepper](#Stepper)
   - [Switch](#Switch)
@@ -83,30 +84,30 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 5,322 | 27,272 | 613 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 5,611 | 27,416 | 617 | MIT |
 | Atlaskit | [atlassian.design](https://atlassian.design) | [bitbucket.org/atlassian/atlaskit-mk-2](https://bitbucket.org/atlassian/atlaskit-mk-2) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 17,546 | 1,834 | 560 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 4,129 | 945 | 453 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 16,490 | 1,303 | 77 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 2,664 | 478 | 349 | Apache 2.0 |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 49,572 | 12,457 | 1,831 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,319 | 242 | 49 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 10,603 | 638 | 76 | MIT |
-| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,745 | 290 | 10 | Apache 2.0 |
-| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 7,138 | 866 | 218 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 67,153 | 21,200 | 490 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,297 | 948 | 150 | Apache 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 780 | 84 | 43 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,930 | 420 | 162 | MIT |
-| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 18,099 | 2,151 | 333 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 19,189 | 3,071 | 134 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,683 | 1,044 | 264 | MIT |
-| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,218 | 309 | 45 | MIT |
-| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,615 | 138 | 1 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 49,135 | 5,117 | 1,044 | MIT |
-| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,563 | 114 | 12 | MIT |
-| UI Fabric | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 11,145 | 1,883 | 1,279 | Other |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 858 | 64 | 12 | Apache 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 17,574 | 1,840 | 555 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 4,157 | 950 | 436 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com](https://chakra-ui.com) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 16,807 | 1,327 | 75 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 2,686 | 482 | 352 | Apache 2.0 |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 49,724 | 12,508 | 1,848 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,322 | 242 | 49 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 10,619 | 640 | 77 | MIT |
+| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,761 | 290 | 12 | Apache 2.0 |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 7,157 | 870 | 210 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 67,410 | 21,338 | 501 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,304 | 954 | 154 | Apache 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 786 | 84 | 41 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 1,944 | 425 | 176 | MIT |
+| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 18,208 | 2,162 | 336 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 19,229 | 3,076 | 141 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,684 | 1,044 | 264 | MIT |
+| react-md | [react-md.mlaursen.com](https://react-md.mlaursen.com) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,221 | 309 | 47 | MIT |
+| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,624 | 138 | 8 | Apache 2.0 |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 49,148 | 5,114 | 1,044 | MIT |
+| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,566 | 114 | 12 | MIT |
+| UI Fabric | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 11,205 | 1,888 | 1,283 | Other |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 861 | 63 | 1 | Apache 2.0 |
 
 <!--
 ********************************************************************************
@@ -114,7 +115,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Wed, 31 Mar 2021 14:02:02 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Fri, 09 Apr 2021 15:56:32 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************
@@ -228,7 +229,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ring UI | [Alert](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-alert--simple) | :heavy_check_mark: | `error`, `loading`, `message`, `success`, `warning` |
 | Smooth UI | [Alert](https://smooth-code.com/open-source/smooth-ui/docs/alert) | :x: | `danger`, `dark`, `info`, `light`, `primary`, `secondary`, `success`, `warning` |
 | UI Fabric | [MessageBar](https://developer.microsoft.com/en-us/fluentui#/controls/web/messagebar) | :heavy_check_mark: | `blocked`, `error`, `info`, `remove`, `severeWarning`, `success`, `warning` |
-| Zendesk Garden | [Notification](https://zendeskgarden.github.io/react-components/notifications) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
+| Zendesk Garden | [Notification](https://garden.zendesk.com/components) | :heavy_check_mark: | `error`, `info`, `success`, `warning` |
 
 <!--
 ********************************************************************************
@@ -407,7 +408,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Semantic UI | [Button](https://semantic-ui.com/elements/button.html) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `big`, `huge`, `large`, `massive`, `medium`, `mini`, `small`, `tiny` |
 | Smooth UI | [Button](https://smooth-code.com/open-source/smooth-ui/docs/button) | :heavy_check_mark: | :x: |  | :x: | `base`, `lg`, `sm`, `xl`, `xs` |
 | UI Fabric | [Button](https://developer.microsoft.com/en-us/fluentui#/controls/web/button) | :heavy_check_mark: | :x: |  | :x: |  |
-| Zendesk Garden | [Button](https://garden.zendesk.com/components/buttons) | :heavy_check_mark: | :heavy_check_mark: | `only` | :x: | `default`, `large`, `small` |
+| Zendesk Garden | [Button](https://garden.zendesk.com/components/button) | :heavy_check_mark: | :heavy_check_mark: | `only` | :x: | `default`, `large`, `small` |
 
 
 <!--
@@ -472,6 +473,69 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Smooth UI | [Checkbox](https://smooth-code.com/open-source/smooth-ui/docs/checkbox) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
 | UI Fabric | [Checkbox](https://developer.microsoft.com/en-us/fluentui#/controls/web/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `left`, `right` |
 | Zendesk Garden | [Checkbox](https://garden.zendesk.com/components/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
+
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+## DatePicker
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+Users select a date or date range using a date picker.
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+#### Criteria
+
+- `Clearable`: Has a prop that allows the user to easily clear the date selection.
+- `Custom Locale`: A developer can specify a custom locale with a prop.
+- `Min/Max`: Allows a devloper to easily set a minimum and maximum date.
+- `Modes`: Allows users to quickly select from different magnituteds of lengths of time.
+- `Presets`: A super simple way exists to provide the user with preset dates (e.g. "Today", "Last Week", , "Past 3 years").
+- `Range`: An out-of-the-box solution exists for allowing the user to select date ranges.
+- `Time`: Users are able to input times.
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+| Framework | Name | Clearable | Custom Locale | Min/Max | Modes | Presets | Range | Time |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ant Design | [DatePicker](https://ant.design/components/date-picker) | :heavy_check_mark: | :heavy_check_mark: | :x: | `day`, `month`, `quarter`, `week`, `year` | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Blueprint | [DatePicker](https://blueprintjs.com/docs/#datetime/daterangepicker) | :x: | :heavy_check_mark: | :heavy_check_mark: | `day`, `month`, `year` | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Carbon Design | [DatePicker](http://react.carbondesignsystem.com/?path=/story/components-datepicker--simple) | :x: | :x: | :heavy_check_mark: | `day`, `year` | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| Elastic UI | [DatePicker](https://elastic.github.io/eui/#/forms/date-picker) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `day` | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| Element | [DatePicker](https://element.eleme.io/#/en-US/component/date-picker) | :heavy_check_mark: | :x: | :heavy_check_mark: | `day`, `month`, `week`, `year` | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
+| Gestalt | [DatePicker](https://gestalt.netlify.app/DatePicker) | :x: | :heavy_check_mark: | :heavy_check_mark: | `day` | :x: | :heavy_check_mark: | :x: |
+| Grommet | [DateInput](https://v2.grommet.io/dateinput) | :x: | :x: | :x: | `day` | :x: | :x: | :x: |
+| Material UI | [DatePicker](https://material-ui.com/components/pickers) | :x: | :x: | :x: | `day` | :x: | :x: | :heavy_check_mark: |
+| Quasar | [DatePicker](https://quasar.dev/vue-components/date) | :x: | :x: | :heavy_check_mark: | `day`, `month`, `year` | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| React Toolbox | [DatePicker](http://react-toolbox.io/#/components/date_picker) | :x: | :heavy_check_mark: | :heavy_check_mark: | `day`, `month`, `year` | :x: | :x: | :x: |
+| Ring UI | [DatePicker](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-date-picker--clearable) | :heavy_check_mark: | :x: | :heavy_check_mark: | `day`, `month`, `year` | :x: | :heavy_check_mark: | :heavy_check_mark: |
+| UI Fabric | [DatePicker](https://developer.microsoft.com/en-us/fluentui#/controls/web/datepicker) | :x: | :x: | :heavy_check_mark: | `day`, `month`, `year` | :x: | :heavy_check_mark: | :x: |
+| Zendesk Garden | [DatePicker](https://garden.zendesk.com/components/date-picker) | :x: | :heavy_check_mark: | :heavy_check_mark: | `day` | :x: | :heavy_check_mark: | :x: |
+
+<!--
+********************************************************************************
+THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
+PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
+********************************************************************************
+-->
+> [Atlaskit](https://bitbucket.org/atlassian/atlaskit-mk-2), [Chakra UI](https://github.com/chakra-ui/chakra-ui), [Elemental UI](https://github.com/elementalui/elemental), [Evergreen](https://github.com/segmentio/evergreen), [Onsen UI](https://github.com/OnsenUI/OnsenUI), [Orbit](https://github.com/kiwicom/orbit), [Prime React](https://github.com/primefaces/primereact), [React Bootstrap](https://github.com/react-bootstrap/react-bootstrap), [react-md](https://github.com/mlaursen/react-md), [Semantic UI](https://github.com/Semantic-Org/Semantic-UI), and [Smooth UI](https://github.com/smooth-code/smooth-ui) appear to be missing a DatePicker component. [Please file an issue](https://github.com/dimitropoulos/react-ui-roundup/issues/new) if one now exists.
 
 
 <!--
@@ -570,7 +634,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Prime React | [Steps](https://primefaces.org/primereact/showcase/#/steps) | :x: | :heavy_check_mark: | :x: | :x: | :x: |
 | Quasar | [Stepper](https://quasar.dev/vue-components/stepper) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Semantic UI | [Steps](https://semantic-ui.com/elements/step.html) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
-| Zendesk Garden | [Stepper](https://zendeskgarden.github.io/react-components/accordions/#stepper) | :x: | :x: | :x: | :x: | :x: |
+| Zendesk Garden | [Stepper](https://garden.zendesk.com/components/stepper) | :x: | :x: | :x: | :x: | :x: |
 
 <!--
 ********************************************************************************

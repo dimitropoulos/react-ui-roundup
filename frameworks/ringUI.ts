@@ -49,6 +49,20 @@ export const ringUI: Framework = {
       },
     },
     {
+      componentId: 'datePicker',
+      componentName: 'DatePicker',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-date-picker--clearable`,
+      options: {
+        clearable: true,
+        customLocale: false,
+        minMax: true,
+        modes: ['day', 'month', 'year'],
+        presets: false,
+        range: true,
+        time: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Toggle',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-toggle--basic`,
