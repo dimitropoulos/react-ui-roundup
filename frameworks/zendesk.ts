@@ -7,7 +7,7 @@ export const zendesk: Framework = {
     {
       componentId: 'alert',
       componentName: 'Notification',
-      componentURL: 'https://zendeskgarden.github.io/react-components/notifications',
+      componentURL: 'https://garden.zendesk.com/components',
       options: {
         closable: true,
         types: ['success', 'info', 'warning', 'error'],
@@ -27,7 +27,7 @@ export const zendesk: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/buttons`,
+      componentURL: `${frameworkHomepage}/components/button`,
       options: {
         disabled: true,
         groupable: true,
@@ -51,7 +51,7 @@ export const zendesk: Framework = {
     {
       componentId: 'stepper',
       componentName: 'Stepper',
-      componentURL: 'https://zendeskgarden.github.io/react-components/accordions/#stepper',
+      componentURL: `${frameworkHomepage}/components/stepper`,
       options: {
         canBeVertical: false,
         clickable: false,
