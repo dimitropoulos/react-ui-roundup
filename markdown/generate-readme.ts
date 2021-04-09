@@ -121,15 +121,16 @@ const frameworksMarkdown = (repoInfoByHtmlUrl: RepoInfoByHtmlUrl) => [
   frameworkFeaturesSectionMarkdown,
 ];
 
-type EnhancedComponent = Component & Pick<Framework, 'frameworkName' | 'frameworkId'>;
+type EnhancedComponent = Component & Pick<Framework, 'frameworkId' | 'frameworkName'>;
 
 const componentsMarkdown = [
   h1('Components'),
   ...chain(({ componentId, cannonicalName, description, indefiniteArticle, optionsById }) => {
     const optionsArray = pipe(
+      () => optionsById,
       values,
       sortBy(prop('name')),
-    )(optionsById);
+    )();
 
     const headers = [
       'Framework',
@@ -157,7 +158,8 @@ const componentsMarkdown = [
     const filteredMissingFrameworks = filter(whereEq({ componentId }), enhancedComponents);
     const missingFrameworkIds = pluck('frameworkId', filteredMissingFrameworks);
     const missingFrameworks: ContentGroup = pipe(
-      (frameworkIds: string[]) => reject(
+      () => missingFrameworkIds,
+      frameworkIds => reject(
         framework => includes(framework.frameworkId, frameworkIds),
         frameworks,
       ),
@@ -165,7 +167,7 @@ const componentsMarkdown = [
         link({ href: repoURL, text: frameworkName })
       )),
       intersperse(', '),
-      (elements: string[]) => {
+      elements => {
         switch (elements.length) {
           case 0:
             return [];
@@ -180,13 +182,13 @@ const componentsMarkdown = [
             return update(elements.length - 2, ', and ', elements);
         }
       },
-      (elements: string[]) => (elements.length > 0 ? append(
+      elements => (elements.length > 0 ? append(
         ` appear${elements.length === 1 ? 's' : ''} to be missing ${indefiniteArticle} ${cannonicalName} component. ${pleaseFileIssue} if one now exists.\n`,
         elements,
       ) : []),
       concatAll,
       line => [typeof line === 'string' && line.length > 0 ? quote(line) : ''],
-    )(missingFrameworkIds);
+    )();
 
     return [
       h2(cannonicalName),

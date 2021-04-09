@@ -2,6 +2,7 @@ import {
   Box,
   Button,
   Link,
+  styled,
   Table,
   TableBody,
   TableCell,
@@ -9,7 +10,6 @@ import {
   TableHead,
   TableRow,
   Typography,
-  withStyles,
 } from '@material-ui/core';
 import {
   append,
@@ -39,12 +39,10 @@ import {
 import { Criteria } from './Criteria';
 import { Card, GroupTitle } from './utils';
 
-const Wrapper = withStyles({
-  root: {
-    backgroundColor: '#fafafa',
-    padding: '1em',
-  },
-})(Box);
+const Wrapper = styled(Box)({
+  backgroundColor: '#fafafa',
+  padding: '1em',
+});
 
 const pleaseFileIssue = (
   <Link
@@ -105,13 +103,14 @@ const MissingFrameworks: FC<{
   const { cannonicalName, indefiniteArticle } = componentInfoById[componentId];
 
   const missingFrameworks = pipe(
-    (components: UnwrapedComponent[]) => map(({ frameworkInfo: { frameworkId }}) => frameworkId, components),
+    () => components,
+    map(({ frameworkInfo: { frameworkId } }) => frameworkId),
     frameworkIds => reject(
       framework => includes(framework.frameworkId, frameworkIds),
       frameworks,
     ),
     map(MissingFramework),
-    elements => intersperse<ReactElement | null | string>(', ', elements),
+    elements => intersperse<ReactElement | string | null>(', ', elements),
     elements => {
       switch (elements.length) {
         case 0:
@@ -127,13 +126,13 @@ const MissingFrameworks: FC<{
           return update(elements.length - 2, ', and ', elements);
       }
     },
-    elements => (elements.length > 0 ? append<ReactElement | null | string>(
+    elements => (elements.length > 0 ? append<ReactElement | string | null>(
       <Fragment key="text">
         {' '}appear{elements.length === 1 ? 's' : ''} to be missing {indefiniteArticle} {cannonicalName} component. {pleaseFileIssue} if one now exists.
       </Fragment>,
       elements,
     ) : null),
-  )(components);
+  )();
 
   if (missingFrameworks === null) {
     return null;
@@ -211,12 +210,13 @@ interface Props {
 
 export const Components: FC<Props> = ({ frameworks }) => {
   const componentGroups = pipe(
+    () => frameworks,
     unwrapFrameworks,
     flatten,
     groupBy(prop('componentId')),
     (x: any) => toStablePairs(x) as [string, UnwrapedComponent[]][],
     map(componentGroup(frameworks)),
-  )(frameworks);
+  )();
 
   return <Fragment key="components">{componentGroups}</Fragment>;
 };

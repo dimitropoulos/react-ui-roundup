@@ -1,24 +1,12 @@
-import { AppBar as MuiAppBar, IconButton, Toolbar as MuiToolbar, Tooltip, Typography, withStyles } from '@material-ui/core';
+import { AppBar, IconButton, Toolbar, Tooltip, Typography } from '@material-ui/core';
 import { GitHub } from '@material-ui/icons';
 import React, { FC } from 'react';
 
 import { kubernetesBlue } from './theme';
 
-const AppBar = withStyles({
-  root: {
-    color: 'white',
-  },
-})(MuiAppBar);
-
-const Toolbar = withStyles({
-  root: {
-    backgroundColor: kubernetesBlue,
-  },
-})(MuiToolbar);
-
 export const Header: FC = () => (
-  <AppBar position="static">
-    <Toolbar>
+  <AppBar position="static" sx={{ color: 'white' }}>
+    <Toolbar sx={{ backgroundColor: kubernetesBlue }}>
       <Typography variant="h6">React UI Roundup</Typography>
       <div style={{ flex: '1 1 auto' }} />
 

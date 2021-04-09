@@ -2,7 +2,6 @@
   "compilerOptions": {
     "types": [
       "jest",
-      "mocha",
       "node",
       "webpack-env"
     ],
@@ -11,6 +10,8 @@
     "strict": true,
   },
   "include": [
+    ".eslintrc.js",
+    "**/*.js",
     "**/*.ts",
     "**/*.tsx"
   ]

@@ -5,20 +5,26 @@ export const reactLightBlue = '#61dafb';
 export const kubernetesBlue = '#326ce5';
 
 export const theme = createMuiTheme({
-  overrides: {
+  components: {
     MuiTableRow: {
-      root: {
-        height: 33,
+      styleOverrides: {
+        root: {
+          height: 33,
+        },
       },
     },
     MuiToolbar: {
-      root: {
-        background: '#fafafa',
+      styleOverrides: {
+        root: {
+          background: '#fafafa',
+        },
       },
     },
     MuiTypography: {
-      subtitle2: {
-        fontWeight: 400,
+      styleOverrides: {
+        subtitle2: {
+          fontWeight: 400,
+        },
       },
     },
   },

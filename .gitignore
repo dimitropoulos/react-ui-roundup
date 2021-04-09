@@ -3,3 +3,4 @@ dist
 .cache
 .env.local
 yarn-error.log
+.parcel-cache

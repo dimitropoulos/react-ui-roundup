@@ -1,6 +1,7 @@
+import { CssBaseline } from '@material-ui/core';
 import * as R from 'ramda';
 import * as RA from 'ramda-adjunct';
-import React from 'react';
+import React, { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 import { App } from './App';
@@ -9,7 +10,10 @@ window.R = R;
 window.RA = RA;
 
 ReactDOM.render(
-  <App />,
+  <Fragment>
+    <CssBaseline />
+    <App />
+  </Fragment>,
   document.getElementById('root'),
 );
 

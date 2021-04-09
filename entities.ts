@@ -1,7 +1,7 @@
 import { Endpoints } from '@octokit/types';
 import { ReactNode } from 'react';
 
-export type RepoInfo = Endpoints['GET /repos/:owner/:repo']['response']['data'];
+export type RepoInfo = Endpoints['GET /repos/{owner}/{repo}']['response']['data'];
 
 type OptionId = string;
 
@@ -29,7 +29,7 @@ export interface ComponentInfo {
   cannonicalName: string;
 
   /** The English indefinte article to be used to refer to this Component */
-  indefiniteArticle: 'an' | 'a';
+  indefiniteArticle: 'a' | 'an';
   description: SuperString;
   optionsById: OptionsById;
 }
@@ -57,7 +57,7 @@ export interface Avatar extends BaseComponent {
   componentId: 'avatar';
   options: {
     badge: boolean;
-    shapes: ('circle' | 'square' | 'rounded-square')[] | null;
+    shapes: ('circle' | 'rounded-square' | 'square')[] | null;
     sizes: string[] | null;
     types: ('icon' | 'image' | 'text')[] | null;
   };
@@ -76,7 +76,7 @@ export interface Button extends BaseComponent {
   options: {
     disabled: boolean;
     groupable: boolean;
-    icon: ('left' | 'right' | 'only')[] | null;
+    icon: ('left' | 'only' | 'right')[] | null;
     loading: boolean;
     sizes: string[] | null;
   };
@@ -89,7 +89,7 @@ export interface Checkbox extends BaseComponent {
     disabled: boolean;
     indeterminate: boolean;
     invalid: boolean;
-    labelPlacement: ('above' | 'right' | 'left' | 'below')[];
+    labelPlacement: ('above' | 'below' | 'left' | 'right')[];
   };
 }
 
@@ -120,7 +120,7 @@ export interface Switch extends BaseComponent {
     indeterminate: boolean;
     internalIcons: boolean;
     internalText: boolean;
-    labelPlacement: ('above' | 'right' | 'left' | 'below')[];
+    labelPlacement: ('above' | 'below' | 'left' | 'right')[];
     loading: boolean;
     sizes: string[];
   };
@@ -145,7 +145,7 @@ export type Component =
   | Tabs;
 
 export interface DesignKit {
-  type: 'Sketch' | 'Figma' | 'Abstract' | 'Axure' | 'Framer X' | 'Adobe XD' | 'Custom';
+  type: 'Abstract' | 'Adobe XD' | 'Axure' | 'Custom' | 'Figma' | 'Framer X' | 'Sketch';
   href: URL;
 }
 

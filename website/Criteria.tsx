@@ -1,21 +1,9 @@
-import { Chip as MuiChip, Typography, withStyles } from '@material-ui/core';
+import { Chip, Typography } from '@material-ui/core';
 import { map } from 'ramda';
 import React, { FC } from 'react';
 
 const Wrapper: FC = ({ children }) => <div style={{ margin: 16 }}>{children}</div>;
 const Row: FC = ({ children }) => <div style={{ marginBottom: 8 }}>{children}</div>;
-
-const Title = withStyles({
-  root: {
-    marginBottom: 8,
-  },
-})(Typography);
-
-const Chip = withStyles({
-  root: {
-    marginRight: 4,
-  },
-})(MuiChip);
 
 interface Props {
   items: [string, string][];
@@ -23,10 +11,10 @@ interface Props {
 
 export const Criteria: FC<Props> = ({ items }) => (
   <Wrapper>
-    <Title variant="h6">Criteria</Title>
+    <Typography sx={{ marginBottom: 1 }} variant="h6">Criteria</Typography>
     {map(([name, description]) => (
       <Row key={name} >
-        <Chip label={name} size="small" />
+        <Chip label={name} size="small" sx={{ marginRight: 1 }} />
         <Typography variant="caption">{description}</Typography>
       </Row>
     ), items)}

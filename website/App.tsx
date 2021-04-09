@@ -1,4 +1,4 @@
-import { Container as MuiContainer, ThemeProvider, withStyles } from '@material-ui/core';
+import { Container as MuiContainer, styled, ThemeProvider } from '@material-ui/core';
 import React, { FC, useEffect } from 'react';
 
 import { frameworkInfo, frameworkInfoByFeatureId, frameworks } from '../frameworks';
@@ -9,16 +9,14 @@ import { Header } from './Header';
 import { theme } from './theme';
 import { scrollIntoView } from './utils';
 
-const Container = withStyles(theme => ({
+const Container = styled(MuiContainer)({
   [theme.breakpoints.down('sm')]: {
-    root: {
-      marginLeft: 0,
-      marginRight: 0,
-      paddingLeft: 0,
-      paddingRight: 0,
-    },
+    marginLeft: 0,
+    marginRight: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
   },
-}))(MuiContainer);
+});
 
 export const App: FC = () => {
   useEffect(() => {

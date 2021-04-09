@@ -43,9 +43,10 @@ export const pipeLog = <T>(input: T) => {
 
 export const toStablePairs = <T extends { [key: string]: any }>(input: T) => (
   pipe(
+    () => input,
     (input: T) => toPairs(input) as Entries<T>,
     entries => sortBy(head, entries) as Entries<T>,
-  )(input)
+  )()
 );
 
 // export const toStablePairs = pipe(

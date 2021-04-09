@@ -1,10 +1,11 @@
-import { Box, Card as MuiCard, Link, Toolbar as MuiToolbar, Typography, withStyles } from '@material-ui/core';
+import { Box, Card as MuiCard, Link, styled, Toolbar as MuiToolbar, Typography } from '@material-ui/core';
 import { Check as MuiCheck, Close as MuiClose, HelpOutline, LinkSharp } from '@material-ui/icons';
 import { map, pipe, prop, sortBy } from 'ramda';
-import React, { FC, Fragment, ReactNode, useState } from 'react';
+import React, { FC, ReactNode, useState } from 'react';
 
 import { DesignKit, FrameworkFeaturesById, SuperString } from '../entities';
 import { noValue } from '../utils';
+import { theme } from './theme';
 
 export const scrollIntoView = (scrollId: string) => () => {
   let element = null;
@@ -21,51 +22,41 @@ export const scrollIntoView = (scrollId: string) => () => {
   element.scrollIntoView();
 };
 
-export const LinkIcon = withStyles({
-  root: {
+export const LinkIcon = styled(LinkSharp)({
+  cursor: 'pointer',
+  fontSize: '1.25em',
+  left: '-1em',
+  opacity: 0.5,
+  position: 'absolute',
+  top: '15%',
+  transform: 'rotate(-45deg)',
+});
+
+export const TitleSection = styled(Box)({
+  display: 'flex',
+  flexDirection: 'column',
+  flexGrow: 1,
+  padding: '1em 0',
+});
+
+export const TitleWrapper = styled(Box)({
+  '&:hover': {
     cursor: 'pointer',
-    fontSize: '1.25em',
-    left: '-1em',
-    opacity: 0.5,
-    position: 'absolute',
-    top: '15%',
-    transform: 'rotate(-45deg)',
   },
-})(LinkSharp);
+  alignItems: 'center',
+  display: 'flex',
+  position: 'relative',
+});
 
-export const TitleSection = withStyles({
-  root: {
-    display: 'flex',
-    flexDirection: 'column',
-    flexGrow: 1,
-    padding: '1em 0',
+export const Title = styled(Typography)({
+  '&:hover': {
+    cursor: 'pointer',
   },
-})(Box);
+});
 
-export const TitleWrapper = withStyles({
-  root: {
-    '&:hover': {
-      cursor: 'pointer',
-    },
-    alignItems: 'center',
-    display: 'flex',
-    position: 'relative',
-  },
-})(Box);
-
-export const Title = withStyles({
-  root: {
-    '&:hover': {
-      cursor: 'pointer',
-    },
-  },
-})(Typography);
-
-export const Toolbar = withStyles({
-  root: {
-    paddingLeft: 24,
-  },
-})(MuiToolbar);
+export const Toolbar = styled(MuiToolbar)({
+  paddingLeft: 24,
+});
 
 interface GroupTitleProps {
   actions?: ReactNode;
@@ -109,17 +100,13 @@ export const GroupTitle: FC<GroupTitleProps> = ({ title, scrollId, subtitle, act
   );
 };
 
-export const Check = withStyles({
-  root: {
-    fill: 'green',
-  },
-})(MuiCheck);
+export const Check = styled(MuiCheck)({
+  fill: 'green',
+});
 
-export const Close = withStyles({
-  root: {
-    fill: 'red',
-  },
-})(MuiClose);
+export const Close = styled(MuiClose)({
+  fill: 'red',
+});
 
 export const checkmark = (value: boolean | undefined) => {
   if (value === undefined) {
@@ -139,9 +126,9 @@ export const designKits = (designKits: FrameworkFeaturesById['designKits']) => (
   pipe<DesignKit[], DesignKit[], ReactNode[], ReactNode>(
     sortBy(prop('type')),
     map(({ href, type }) => (
-      <Link href={href} key={type} style={{ marginRight: 8 }}>{type}</Link>
+      <Link href={href} key={type} sx={{ marginRight: 2 }}>{type}</Link>
     )),
-    kits => <Fragment key="kits">{kits}</Fragment>,
+    kits => <div key="kits">{kits}</div>,
   )(designKits)
 ));
 
@@ -149,18 +136,14 @@ export const themer = (themer: FrameworkFeaturesById['themer']) => (themer === f
   <Link href={themer as unknown as string}>Link</Link>
 ));
 
-export const Card = withStyles(theme => ({
-  root: {
-    margin: '2em',
-  },
+export const Card = styled(MuiCard)({
+  margin: '2em',
   [theme.breakpoints.down('sm')]: {
-    root: {
-      marginBottom: theme.spacing(2),
-      marginLeft: theme.spacing(1),
-      marginRight: theme.spacing(1),
-      marginTop: theme.spacing(1),
-      paddingLeft: 0,
-      paddingRight: 0,
-    },
+    marginBottom: theme.spacing(2),
+    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
+    marginTop: theme.spacing(1),
+    paddingLeft: 0,
+    paddingRight: 0,
   },
-}))(MuiCard);
+});

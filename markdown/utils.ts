@@ -3,7 +3,7 @@ import { join, length, map, pipe, prop, repeat, sortBy } from 'ramda';
 import { DesignKit, FrameworkFeaturesById, URL } from '../entities';
 
 // eslint-disable-next-line @typescript-eslint/no-use-before-define -- don't see another way to do this without the circular hoist
-const line = (line: string | ContentGroup): string => (typeof line === 'string' ? `${line}\n` : lines(line));
+const line = (line: ContentGroup | string): string => (typeof line === 'string' ? `${line}\n` : lines(line));
 export const lines = (input: ContentGroup): string => map(line, input).join('');
 
 export const comment = (text: string) => `<!--${text}-->`;
@@ -54,7 +54,7 @@ export const table = ({ headers, rows }: { headers: string[]; rows: string[][] }
   ])
 );
 
-export const list = (character: '1.' | '-', indent = 0) => (data: ContentGroup): string => {
+export const list = (character: '-' | '1.', indent = 0) => (data: ContentGroup): string => {
   const indentation = '  '.repeat(indent);
   const before = `${indentation}${character} `;
   return map(datum => (Array.isArray(datum) ? (
@@ -68,7 +68,7 @@ export const unorderedList = list('-');
 export const orderedList = list('1.');
 
 export type ContentItem = string;
-export type ContentGroup = (ContentItem | ContentGroup)[];
+export type ContentGroup = (ContentGroup | ContentItem)[];
 
 export type LinkInfoGroup = (ContentItem | LinkInfo | LinkInfoGroup)[];
 
