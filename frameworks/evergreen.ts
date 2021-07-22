@@ -27,7 +27,7 @@ export const evergreen: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/button`,
+      componentURL: `${frameworkHomepage}/components/buttons`,
       options: {
         disabled: true,
         groupable: true,
@@ -65,7 +65,7 @@ export const evergreen: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tablist',
-      componentURL: `${frameworkHomepage}/components/tab`,
+      componentURL: `${frameworkHomepage}/components/tabs`,
       options: {
         canBeVertical: true,
       },
