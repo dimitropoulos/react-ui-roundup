@@ -7,7 +7,7 @@ export const chakra: Framework = {
     {
       componentId: 'alert',
       componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/alert`,
+      componentURL: `${frameworkHomepage}/feedback/alert`,
       options: {
         closable: true,
         types: ['success', 'info', 'warning', 'error'],
@@ -16,7 +16,7 @@ export const chakra: Framework = {
     {
       componentId: 'avatar',
       componentName: 'Avatar',
-      componentURL: `${frameworkHomepage}/avatar`,
+      componentURL: `${frameworkHomepage}/media-and-icons//avatar`,
       options: {
         badge: true,
         shapes: ['circle'],
@@ -27,7 +27,7 @@ export const chakra: Framework = {
     {
       componentId: 'avatarGroup',
       componentName: 'AvatarGroup',
-      componentURL: `${frameworkHomepage}/avatar`,
+      componentURL: `${frameworkHomepage}/media-and-icons/avatar`,
       options: {
         expandableGroup: false,
         maxCount: true,
@@ -36,7 +36,7 @@ export const chakra: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/button`,
+      componentURL: `${frameworkHomepage}/form/button`,
       options: {
         disabled: true,
         groupable: false,
@@ -48,7 +48,7 @@ export const chakra: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/checkbox`,
+      componentURL: `${frameworkHomepage}/form/checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -60,7 +60,7 @@ export const chakra: Framework = {
     {
       componentId: 'switch',
       componentName: 'Switch',
-      componentURL: `${frameworkHomepage}/switch`,
+      componentURL: `${frameworkHomepage}/form/switch`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -74,7 +74,7 @@ export const chakra: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/tabs`,
+      componentURL: `${frameworkHomepage}/disclosure/tabs`,
       options: {
         canBeVertical: true,
       },
