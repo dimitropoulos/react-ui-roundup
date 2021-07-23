@@ -72,6 +72,18 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/docs/#select/select-component`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Stepper',
       componentURL: `${frameworkHomepage}/components/steppers`,

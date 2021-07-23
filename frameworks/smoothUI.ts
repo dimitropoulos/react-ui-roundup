@@ -38,6 +38,18 @@ export const smoothUI: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/docs/select`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/docs/switch`,

@@ -63,6 +63,18 @@ export const zendesk: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/components/select`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Stepper',
       componentURL: `${frameworkHomepage}/components/stepper`,

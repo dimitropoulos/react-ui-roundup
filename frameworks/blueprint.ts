@@ -43,6 +43,18 @@ export const blueprint: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/docs/#select/select-component`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/docs/#core/components/switch`,

@@ -29,6 +29,18 @@ export const grommet: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/select`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'CheckBox',
       componentURL: `${frameworkHomepage}/checkbox`,

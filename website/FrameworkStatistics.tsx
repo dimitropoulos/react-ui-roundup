@@ -37,7 +37,7 @@ const Framework: FC<FrameworkType> = ({
       <TableCell>{repoInfo?.stargazers_count.toLocaleString() ?? noValue}</TableCell>
       <TableCell>{repoInfo?.forks_count.toLocaleString() ?? noValue}</TableCell>
       <TableCell>{repoInfo?.open_issues_count.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.license.name.replace(/ License/, '') ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.license?.name.replace(/ License/, '') ?? noValue}</TableCell>
     </TableRow>
   );
 };
@@ -45,6 +45,8 @@ const Framework: FC<FrameworkType> = ({
 interface Props {
   frameworks: FrameworkType[];
 }
+
+const scrollId = 'FrameworkStatistics';
 
 export const FrameworkStatistics: FC<Props> = ({ frameworks }) => {
   const openAll = (type: 'homepages' | 'repositories') => () => {
@@ -58,8 +60,6 @@ export const FrameworkStatistics: FC<Props> = ({ frameworks }) => {
       }
     }, frameworks);
   };
-
-  const scrollId = 'FrameworkStatistics';
 
   return (
     <Card id={scrollId}>

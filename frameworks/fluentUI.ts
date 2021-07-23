@@ -2,7 +2,7 @@ import { Framework } from '../entities';
 
 const frameworkHomepage = 'https://developer.microsoft.com/en-us/fluentui';
 
-export const uiFabric: Framework = {
+export const fluentUI: Framework = {
   components: [
     {
       componentId: 'alert',
@@ -72,6 +72,18 @@ export const uiFabric: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Dropdown',
+      componentURL: `${frameworkHomepage}#/controls/web/dropdown`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Toggle',
       componentURL: `${frameworkHomepage}#/controls/web/toggle`,
@@ -111,7 +123,7 @@ export const uiFabric: Framework = {
     typeScript: true,
   },
   frameworkHomepage,
-  frameworkId: 'uiFabric',
-  frameworkName: 'UI Fabric',
+  frameworkId: 'fluentUI',
+  frameworkName: 'Fluent UI',
   repoURL: 'https://github.com/microsoft/fluentui',
 };

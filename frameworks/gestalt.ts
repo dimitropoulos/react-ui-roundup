@@ -43,6 +43,18 @@ export const gestalt: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'SelectList',
+      componentURL: `${frameworkHomepage}/SelectList`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/Switch`,

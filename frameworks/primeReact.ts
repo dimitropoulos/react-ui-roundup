@@ -29,6 +29,18 @@ export const primeReact: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Dropdown',
+      componentURL: `${frameworkHomepage}/showcase/#/dropdown`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Steps',
       componentURL: `${frameworkHomepage}/showcase/#/steps`,

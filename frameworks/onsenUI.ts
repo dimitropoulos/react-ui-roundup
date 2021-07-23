@@ -29,6 +29,18 @@ export const onsenUI: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/v2/api/react/Select.html`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/v2/api/react/Switch.html`,

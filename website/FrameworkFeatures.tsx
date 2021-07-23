@@ -32,35 +32,34 @@ interface Props {
   frameworkInfoByFeatureId: FrameworkInfoByFeatureId;
 }
 
+const scrollId = 'FrameworkFeatures';
+
 export const FrameworkFeatures: FC<Props> = ({
   frameworkInfo,
   frameworkInfoByFeatureId,
   frameworks,
-}) => {
-  const scrollId = 'FrameworkFeatures';
-  return (
-    <Card id={scrollId}>
-      <GroupTitle scrollId={scrollId} title="Framework Features" />
+}) => (
+  <Card id={scrollId}>
+    <GroupTitle scrollId={scrollId} title="Framework Features" />
 
-      <Criteria
-        items={map(({ criteria, name }) => [name, criteria], frameworkInfo)}
-      />
+    <Criteria
+      items={map(({ criteria, name }) => [name, criteria], frameworkInfo)}
+    />
 
-      <TableContainer>
-        <Table size="small">
-          <TableHead>
-            <TableRow>
-              <TableCell>Name</TableCell>
-              {map(({ featureId, name }) => (
-                <TableCell key={featureId}>{name}</TableCell>
-              ), frameworkInfo)}
-            </TableRow>
-          </TableHead>
-          <TableBody>
-            {map(feature(frameworkInfoByFeatureId), frameworks)}
-          </TableBody>
-        </Table>
-      </TableContainer>
-    </Card>
-  );
-};
+    <TableContainer>
+      <Table size="small">
+        <TableHead>
+          <TableRow>
+            <TableCell>Name</TableCell>
+            {map(({ featureId, name }) => (
+              <TableCell key={featureId}>{name}</TableCell>
+            ), frameworkInfo)}
+          </TableRow>
+        </TableHead>
+        <TableBody>
+          {map(feature(frameworkInfoByFeatureId), frameworks)}
+        </TableBody>
+      </Table>
+    </TableContainer>
+  </Card>
+);

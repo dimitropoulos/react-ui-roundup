@@ -67,6 +67,18 @@ export const atlaskit: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/components/select`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: false,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'ProgressTracker',
       componentURL: `${frameworkHomepage}/components/progress-tracker`,

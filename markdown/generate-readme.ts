@@ -19,6 +19,7 @@ import {
 import { compact, concatAll } from 'ramda-adjunct';
 
 import { componentInfo } from '../components';
+import { tableOfContentsIntro } from '../copy';
 import { Component, Framework, RepoInfo } from '../entities';
 import { frameworkInfo, frameworks } from '../frameworks';
 import { createScrollId, getRepoInfo, issueURL, noValue, removeProtocol, toStablePairs } from '../utils';
@@ -51,7 +52,7 @@ const pleaseFileIssue = link({
 
 const tableOfContentsMarkdown = [
   h1('React UI Roundup'),
-  paragraph('Are you a frontend developer or designer?  Do you wish you had a one-stop-shop you could go to see the various implementations of common components?  If so - React UI Roundup is for you!'),
+  paragraph(tableOfContentsIntro),
   tableOfContents([
     { href: '#About', text: 'About' },
     { href: '#Framework-Statistics', text: 'Framework Statistics' },

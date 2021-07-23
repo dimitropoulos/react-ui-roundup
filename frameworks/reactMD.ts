@@ -1,13 +1,13 @@
 import { Framework } from '../entities';
 
-const frameworkHomepage = 'https://react-md.mlaursen.com';
+const frameworkHomepage = 'https://react-md.dev';
 
 export const reactMD: Framework = {
   components: [
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/buttons`,
+      componentURL: `${frameworkHomepage}/packages/buttons/demos`,
       options: {
         disabled: true,
         groupable: false,
@@ -19,7 +19,7 @@ export const reactMD: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/components/selection-controls`,
+      componentURL: `${frameworkHomepage}/packages/form/selection-control-demos`,
       options: {
         customIcon: true,
         disabled: true,
@@ -29,9 +29,21 @@ export const reactMD: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Dropdown',
+      componentURL: `${frameworkHomepage}/packages/dropdown/demos`,
+      options: {
+        async: false,
+        disabled: false,
+        disabledOptions: false,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/components/tabs`,
+      componentURL: `${frameworkHomepage}/packages/tabs/demos`,
       options: {
         canBeVertical: false,
       },

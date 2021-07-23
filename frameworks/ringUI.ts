@@ -63,6 +63,18 @@ export const ringUI: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-select--with-a-filter-and-tags`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Toggle',
       componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-toggle--basic`,

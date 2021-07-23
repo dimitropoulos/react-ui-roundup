@@ -38,6 +38,18 @@ export const reactBootstrap: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Dropdown',
+      componentURL: `${frameworkHomepage}/components/dropdowns`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Form.Check',
       componentURL: `${frameworkHomepage}/components/forms/#forms-custom-switch`,

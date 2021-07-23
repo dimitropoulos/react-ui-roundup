@@ -6,8 +6,11 @@
       "webpack-env"
     ],
     "esModuleInterop": true,
-    "jsx": "react",
+    "jsx": "react-jsx",
     "strict": true,
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
   },
   "include": [
     ".eslintrc.js",

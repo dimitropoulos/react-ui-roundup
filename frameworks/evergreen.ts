@@ -49,6 +49,18 @@ export const evergreen: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'SelectMenu',
+      componentURL: `${frameworkHomepage}/components/select-menu`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'switch',
       componentName: 'Switch',
       componentURL: `${frameworkHomepage}/components/switch`,

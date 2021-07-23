@@ -6,6 +6,7 @@ import { Components } from './Components';
 import { FrameworkFeatures } from './FrameworkFeatures';
 import { FrameworkStatistics } from './FrameworkStatistics';
 import { Header } from './Header';
+import { TableOfContents } from './TableOfContents';
 import { theme } from './theme';
 import { scrollIntoView } from './utils';
 
@@ -27,6 +28,8 @@ export const App: FC = () => {
     <ThemeProvider theme={theme}>
       <Header />
       <Container maxWidth="lg">
+        <TableOfContents />
+
         <FrameworkStatistics
           frameworks={frameworks}
         />

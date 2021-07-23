@@ -1,11 +1,18 @@
-import { createMuiTheme } from '@material-ui/core';
+import { createTheme } from '@material-ui/core';
 
 export const reactBackground = '#282c34';
 export const reactLightBlue = '#61dafb';
 export const kubernetesBlue = '#326ce5';
 
-export const theme = createMuiTheme({
+export const theme = createTheme({
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          textDecorationColor: 'transparent',
+        },
+      },
+    },
     MuiTableRow: {
       styleOverrides: {
         root: {

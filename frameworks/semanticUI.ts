@@ -29,6 +29,18 @@ export const semanticUI: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Dropdown',
+      componentURL: `${frameworkHomepage}/modules/dropdown.html`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Steps',
       componentURL: `${frameworkHomepage}/elements/step.html`,

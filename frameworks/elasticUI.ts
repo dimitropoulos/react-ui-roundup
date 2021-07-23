@@ -53,6 +53,18 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'SuperSelect',
+      componentURL: `${frameworkHomepage}/#/forms/super-select`,
+      options: {
+        async: true,
+        disabled: false,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Steps',
       componentURL: `${frameworkHomepage}/#/navigation/steps`,

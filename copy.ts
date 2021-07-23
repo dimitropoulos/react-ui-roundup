@@ -1,0 +1,1 @@
+export const tableOfContentsIntro = 'Are you a frontend developer or designer?  Do you wish you had a one-stop-shop where you could check out the various implementations of common components?  If so - React UI Roundup is for you!';

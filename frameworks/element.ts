@@ -63,6 +63,18 @@ export const element: Framework = {
       },
     },
     {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/#/en-US/component/select`,
+      options: {
+        async: true,
+        disabled: true,
+        disabledOptions: true,
+        filterable: true,
+        groupable: true,
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Steps',
       componentURL: `${frameworkHomepage}/#/en-US/component/steps`,

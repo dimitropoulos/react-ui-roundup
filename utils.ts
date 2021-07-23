@@ -1,8 +1,19 @@
 import fetch from 'cross-fetch';
-import { head, map, pipe, sortBy, toPairs } from 'ramda';
+import { head, indexBy, map, pipe, prop, sortBy, toPairs } from 'ramda';
 import { Entries } from 'type-fest';
 
-import { Framework, RepoInfo, URL } from './entities';
+import { Framework, Option, RepoInfo, URL } from './entities';
+import {
+  checkmark as markdownCheckmark,
+  designKits as markdownDesignKits, stringArray as markdownStringArray,
+  themer as markdownThemer } from './markdown/utils';
+import {
+  checkmark as jsxCheckmark,
+  designKits as jsxDesignKits,
+  stringArray as jsxStringArray,
+  themer as jsxThemer } from './website/utils';
+
+
 
 const envShouldFetch = process.env.SHOULD_FETCH;
 export const SHOULD_FETCH = envShouldFetch === undefined ? true : envShouldFetch !== 'false';
@@ -56,3 +67,25 @@ export const toStablePairs = <T extends { [key: string]: any }>(input: T) => (
 // );
 
 export const createScrollId = (cannonicalName: string) => `${cannonicalName.replace(' ', '')}`;
+
+export const checkmark = {
+  toJsx: jsxCheckmark,
+  toMarkdown: markdownCheckmark,
+};
+
+export const stringArray = {
+  toJsx: jsxStringArray,
+  toMarkdown: markdownStringArray,
+};
+
+export const themer = {
+  toJsx: jsxThemer,
+  toMarkdown: markdownThemer,
+};
+
+export const designKits = {
+  toJsx: jsxDesignKits,
+  toMarkdown: markdownDesignKits,
+};
+
+export const indexByOptionId = indexBy<Option>(prop('optionId'));

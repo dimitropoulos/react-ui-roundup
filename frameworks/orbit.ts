@@ -37,6 +37,18 @@ export const orbit: Framework = {
         labelPlacement: ['right'],
       },
     },
+    {
+      componentId: 'select',
+      componentName: 'Select',
+      componentURL: `${frameworkHomepage}/docs/#select/select-component`,
+      options: {
+        async: false,
+        disabled: true,
+        disabledOptions: true,
+        filterable: false,
+        groupable: false,
+      },
+    },
   ],
   frameworkFeaturesById: {
     darkMode: false,

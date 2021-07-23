@@ -37,6 +37,18 @@ export const elementalUI: Framework = {
         labelPlacement: ['right'],
       },
     },
+    {
+      componentId: 'select',
+      componentName: 'Dropdown',
+      componentURL: `${frameworkHomepage}/components/dropdown`,
+      options: {
+        async: false,
+        disabled: false,
+        disabledOptions: false,
+        filterable: false,
+        groupable: true,
+      },
+    },
   ],
   frameworkFeaturesById: {
     darkMode: false,

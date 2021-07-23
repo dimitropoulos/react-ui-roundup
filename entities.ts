@@ -115,6 +115,17 @@ export interface ErrorBoundary extends BaseComponent {
   };
 }
 
+export interface Select extends BaseComponent {
+  componentId: 'select';
+  options: {
+    async: boolean;
+    disabled: boolean;
+    disabledOptions: boolean;
+    filterable: boolean;
+    groupable: boolean;
+  };
+}
+
 export interface Stepper extends BaseComponent {
   componentId: 'stepper';
   options: {
@@ -154,6 +165,7 @@ export type Component =
   | Checkbox
   | DatePicker
   | ErrorBoundary
+  | Select
   | Stepper
   | Switch
   | Tabs;
