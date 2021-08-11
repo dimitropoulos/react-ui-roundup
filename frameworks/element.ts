@@ -72,6 +72,7 @@ export const element: Framework = {
         disabledOptions: true,
         filterable: true,
         groupable: true,
+        icons: [],
       },
     },
     {

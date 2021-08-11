@@ -123,6 +123,7 @@ export interface Select extends BaseComponent {
     disabledOptions: boolean;
     filterable: boolean;
     groupable: boolean;
+    icons: ('composable' | 'end' | 'start')[];
   };
 }
 

@@ -74,13 +74,14 @@ export const materialUI: Framework = {
     {
       componentId: 'select',
       componentName: 'Select',
-      componentURL: `${frameworkHomepage}/docs/#select/select-component`,
+      componentURL: `${frameworkHomepage}/components/selects`,
       options: {
         async: true,
         disabled: true,
         disabledOptions: true,
         filterable: false,
         groupable: true,
+        icons: ['composable'],
       },
     },
     {

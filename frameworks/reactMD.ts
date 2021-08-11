@@ -38,6 +38,7 @@ export const reactMD: Framework = {
         disabledOptions: false,
         filterable: false,
         groupable: false,
+        icons: ['start', 'end'],
       },
     },
     {

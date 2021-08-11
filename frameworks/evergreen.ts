@@ -58,6 +58,7 @@ export const evergreen: Framework = {
         disabledOptions: true,
         filterable: true,
         groupable: true,
+        icons: ['start'],
       },
     },
     {

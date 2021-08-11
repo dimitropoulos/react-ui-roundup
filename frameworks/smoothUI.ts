@@ -47,6 +47,7 @@ export const smoothUI: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: [],
       },
     },
     {

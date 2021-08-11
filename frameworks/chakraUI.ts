@@ -67,6 +67,7 @@ export const chakra: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: [],
       },
     },
     {

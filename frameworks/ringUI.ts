@@ -72,6 +72,7 @@ export const ringUI: Framework = {
         disabledOptions: true,
         filterable: true,
         groupable: false,
+        icons: [],
       },
     },
     {

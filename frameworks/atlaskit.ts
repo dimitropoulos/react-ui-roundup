@@ -76,6 +76,7 @@ export const atlaskit: Framework = {
         disabledOptions: false,
         filterable: true,
         groupable: true,
+        icons: [],
       },
     },
     {

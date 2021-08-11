@@ -40,13 +40,14 @@ export const orbit: Framework = {
     {
       componentId: 'select',
       componentName: 'Select',
-      componentURL: `${frameworkHomepage}/docs/#select/select-component`,
+      componentURL: `${frameworkHomepage}/components/select`,
       options: {
         async: false,
         disabled: true,
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: ['start', 'end'],
       },
     },
   ],

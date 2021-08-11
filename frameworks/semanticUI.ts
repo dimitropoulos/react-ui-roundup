@@ -38,6 +38,7 @@ export const semanticUI: Framework = {
         disabledOptions: true,
         filterable: true,
         groupable: false,
+        icons: ['composable'],
       },
     },
     {

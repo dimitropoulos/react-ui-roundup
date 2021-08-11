@@ -72,6 +72,7 @@ export const zendesk: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: ['start'],
       },
     },
     {

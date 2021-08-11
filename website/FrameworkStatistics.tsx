@@ -34,10 +34,10 @@ const Framework: FC<FrameworkType> = ({
         </Link>
       </TableCell>
 
-      <TableCell>{repoInfo?.stargazers_count.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.forks_count.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.open_issues_count.toLocaleString() ?? noValue}</TableCell>
-      <TableCell>{repoInfo?.license?.name.replace(/ License/, '') ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.stargazers_count?.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.forks_count?.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.open_issues_count?.toLocaleString() ?? noValue}</TableCell>
+      <TableCell>{repoInfo?.license?.name?.replace(/ License/, '') ?? noValue}</TableCell>
     </TableRow>
   );
 };

@@ -52,6 +52,7 @@ export const blueprint: Framework = {
         disabledOptions: true,
         filterable: true,
         groupable: true,
+        icons: [],
       },
     },
     {

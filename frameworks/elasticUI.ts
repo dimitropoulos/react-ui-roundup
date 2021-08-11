@@ -62,6 +62,7 @@ export const elasticUI: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: ['composable'],
       },
     },
     {

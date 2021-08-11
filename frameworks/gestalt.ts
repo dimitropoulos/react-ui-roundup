@@ -52,6 +52,7 @@ export const gestalt: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: [],
       },
     },
     {

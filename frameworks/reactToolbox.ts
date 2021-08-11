@@ -52,6 +52,7 @@ export const reactToolbox: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: [],
       },
     },
     {

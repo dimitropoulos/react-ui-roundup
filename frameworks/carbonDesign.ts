@@ -50,6 +50,7 @@ export const carbonDesign: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: true,
+        icons: [],
       },
     },
     {

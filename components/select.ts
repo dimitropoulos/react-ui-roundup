@@ -1,5 +1,5 @@
 import { ComponentInfo } from '../entities';
-import { checkmark, indexByOptionId } from '../utils';
+import { checkmark, indexByOptionId, stringArray } from '../utils';
 
 export const select: ComponentInfo = {
   cannonicalName: 'Select',
@@ -36,6 +36,12 @@ export const select: ComponentInfo = {
       name: 'Groupable',
       optionId: 'groupable',
       ...checkmark,
+    },
+    {
+      criteria: 'Has out-of-the-box (i.e. props) support for start or end icons (or can easily be composed with icons and has examples of such on the docs).',
+      name: 'Icons',
+      optionId: 'icons',
+      ...stringArray,
     },
   ]),
 };

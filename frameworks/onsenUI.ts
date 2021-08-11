@@ -38,6 +38,7 @@ export const onsenUI: Framework = {
         disabledOptions: true,
         filterable: false,
         groupable: false,
+        icons: [],
       },
     },
     {
