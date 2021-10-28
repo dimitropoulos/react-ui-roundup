@@ -1,9 +1,19 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId } from '../utils';
+
+const componentId = 'tabs';
+
+export interface Tabs extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    canBeVertical: boolean;
+  };
+}
 
 export const tabs: ComponentInfo = {
   cannonicalName: 'Tabs',
-  componentId: 'tabs',
+  componentId,
   description: 'Users switch between different views with tabs.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([

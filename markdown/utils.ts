@@ -1,6 +1,7 @@
 import { join, length, map, pipe, prop, repeat, sortBy } from 'ramda';
 
-import { DesignKit, FrameworkFeaturesById, URL } from '../entities';
+import { URL } from '../entities';
+import { DesignKit, FrameworkFeaturesById } from '../frameworks';
 
 // eslint-disable-next-line @typescript-eslint/no-use-before-define -- don't see another way to do this without the circular hoist
 const line = (line: ContentGroup | string): string => (typeof line === 'string' ? `${line}\n` : lines(line));

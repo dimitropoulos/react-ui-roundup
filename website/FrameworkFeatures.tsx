@@ -1,8 +1,8 @@
-import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
+import { Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { map } from 'ramda';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
-import { Framework, FrameworkFeatureInfo, FrameworkInfoByFeatureId } from '../entities';
+import { Framework, FrameworkFeatureInfo, FrameworkInfoByFeatureId } from '../frameworks';
 import { toStablePairs } from '../utils';
 import { Criteria } from './Criteria';
 import { Card, GroupTitle } from './utils';

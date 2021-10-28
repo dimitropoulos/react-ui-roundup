@@ -10,7 +10,7 @@ import {
   TableHead,
   TableRow,
   Typography,
-} from '@material-ui/core';
+} from '@mui/material';
 import {
   append,
   flatten,
@@ -24,11 +24,11 @@ import {
   reject,
   update,
 } from 'ramda';
-import React, { FC, Fragment, ReactElement, ReactNode } from 'react';
+import { FC, Fragment, ReactElement, ReactNode } from 'react';
 import { Entry } from 'type-fest';
 
-import { componentInfoById } from '../components';
-import { Framework, UnwrapedComponent } from '../entities';
+import { Component, componentInfoById } from '../components';
+import { Framework } from '../frameworks';
 import {
   createScrollId,
   issueURL,
@@ -38,6 +38,10 @@ import {
 } from '../utils';
 import { Criteria } from './Criteria';
 import { Card, GroupTitle } from './utils';
+
+type UnwrapedComponent = Component & {
+  frameworkInfo: Omit<Framework, 'components'>;
+};
 
 const Wrapper = styled(Box)({
   backgroundColor: '#fafafa',

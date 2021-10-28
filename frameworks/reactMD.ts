@@ -1,9 +1,20 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://react-md.dev';
 
 export const reactMD: Framework = {
   components: [
+    {
+      componentId: 'appBar',
+      componentName: 'AppBar',
+      componentURL: `${frameworkHomepage}/packages/app-bar/demos`,
+      options: {
+        api: ['customComponents'],
+        denseMode: true,
+        sticky: false,
+        themeMode: true,
+      },
+    },
     {
       componentId: 'button',
       componentName: 'Button',

@@ -18,10 +18,10 @@ import {
 } from 'ramda';
 import { compact, concatAll } from 'ramda-adjunct';
 
-import { componentInfo } from '../components';
+import { Component, componentInfo } from '../components';
 import { tableOfContentsIntro } from '../copy';
-import { Component, Framework, RepoInfo } from '../entities';
-import { frameworkInfo, frameworks } from '../frameworks';
+import { RepoInfo } from '../entities';
+import { Framework, frameworkInfo, frameworks } from '../frameworks';
 import { createScrollId, getRepoInfo, issueURL, noValue, removeProtocol, toStablePairs } from '../utils';
 import {
   ContentGroup,

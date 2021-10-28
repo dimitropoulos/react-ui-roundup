@@ -1,9 +1,20 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://elastic.github.io/eui';
 
 export const elasticUI: Framework = {
   components: [
+    {
+      componentId: 'appBar',
+      componentName: 'Header',
+      componentURL: `${frameworkHomepage}/#/layout/header`,
+      options: {
+        api: ['customComponents'],
+        denseMode: false,
+        sticky: true,
+        themeMode: true,
+      },
+    },
     {
       componentId: 'button',
       componentName: 'Button',

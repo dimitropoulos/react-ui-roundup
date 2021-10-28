@@ -1,4 +1,4 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://jetbrains.github.io/ring-ui';
 
@@ -11,6 +11,17 @@ export const ringUI: Framework = {
       options: {
         closable: true,
         types: ['error', 'loading', 'message', 'success', 'warning'],
+      },
+    },
+    {
+      componentId: 'appBar',
+      componentName: 'Header',
+      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-header--header`,
+      options: {
+        api: ['children'],
+        denseMode: true,
+        sticky: false,
+        themeMode: true,
       },
     },
     {

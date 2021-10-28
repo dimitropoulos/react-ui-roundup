@@ -1,5 +1,5 @@
-import { Container as MuiContainer, styled, ThemeProvider } from '@material-ui/core';
-import React, { FC, useEffect } from 'react';
+import { Container as MuiContainer, styled, ThemeProvider } from '@mui/material';
+import { FC, useEffect } from 'react';
 
 import { frameworkInfo, frameworkInfoByFeatureId, frameworks } from '../frameworks';
 import { Components } from './Components';

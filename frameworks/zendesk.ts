@@ -1,4 +1,4 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://garden.zendesk.com';
 
@@ -11,6 +11,17 @@ export const zendesk: Framework = {
       options: {
         closable: true,
         types: ['success', 'info', 'warning', 'error'],
+      },
+    },
+    {
+      componentId: 'appBar',
+      componentName: 'Header',
+      componentURL: `${frameworkHomepage}/components/chrome#header`,
+      options: {
+        api: ['customComponents'],
+        denseMode: true,
+        sticky: false,
+        themeMode: true,
       },
     },
     {

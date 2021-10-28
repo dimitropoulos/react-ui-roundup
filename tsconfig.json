@@ -1,7 +1,6 @@
 {
   "compilerOptions": {
     "types": [
-      "jest",
       "node",
       "webpack-env"
     ],

@@ -1,9 +1,23 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId, stringArray } from '../utils';
+
+const componentId = 'checkbox';
+
+export interface Checkbox extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    customIcon: boolean;
+    disabled: boolean;
+    indeterminate: boolean;
+    invalid: boolean;
+    labelPlacement: ('above' | 'below' | 'left' | 'right')[];
+  };
+}
 
 export const checkbox: ComponentInfo = {
   cannonicalName: 'Checkbox',
-  componentId: 'checkbox',
+  componentId,
   description: 'Users toggle between checked, unchecked (or indeterminate) values with checkboxes.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([
@@ -14,7 +28,7 @@ export const checkbox: ComponentInfo = {
       ...checkmark,
     },
     {
-      criteria: 'The checkbox has a `disabled` state, indicating the user cannot interact with it',
+      criteria: 'The checkbox has a `disabled` state, indicating the user cannot interact with it.',
       name: 'Disabled',
       optionId: 'disabled',
       ...checkmark,

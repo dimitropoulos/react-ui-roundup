@@ -2,7 +2,9 @@ import fetch from 'cross-fetch';
 import { head, indexBy, map, pipe, prop, sortBy, toPairs } from 'ramda';
 import { Entries } from 'type-fest';
 
-import { Framework, Option, RepoInfo, URL } from './entities';
+import { Option } from './components';
+import { RepoInfo, URL } from './entities';
+import { Framework } from './frameworks';
 import {
   checkmark as markdownCheckmark,
   designKits as markdownDesignKits, stringArray as markdownStringArray,
@@ -88,4 +90,4 @@ export const designKits = {
   toMarkdown: markdownDesignKits,
 };
 
-export const indexByOptionId = indexBy<Option>(prop('optionId'));
+export const indexByOptionId = (options: Option[]) => indexBy(prop('optionId'), options);

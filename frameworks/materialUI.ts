@@ -1,4 +1,4 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://material-ui.com';
 
@@ -11,6 +11,17 @@ export const materialUI: Framework = {
       options: {
         closable: true,
         types: ['error', 'warning', 'info', 'success'],
+      },
+    },
+    {
+      componentId: 'appBar',
+      componentName: 'AppBar',
+      componentURL: `${frameworkHomepage}/components/app-bar`,
+      options: {
+        api: ['children'],
+        denseMode: true,
+        sticky: true,
+        themeMode: true,
       },
     },
     {

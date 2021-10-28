@@ -1,9 +1,25 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId, stringArray } from '../utils';
+
+const componentId = 'datePicker';
+
+export interface DatePicker extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    clearable: boolean;
+    customLocale: boolean;
+    minMax: boolean;
+    modes: ('day' | 'month' | 'quarter' | 'week' | 'year')[];
+    presets: boolean;
+    range: boolean;
+    time: boolean;
+  };
+}
 
 export const datePicker: ComponentInfo = {
   cannonicalName: 'DatePicker',
-  componentId: 'datePicker',
+  componentId,
   description: 'Users select a date or date range using a date picker.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([

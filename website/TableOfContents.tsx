@@ -1,4 +1,4 @@
-import { Link, styled, Typography } from '@material-ui/core';
+import { Link, styled, Typography } from '@mui/material';
 import { map } from 'ramda';
 import { isEven, notEqual } from 'ramda-adjunct';
 import { FC } from 'react';
