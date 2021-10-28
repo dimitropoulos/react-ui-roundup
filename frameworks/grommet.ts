@@ -1,4 +1,4 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://v2.grommet.io';
 

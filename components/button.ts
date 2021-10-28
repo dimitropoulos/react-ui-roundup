@@ -1,9 +1,23 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId, stringArray } from '../utils';
+
+const componentId = 'button';
+
+export interface Button extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    disabled: boolean;
+    groupable: boolean;
+    icon: ('left' | 'only' | 'right')[] | null;
+    loading: boolean;
+    sizes: string[] | null;
+  };
+}
 
 export const button: ComponentInfo = {
   cannonicalName: 'Button',
-  componentId: 'button',
+  componentId,
   description: 'Users trigger actions by clicking on buttons.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([

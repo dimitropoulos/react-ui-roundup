@@ -1,9 +1,24 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId, stringArray } from '../utils';
+
+const componentId = 'select';
+
+export interface Select extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    async: boolean;
+    disabled: boolean;
+    disabledOptions: boolean;
+    filterable: boolean;
+    groupable: boolean;
+    icons: ('composable' | 'end' | 'start')[];
+  };
+}
 
 export const select: ComponentInfo = {
   cannonicalName: 'Select',
-  componentId: 'select',
+  componentId,
   description: 'A Select allows a user to select a value from a series of options.  Much more advanced than the native HTML select.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([

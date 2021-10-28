@@ -1,9 +1,25 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId, stringArray } from '../utils';
+
+const componentId = 'switch';
+
+export interface Switch extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    disabled: boolean;
+    indeterminate: boolean;
+    internalIcons: boolean;
+    internalText: boolean;
+    labelPlacement: ('above' | 'below' | 'left' | 'right')[];
+    loading: boolean;
+    sizes: string[];
+  };
+}
 
 export const switchComponent: ComponentInfo = {
   cannonicalName: 'Switch',
-  componentId: 'switch',
+  componentId,
   description: 'Used to toggle between two states: on and off.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([

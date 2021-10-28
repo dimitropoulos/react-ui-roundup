@@ -1,6 +1,6 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
-const frameworkHomepage = 'https://chakra-ui.com';
+const frameworkHomepage = 'https://chakra-ui.com/docs';
 
 export const chakra: Framework = {
   components: [
@@ -60,7 +60,7 @@ export const chakra: Framework = {
     {
       componentId: 'select',
       componentName: 'Select',
-      componentURL: `${frameworkHomepage}/docs/form/select`,
+      componentURL: `${frameworkHomepage}/form/select`,
       options: {
         async: false,
         disabled: true,

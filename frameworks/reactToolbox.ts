@@ -1,9 +1,20 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'http://react-toolbox.io';
 
 export const reactToolbox: Framework = {
   components: [
+    {
+      componentId: 'appBar',
+      componentName: 'AppBar',
+      componentURL: `${frameworkHomepage}/#/components/app_bar`,
+      options: {
+        api: ['props'],
+        denseMode: false,
+        sticky: true,
+        themeMode: false,
+      },
+    },
     {
       componentId: 'button',
       componentName: 'Button',

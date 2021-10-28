@@ -1,6 +1,8 @@
 import { ascend, indexBy, pipe, prop, sort, sortBy, toLower } from 'ramda';
+import { ReactNode } from 'react';
 
-import { Framework, FrameworkFeatureInfo, FrameworkInfoByFeatureId, FrameworksById } from './entities';
+import { Component } from './components';
+import { Sentence, URL } from './entities';
 import { antDesign } from './frameworks/antDesign';
 import { atlaskit } from './frameworks/atlaskit';
 import { blueprint } from './frameworks/blueprint';
@@ -26,6 +28,22 @@ import { semanticUI } from './frameworks/semanticUI';
 import { smoothUI } from './frameworks/smoothUI';
 import { zendesk } from './frameworks/zendesk';
 import { checkmark, designKits, themer } from './utils';
+
+export type FrameworkId = string;
+export interface Framework {
+  /** must not end with a trailing forward slash */
+  frameworkHomepage: string;
+
+  frameworkId: FrameworkId;
+
+  frameworkName: string;
+
+  repoURL: URL;
+
+  components: Component[];
+
+  frameworkFeaturesById: FrameworkFeaturesById;
+}
 
 export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), toLower)), [
   antDesign,
@@ -54,7 +72,48 @@ export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), t
   zendesk,
 ]);
 
+export type FrameworksById = {
+  [frameworkId in FrameworkId]: Framework;
+};
+
 export const frameworksById: FrameworksById = indexBy(prop('frameworkId'), frameworks);
+
+export interface DesignKit {
+  type: 'Abstract' | 'Adobe XD' | 'Axure' | 'Custom' | 'Figma' | 'Framer X' | 'Sketch';
+  href: URL;
+}
+
+export interface FrameworkFeaturesById {
+  /** criteria: an out-of-the-box dark mode */
+  darkMode: boolean;
+
+  /** criteria: a design kit supported by the developers */
+  designKits: DesignKit[] | false;
+
+  /** criteria: out-of-the-box support for right-to-left */
+  rtlSupport: boolean;
+
+  themer: URL | false;
+
+  /** criteria: high quality and up to date (in the repo, not on DefinitelyTyped) TypeScript types, or the app is written in TypeScript. */
+  typeScript: boolean;
+}
+
+export interface FrameworkFeatureInfoGeneric<T extends keyof FrameworkFeaturesById> {
+  featureId: T;
+  criteria: Sentence;
+  name: string;
+  toJsx: (input: FrameworkFeaturesById[T]) => ReactNode | string;
+  toMarkdown: (input: FrameworkFeaturesById[T]) => string;
+}
+
+export type FrameworkFeatureInfo =
+  | FrameworkFeatureInfoGeneric<'darkMode'>
+  | FrameworkFeatureInfoGeneric<'designKits'>
+  | FrameworkFeatureInfoGeneric<'rtlSupport'>
+  | FrameworkFeatureInfoGeneric<'themer'>
+  | FrameworkFeatureInfoGeneric<'typeScript'>;
+
 
 export const frameworkInfo: FrameworkFeatureInfo[] = sortBy(prop('featureId'), [
   {
@@ -88,5 +147,10 @@ export const frameworkInfo: FrameworkFeatureInfo[] = sortBy(prop('featureId'), [
     ...checkmark,
   },
 ]);
+
+
+export type FrameworkInfoByFeatureId = {
+  [featureId in keyof FrameworkFeaturesById]: FrameworkFeatureInfo;
+};
 
 export const frameworkInfoByFeatureId: FrameworkInfoByFeatureId = indexBy(prop('featureId'), frameworkInfo);

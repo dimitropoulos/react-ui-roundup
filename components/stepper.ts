@@ -1,9 +1,23 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId } from '../utils';
+
+const componentId = 'stepper';
+
+export interface Stepper extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    canBeVertical: boolean;
+    clickable: boolean;
+    stepDescription: boolean;
+    stepError: boolean;
+    stepIcon: boolean;
+  };
+}
 
 export const stepper: ComponentInfo = {
   cannonicalName: 'Stepper',
-  componentId: 'stepper',
+  componentId,
   description: 'Navigation that guides users through the steps of a task.',
   indefiniteArticle: 'a',
   optionsById: indexByOptionId([

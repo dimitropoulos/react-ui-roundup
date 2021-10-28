@@ -1,9 +1,20 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId, stringArray } from '../utils';
+
+const componentId = 'alert';
+
+export interface Alert extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    closable: boolean;
+    types: string[] | null;
+  };
+}
 
 export const alertComponent: ComponentInfo = {
   cannonicalName: 'Alert',
-  componentId: 'alert',
+  componentId,
   description: 'Alerts are used to show an important message to users.',
   indefiniteArticle: 'an',
   optionsById: indexByOptionId([

@@ -1,7 +1,7 @@
-import { CssBaseline } from '@material-ui/core';
+import { CssBaseline } from '@mui/material';
 import * as R from 'ramda';
 import * as RA from 'ramda-adjunct';
-import React, { Fragment } from 'react';
+import { Fragment } from 'react';
 import ReactDOM from 'react-dom';
 
 import { App } from './App';

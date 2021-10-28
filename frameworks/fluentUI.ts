@@ -1,4 +1,4 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://developer.microsoft.com/en-us/fluentui';
 

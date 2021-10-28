@@ -1,9 +1,10 @@
-import { Box, Card as MuiCard, Link, styled, Toolbar as MuiToolbar, Typography } from '@material-ui/core';
-import { Check as MuiCheck, Close as MuiClose, HelpOutline, LinkSharp } from '@material-ui/icons';
+import { Box, Card as MuiCard, Link, styled, Toolbar as MuiToolbar, Typography } from '@mui/material';
+import { Check as MuiCheck, Close as MuiClose, HelpOutline, LinkSharp } from '@mui/icons-material';
 import { map, pipe, prop, sortBy } from 'ramda';
-import React, { FC, ReactNode, useState } from 'react';
+import { FC, ReactNode, useState } from 'react';
 
-import { DesignKit, FrameworkFeaturesById, SuperString } from '../entities';
+import { SuperString } from '../components';
+import { DesignKit, FrameworkFeaturesById } from '../frameworks';
 import { noValue } from '../utils';
 import { theme } from './theme';
 

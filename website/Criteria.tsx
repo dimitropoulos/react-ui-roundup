@@ -1,6 +1,6 @@
-import { Chip, Typography } from '@material-ui/core';
+import { Chip, Typography } from '@mui/material';
 import { map } from 'ramda';
-import React, { FC } from 'react';
+import { FC } from 'react';
 
 const Wrapper: FC = ({ children }) => <div style={{ margin: 16 }}>{children}</div>;
 const Row: FC = ({ children }) => <div style={{ marginBottom: 8 }}>{children}</div>;

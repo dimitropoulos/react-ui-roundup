@@ -1,9 +1,20 @@
-import { ComponentInfo } from '../entities';
+import { ComponentInfo } from '../components';
+import { BaseComponent } from '../entities';
 import { checkmark, indexByOptionId } from '../utils';
+
+const componentId = 'avatarGroup';
+
+export interface AvatarGroup extends BaseComponent {
+  componentId: typeof componentId;
+  options: {
+    expandableGroup: boolean;
+    maxCount: boolean;
+  };
+}
 
 export const avatarGroup: ComponentInfo = {
   cannonicalName: 'AvatarGroup',
-  componentId: 'avatarGroup',
+  componentId,
   description: 'AvatarGroups stack a set of Avatars into a customized list, often with customized animations and options.',
   indefiniteArticle: 'an',
   optionsById: indexByOptionId([

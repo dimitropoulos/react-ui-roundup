@@ -1,4 +1,4 @@
-import { Framework } from '../entities';
+import { Framework } from '../frameworks';
 
 const frameworkHomepage = 'https://smooth-code.com/open-source/smooth-ui';
 

@@ -1,4 +1,4 @@
-import { createTheme } from '@material-ui/core';
+import { createTheme } from '@mui/material';
 
 export const reactBackground = '#282c34';
 export const reactLightBlue = '#61dafb';

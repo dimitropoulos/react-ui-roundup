@@ -1,8 +1,9 @@
-import { Button, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@material-ui/core';
+import { Button, Link, Table, TableBody, TableCell, TableContainer, TableHead, TableRow } from '@mui/material';
 import { forEach, map } from 'ramda';
-import React, { FC, Fragment, useEffect, useState } from 'react';
+import { FC, Fragment, useEffect, useState } from 'react';
 
-import { Framework as FrameworkType, RepoInfo } from '../entities';
+import { RepoInfo } from '../entities';
+import { Framework as FrameworkType } from '../frameworks';
 import { getRepoInfo, noValue, removeProtocol } from '../utils';
 import { Card, GroupTitle } from './utils';
 
