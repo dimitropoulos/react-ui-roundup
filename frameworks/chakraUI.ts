@@ -29,6 +29,7 @@ export const chakra: Framework = {
       componentName: 'AvatarGroup',
       componentURL: `${frameworkHomepage}/media-and-icons/avatar`,
       options: {
+        cascade: ['below'],
         expandableGroup: false,
         maxCount: true,
       },

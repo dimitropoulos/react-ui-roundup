@@ -29,6 +29,7 @@ export const antDesign: Framework = {
       componentName: 'Avatar.Group',
       componentURL: `${frameworkHomepage}/components/avatar`,
       options: {
+        cascade: ['above'],
         expandableGroup: true,
         maxCount: true,
       },

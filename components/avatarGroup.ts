@@ -1,12 +1,13 @@
 import { ComponentInfo } from '../components';
 import { BaseComponent } from '../entities';
-import { checkmark, indexByOptionId } from '../utils';
+import { checkmark, indexByOptionId, stringArray } from '../utils';
 
 const componentId = 'avatarGroup';
 
 export interface AvatarGroup extends BaseComponent {
   componentId: typeof componentId;
   options: {
+    cascade: ['above' | 'below' | 'no-overlap'];
     expandableGroup: boolean;
     maxCount: boolean;
   };
@@ -29,6 +30,12 @@ export const avatarGroup: ComponentInfo = {
       name: 'Max Count',
       optionId: 'maxCount',
       ...checkmark,
+    },
+    {
+      criteria: 'A prop exists that allows you to set whether the children overlap above or below each other.',
+      name: 'Cascade Direction',
+      optionId: 'cascade',
+      ...stringArray,
     },
   ]),
 };

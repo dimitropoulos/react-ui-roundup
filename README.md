@@ -86,30 +86,30 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 75,205 | 30,848 | 717 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 77,031 | 32,077 | 778 | MIT |
 | Atlaskit | [atlassian.design](https://atlassian.design) | [bitbucket.org/atlassian/atlaskit-mk-2](https://bitbucket.org/atlassian/atlaskit-mk-2) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 18,257 | 1,916 | 637 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 4,873 | 1,148 | 512 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com/docs](https://chakra-ui.com/docs) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 21,520 | 1,823 | 133 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 3,195 | 579 | 397 | Other |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 51,131 | 13,309 | 1,989 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,332 | 244 | 49 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 11,217 | 723 | 47 | MIT |
-| Fluent UI | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 12,341 | 2,041 | 1,012 | Other |
-| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,888 | 302 | 9 | Apache 2.0 |
-| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 7,613 | 933 | 219 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 72,552 | 24,622 | 728 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,484 | 987 | 172 | Apache 2.0 |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 1,113 | 106 | 41 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 2,298 | 506 | 279 | MIT |
-| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 19,700 | 2,479 | 413 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 20,099 | 3,209 | 155 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,707 | 1,048 | 265 | MIT |
-| react-md | [react-md.dev](https://react-md.dev) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,275 | 313 | 46 | MIT |
-| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,821 | 161 | 9 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 49,652 | 5,143 | 1,054 | MIT |
-| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,578 | 116 | 11 | MIT |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 963 | 78 | 6 | Apache 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 18,454 | 1,952 | 668 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 5,069 | 1,200 | 549 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com/docs](https://chakra-ui.com/docs) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 23,323 | 2,019 | 111 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 3,309 | 594 | 390 | Other |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 51,552 | 13,598 | 2,152 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,329 | 243 | 49 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 11,397 | 743 | 31 | MIT |
+| Fluent UI | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 12,693 | 2,089 | 1,031 | Other |
+| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,910 | 308 | 10 | Apache 2.0 |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 7,735 | 938 | 180 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 74,368 | 25,615 | 860 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,532 | 995 | 172 | Apache 2.0 |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 1,144 | 106 | 37 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 2,419 | 530 | 238 | MIT |
+| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 20,246 | 2,572 | 362 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 20,340 | 3,264 | 173 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,707 | 1,050 | 267 | MIT |
+| react-md | [react-md.dev](https://react-md.dev) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,285 | 312 | 41 | MIT |
+| Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,902 | 165 | 6 | Apache 2.0 |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 49,791 | 5,140 | 1,057 | MIT |
+| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,582 | 116 | 11 | MIT |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 979 | 81 | 10 | Apache 2.0 |
 
 <!--
 ********************************************************************************
@@ -117,7 +117,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Thu, 28 Oct 2021 21:35:27 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Fri, 14 Jan 2022 16:31:28 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************
@@ -376,6 +376,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 #### Criteria
 
+- `Cascade Direction`: A prop exists that allows you to set whether the children overlap above or below each other.
 - `Expandable Group`: Avatar groups support expandable lists where a user can click to see more members in the list.
 - `Max Count`: A custom number can be set representing the number of avatars shown.
 
@@ -385,13 +386,13 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-| Framework | Name | Expandable Group | Max Count |
-| --- | --- | --- | --- |
-| Ant Design | [Avatar.Group](https://ant.design/components/avatar) | :heavy_check_mark: | :heavy_check_mark: |
-| Atlaskit | [AvatarGroup](https://atlassian.design/components/avatar-group) | :heavy_check_mark: | :heavy_check_mark: |
-| Chakra UI | [AvatarGroup](https://chakra-ui.com/docs/media-and-icons/avatar) | :x: | :heavy_check_mark: |
-| Fluent UI | [Facepile](https://developer.microsoft.com/en-us/fluentui#/controls/web/facepile) | :heavy_check_mark: | :heavy_check_mark: |
-| Material UI | [AvatarGroup](https://material-ui.com/components/avatars) | :x: | :heavy_check_mark: |
+| Framework | Name | Cascade Direction | Expandable Group | Max Count |
+| --- | --- | --- | --- | --- |
+| Ant Design | [Avatar.Group](https://ant.design/components/avatar) | `above` | :heavy_check_mark: | :heavy_check_mark: |
+| Atlaskit | [AvatarGroup](https://atlassian.design/components/avatar-group) | `below` | :heavy_check_mark: | :heavy_check_mark: |
+| Chakra UI | [AvatarGroup](https://chakra-ui.com/docs/media-and-icons/avatar) | `below` | :x: | :heavy_check_mark: |
+| Fluent UI | [Facepile](https://developer.microsoft.com/en-us/fluentui#/controls/web/facepile) | `no-overlap` | :heavy_check_mark: | :heavy_check_mark: |
+| Material UI | [AvatarGroup](https://material-ui.com/components/avatars) | `below` | :x: | :heavy_check_mark: |
 
 <!--
 ********************************************************************************

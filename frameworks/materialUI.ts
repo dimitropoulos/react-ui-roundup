@@ -40,6 +40,7 @@ export const materialUI: Framework = {
       componentName: 'AvatarGroup',
       componentURL: `${frameworkHomepage}/components/avatars`,
       options: {
+        cascade: ['below'],
         expandableGroup: false,
         maxCount: true,
       },

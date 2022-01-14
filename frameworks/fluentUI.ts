@@ -29,6 +29,7 @@ export const fluentUI: Framework = {
       componentName: 'Facepile',
       componentURL: `${frameworkHomepage}#/controls/web/facepile`,
       options: {
+        cascade: ['no-overlap'],
         expandableGroup: true,
         maxCount: true,
       },

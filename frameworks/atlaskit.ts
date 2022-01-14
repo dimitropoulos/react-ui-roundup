@@ -29,6 +29,7 @@ export const atlaskit: Framework = {
       componentName: 'AvatarGroup',
       componentURL: `${frameworkHomepage}/components/avatar-group`,
       options: {
+        cascade: ['below'],
         expandableGroup: true,
         maxCount: true,
       },
