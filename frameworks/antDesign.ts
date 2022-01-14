@@ -93,6 +93,7 @@ export const antDesign: Framework = {
         filterable: true,
         groupable: true,
         icons: ['end'],
+        virtual: true,
       },
     },
     {

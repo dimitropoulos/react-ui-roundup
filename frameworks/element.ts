@@ -73,6 +73,7 @@ export const element: Framework = {
         filterable: true,
         groupable: true,
         icons: [],
+        virtual: false,
       },
     },
     {

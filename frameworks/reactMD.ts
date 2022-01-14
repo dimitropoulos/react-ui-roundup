@@ -50,6 +50,7 @@ export const reactMD: Framework = {
         filterable: false,
         groupable: false,
         icons: ['start', 'end'],
+        virtual: true,
       },
     },
     {

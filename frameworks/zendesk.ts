@@ -84,6 +84,7 @@ export const zendesk: Framework = {
         filterable: false,
         groupable: false,
         icons: ['start'],
+        virtual: false,
       },
     },
     {

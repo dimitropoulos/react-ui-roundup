@@ -64,6 +64,7 @@ export const reactToolbox: Framework = {
         filterable: false,
         groupable: false,
         icons: [],
+        virtual: false,
       },
     },
     {

@@ -59,6 +59,7 @@ export const evergreen: Framework = {
         filterable: true,
         groupable: true,
         icons: ['start'],
+        virtual: true,
       },
     },
     {

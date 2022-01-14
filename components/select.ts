@@ -13,6 +13,7 @@ export interface Select extends BaseComponent {
     filterable: boolean;
     groupable: boolean;
     icons: ('composable' | 'end' | 'start')[];
+    virtual: boolean;
   };
 }
 
@@ -57,6 +58,12 @@ export const select: ComponentInfo = {
       name: 'Icons',
       optionId: 'icons',
       ...stringArray,
+    },
+    {
+      criteria: 'Either had a prop that you can use to make the items virtualized, or proveds a simple (documented) way to use another library to do it, e.g. react-virtualized.',
+      name: 'Virtual',
+      optionId: 'virtual',
+      ...checkmark,
     },
   ]),
 };

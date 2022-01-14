@@ -48,6 +48,7 @@ export const orbit: Framework = {
         filterable: false,
         groupable: false,
         icons: ['start', 'end'],
+        virtual: false,
       },
     },
   ],

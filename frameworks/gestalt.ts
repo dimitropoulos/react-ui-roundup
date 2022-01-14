@@ -7,7 +7,7 @@ export const gestalt: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/Button`,
+      componentURL: `${frameworkHomepage}/button`,
       options: {
         disabled: true,
         groupable: false,
@@ -19,7 +19,7 @@ export const gestalt: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/Checkbox`,
+      componentURL: `${frameworkHomepage}/checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -31,7 +31,7 @@ export const gestalt: Framework = {
     {
       componentId: 'datePicker',
       componentName: 'DatePicker',
-      componentURL: `${frameworkHomepage}/DatePicker`,
+      componentURL: `${frameworkHomepage}/datepicker`,
       options: {
         clearable: false,
         customLocale: true,
@@ -45,7 +45,7 @@ export const gestalt: Framework = {
     {
       componentId: 'select',
       componentName: 'SelectList',
-      componentURL: `${frameworkHomepage}/SelectList`,
+      componentURL: `${frameworkHomepage}/selectlist`,
       options: {
         async: false,
         disabled: true,
@@ -53,12 +53,13 @@ export const gestalt: Framework = {
         filterable: false,
         groupable: false,
         icons: [],
+        virtual: false,
       },
     },
     {
       componentId: 'switch',
       componentName: 'Switch',
-      componentURL: `${frameworkHomepage}/Switch`,
+      componentURL: `${frameworkHomepage}/switch`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -72,7 +73,7 @@ export const gestalt: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/Tabs`,
+      componentURL: `${frameworkHomepage}/tabs`,
       options: {
         canBeVertical: false,
       },

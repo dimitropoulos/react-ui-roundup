@@ -73,6 +73,7 @@ export const quasar: Framework = {
         filterable: true,
         groupable: false,
         icons: [],
+        virtual: true,
       },
     },
     {

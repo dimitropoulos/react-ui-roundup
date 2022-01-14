@@ -39,6 +39,7 @@ export const grommet: Framework = {
         filterable: false,
         groupable: false,
         icons: [],
+        virtual: false,
       },
     },
     {

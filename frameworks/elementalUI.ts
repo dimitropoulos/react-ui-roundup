@@ -48,6 +48,7 @@ export const elementalUI: Framework = {
         filterable: false,
         groupable: true,
         icons: [],
+        virtual: false,
       },
     },
   ],

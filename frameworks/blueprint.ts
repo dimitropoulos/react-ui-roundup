@@ -53,6 +53,7 @@ export const blueprint: Framework = {
         filterable: true,
         groupable: true,
         icons: [],
+        virtual: true,
       },
     },
     {

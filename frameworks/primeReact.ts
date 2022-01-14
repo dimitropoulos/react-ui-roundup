@@ -7,7 +7,7 @@ export const primeReact: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/showcase/#/button`,
+      componentURL: `${frameworkHomepage}/button`,
       options: {
         disabled: false,
         groupable: false,
@@ -19,7 +19,7 @@ export const primeReact: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/showcase/#/checkbox`,
+      componentURL: `${frameworkHomepage}/checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -31,7 +31,7 @@ export const primeReact: Framework = {
     {
       componentId: 'select',
       componentName: 'Dropdown',
-      componentURL: `${frameworkHomepage}/showcase/#/dropdown`,
+      componentURL: `${frameworkHomepage}/dropdown`,
       options: {
         async: true,
         disabled: true,
@@ -39,12 +39,13 @@ export const primeReact: Framework = {
         filterable: true,
         groupable: true,
         icons: ['composable'],
+        virtual: true,
       },
     },
     {
       componentId: 'stepper',
       componentName: 'Steps',
-      componentURL: `${frameworkHomepage}/showcase/#/steps`,
+      componentURL: `${frameworkHomepage}/steps`,
       options: {
         canBeVertical: false,
         clickable: true,
@@ -56,7 +57,7 @@ export const primeReact: Framework = {
     {
       componentId: 'switch',
       componentName: 'InputSwitch',
-      componentURL: `${frameworkHomepage}/showcase/#/inputswitch`,
+      componentURL: `${frameworkHomepage}/inputswitch`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -70,7 +71,7 @@ export const primeReact: Framework = {
     {
       componentId: 'tabs',
       componentName: 'TabView',
-      componentURL: `${frameworkHomepage}/showcase/#/tabview`,
+      componentURL: `${frameworkHomepage}/tabview`,
       options: {
         canBeVertical: false,
       },

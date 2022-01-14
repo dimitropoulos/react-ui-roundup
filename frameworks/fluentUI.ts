@@ -83,6 +83,7 @@ export const fluentUI: Framework = {
         filterable: true,
         groupable: true,
         icons: ['composable'],
+        virtual: false,
       },
     },
     {

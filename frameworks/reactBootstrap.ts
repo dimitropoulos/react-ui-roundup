@@ -48,6 +48,7 @@ export const reactBootstrap: Framework = {
         filterable: true,
         groupable: true,
         icons: [],
+        virtual: false,
       },
     },
     {

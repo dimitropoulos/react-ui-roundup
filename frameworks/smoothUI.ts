@@ -48,6 +48,7 @@ export const smoothUI: Framework = {
         filterable: false,
         groupable: false,
         icons: [],
+        virtual: false,
       },
     },
     {

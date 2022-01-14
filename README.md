@@ -86,28 +86,28 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 77,031 | 32,077 | 778 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 77,031 | 32,077 | 780 | MIT |
 | Atlaskit | [atlassian.design](https://atlassian.design) | [bitbucket.org/atlassian/atlaskit-mk-2](https://bitbucket.org/atlassian/atlaskit-mk-2) | -- | -- | -- | -- |
 | Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 18,454 | 1,952 | 668 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 5,069 | 1,200 | 549 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 5,069 | 1,200 | 546 | Apache 2.0 |
 | Chakra UI | [chakra-ui.com/docs](https://chakra-ui.com/docs) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 23,323 | 2,019 | 111 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 3,309 | 594 | 390 | Other |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 3,309 | 594 | 389 | Other |
 | Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 51,552 | 13,598 | 2,152 | MIT |
 | Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,329 | 243 | 49 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 11,397 | 743 | 31 | MIT |
-| Fluent UI | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 12,693 | 2,089 | 1,031 | Other |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 11,397 | 743 | 32 | MIT |
+| Fluent UI | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 12,694 | 2,089 | 1,033 | Other |
 | Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 3,910 | 308 | 10 | Apache 2.0 |
-| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 7,735 | 938 | 180 | Apache 2.0 |
-| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 74,368 | 25,615 | 860 | MIT |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 7,735 | 938 | 181 | Apache 2.0 |
+| Material UI | [material-ui.com](https://material-ui.com) | [mui-org/material-ui](https://github.com/mui-org/material-ui) | 74,369 | 25,615 | 863 | MIT |
 | Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,532 | 995 | 172 | Apache 2.0 |
 | Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 1,144 | 106 | 37 | MIT |
 | Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 2,419 | 530 | 238 | MIT |
 | Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 20,246 | 2,572 | 362 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 20,340 | 3,264 | 173 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 20,340 | 3,264 | 174 | MIT |
 | React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,707 | 1,050 | 267 | MIT |
 | react-md | [react-md.dev](https://react-md.dev) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,285 | 312 | 41 | MIT |
 | Ring UI | [jetbrains.github.io/ring-ui](https://jetbrains.github.io/ring-ui) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 2,902 | 165 | 6 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 49,791 | 5,140 | 1,057 | MIT |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 49,792 | 5,140 | 1,057 | MIT |
 | Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,582 | 116 | 11 | MIT |
 | Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 979 | 81 | 10 | Apache 2.0 |
 
@@ -117,7 +117,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Fri, 14 Jan 2022 16:31:28 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Fri, 14 Jan 2022 17:19:05 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************
@@ -451,12 +451,12 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elemental UI | [Button](http://elemental-ui.com/buttons) | :x: | :heavy_check_mark: |  | :x: | `default`, `extra small`, `large`, `small` |
 | Evergreen | [Button](https://evergreen.segment.com/components/buttons) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `arbitrary pixel sizes` |
 | Fluent UI | [Button](https://developer.microsoft.com/en-us/fluentui#/controls/web/button) | :heavy_check_mark: | :x: |  | :x: |  |
-| Gestalt | [Button](https://gestalt.netlify.app/Button) | :heavy_check_mark: | :x: | `only` | :x: | `lg`, `md`, `sm` |
+| Gestalt | [Button](https://gestalt.netlify.app/button) | :heavy_check_mark: | :x: | `only` | :x: | `lg`, `md`, `sm` |
 | Grommet | [Button](https://v2.grommet.io/button) | :heavy_check_mark: | :x: | `left`, `only`, `right` | :x: |  |
 | Material UI | [Button](https://material-ui.com/components/buttons) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :x: | `large`, `medium`, `small` |
 | Onsen UI | [Button](https://onsen.io/v2/api/react/Button.html) | :heavy_check_mark: | :x: |  | :x: | `default`, `large` |
 | Orbit | [Button](https://orbit.kiwi/components/button/) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `large`, `normal`, `small` |
-| Prime React | [Button](https://primefaces.org/primereact/showcase/#/button) | :x: | :x: | `left`, `only`, `right` | :x: |  |
+| Prime React | [Button](https://primefaces.org/primereact/button) | :x: | :x: | `left`, `only`, `right` | :x: |  |
 | Quasar | [btn](https://quasar.dev/vue-components/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `custom`, `lg`, `md`, `sm`, `xs` |
 | React Bootstrap | [Button](https://react-bootstrap.github.io/components/buttons) | :heavy_check_mark: | :heavy_check_mark: |  | :x: | `lg`, `sm` |
 | React Toolbox | [Button](http://react-toolbox.io/#/components/button) | :heavy_check_mark: | :x: | `left`, `only` | :x: |  |
@@ -515,12 +515,12 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elemental UI | [Checkbox](http://elemental-ui.com/components/checkbox) | :x: | :x: | :x: | :x: | `right` |
 | Evergreen | [Checkbox](https://evergreen.segment.com/components/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Fluent UI | [Checkbox](https://developer.microsoft.com/en-us/fluentui#/controls/web/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `left`, `right` |
-| Gestalt | [Checkbox](https://gestalt.netlify.app/Checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
+| Gestalt | [Checkbox](https://gestalt.netlify.app/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Grommet | [CheckBox](https://v2.grommet.io/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | Material UI | [Checkbox](https://material-ui.com/components/checkboxes) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | `above`, `below`, `left`, `right` |
 | Onsen UI | [Checkbox](https://onsen.io/v2/api/react/Checkbox.html) | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Orbit | [Checkbox](https://orbit.kiwi/components/checkbox) | :x: | :heavy_check_mark: | :x: | :heavy_check_mark: | `right` |
-| Prime React | [Checkbox](https://primefaces.org/primereact/showcase/#/checkbox) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
+| Prime React | [Checkbox](https://primefaces.org/primereact/checkbox) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
 | Quasar | [checkbox](https://quasar.dev/vue-components/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `left`, `right` |
 | React Bootstrap | [Form.Check](https://react-bootstrap.github.io/components/forms/#forms-form-check) | :x: | :heavy_check_mark: | :x: | :x: |  |
 | React Toolbox | [Checkbox](http://react-toolbox.io/#/components/checkbox) | :x: | :heavy_check_mark: | :x: | :x: | `right` |
@@ -577,7 +577,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elastic UI | [DatePicker](https://elastic.github.io/eui/#/forms/date-picker) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `day` | :x: | :heavy_check_mark: | :heavy_check_mark: |
 | Element | [DatePicker](https://element.eleme.io/#/en-US/component/date-picker) | :heavy_check_mark: | :x: | :heavy_check_mark: | `day`, `month`, `week`, `year` | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Fluent UI | [DatePicker](https://developer.microsoft.com/en-us/fluentui#/controls/web/datepicker) | :x: | :x: | :heavy_check_mark: | `day`, `month`, `year` | :x: | :heavy_check_mark: | :x: |
-| Gestalt | [DatePicker](https://gestalt.netlify.app/DatePicker) | :x: | :heavy_check_mark: | :heavy_check_mark: | `day` | :x: | :heavy_check_mark: | :x: |
+| Gestalt | [DatePicker](https://gestalt.netlify.app/datepicker) | :x: | :heavy_check_mark: | :heavy_check_mark: | `day` | :x: | :heavy_check_mark: | :x: |
 | Grommet | [DateInput](https://v2.grommet.io/dateinput) | :x: | :x: | :x: | `day` | :x: | :x: | :x: |
 | Material UI | [DatePicker](https://material-ui.com/components/pickers) | :x: | :x: | :x: | `day` | :x: | :x: | :heavy_check_mark: |
 | Quasar | [DatePicker](https://quasar.dev/vue-components/date) | :x: | :x: | :heavy_check_mark: | `day`, `month`, `year` | :x: | :heavy_check_mark: | :heavy_check_mark: |
@@ -673,6 +673,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 - `Filterable`: Filter the options of the select with keyboard input.
 - `Groupable`: Can group the options into sub sections within the options list.
 - `Icons`: Has out-of-the-box (i.e. props) support for start or end icons (or can easily be composed with icons and has examples of such on the docs).
+- `Virtual`: Either had a prop that you can use to make the items virtualized, or proveds a simple (documented) way to use another library to do it, e.g. react-virtualized.
 
 <!--
 ********************************************************************************
@@ -680,32 +681,32 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-| Framework | Name | Async | Disabled | Disabled Options | Filterable | Groupable | Icons |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [Select](https://ant.design/components/select) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `end` |
-| Atlaskit | [Select](https://atlassian.design/components/select) | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Blueprint | [Select](https://blueprintjs.com/docs/#select/select-component) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Carbon Design | [Select](http://react.carbondesignsystem.com/?path=/story/components-select--default) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |  |
-| Chakra UI | [Select](https://chakra-ui.com/docs/form/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  |
-| Elastic UI | [SuperSelect](https://elastic.github.io/eui/#/forms/super-select) | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | `composable` |
-| Element | [Select](https://element.eleme.io/#/en-US/component/select) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| Elemental UI | [Dropdown](http://elemental-ui.com/components/dropdown) | :x: | :x: | :x: | :x: | :heavy_check_mark: |  |
-| Evergreen | [SelectMenu](https://evergreen.segment.com/components/select-menu) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `start` |
-| Fluent UI | [Dropdown](https://developer.microsoft.com/en-us/fluentui#/controls/web/dropdown) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `composable` |
-| Gestalt | [SelectList](https://gestalt.netlify.app/SelectList) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  |
-| Grommet | [Select](https://v2.grommet.io/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  |
-| Material UI | [Select](https://material-ui.com/components/selects) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | `composable` |
-| Onsen UI | [Select](https://onsen.io/v2/api/react/Select.html) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  |
-| Orbit | [Select](https://orbit.kiwi/components/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | `end`, `start` |
-| Prime React | [Dropdown](https://primefaces.org/primereact/showcase/#/dropdown) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `composable` |
-| Quasar | [Select](https://quasar.dev/vue-components/select) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  |
-| React Bootstrap | [Dropdown](https://react-bootstrap.github.io/components/dropdowns) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  |
-| React Toolbox | [Dropdown](http://react-toolbox.io/#/components/dropdown) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  |
-| react-md | [Dropdown](https://react-md.dev/packages/dropdown/demos) | :x: | :x: | :x: | :x: | :x: | `end`, `start` |
-| Ring UI | [Select](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-select--with-a-filter-and-tags) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  |
-| Semantic UI | [Dropdown](https://semantic-ui.com/modules/dropdown.html) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | `composable` |
-| Smooth UI | [Select](https://smooth-code.com/open-source/smooth-ui/docs/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  |
-| Zendesk Garden | [Select](https://garden.zendesk.com/components/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | `start` |
+| Framework | Name | Async | Disabled | Disabled Options | Filterable | Groupable | Icons | Virtual |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Ant Design | [Select](https://ant.design/components/select) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `end` | :heavy_check_mark: |
+| Atlaskit | [Select](https://atlassian.design/components/select) | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :x: |
+| Blueprint | [Select](https://blueprintjs.com/docs/#select/select-component) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: |
+| Carbon Design | [Select](http://react.carbondesignsystem.com/?path=/story/components-select--default) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |  | :x: |
+| Chakra UI | [Select](https://chakra-ui.com/docs/form/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  | :x: |
+| Elastic UI | [SuperSelect](https://elastic.github.io/eui/#/forms/super-select) | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | :x: | `composable` | :x: |
+| Element | [Select](https://element.eleme.io/#/en-US/component/select) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :x: |
+| Elemental UI | [Dropdown](http://elemental-ui.com/components/dropdown) | :x: | :x: | :x: | :x: | :heavy_check_mark: |  | :x: |
+| Evergreen | [SelectMenu](https://evergreen.segment.com/components/select-menu) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `start` | :heavy_check_mark: |
+| Fluent UI | [Dropdown](https://developer.microsoft.com/en-us/fluentui#/controls/web/dropdown) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `composable` | :x: |
+| Gestalt | [SelectList](https://gestalt.netlify.app/selectlist) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  | :x: |
+| Grommet | [Select](https://v2.grommet.io/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  | :x: |
+| Material UI | [Select](https://material-ui.com/components/selects) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: | `composable` | :x: |
+| Onsen UI | [Select](https://onsen.io/v2/api/react/Select.html) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  | :x: |
+| Orbit | [Select](https://orbit.kiwi/components/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | `end`, `start` | :x: |
+| Prime React | [Dropdown](https://primefaces.org/primereact/dropdown) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `composable` | :heavy_check_mark: |
+| Quasar | [Select](https://quasar.dev/vue-components/select) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  | :heavy_check_mark: |
+| React Bootstrap | [Dropdown](https://react-bootstrap.github.io/components/dropdowns) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |  | :x: |
+| React Toolbox | [Dropdown](http://react-toolbox.io/#/components/dropdown) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  | :x: |
+| react-md | [Dropdown](https://react-md.dev/packages/dropdown/demos) | :x: | :x: | :x: | :x: | :x: | `end`, `start` | :heavy_check_mark: |
+| Ring UI | [Select](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs/components-select--with-a-filter-and-tags) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |  | :x: |
+| Semantic UI | [Dropdown](https://semantic-ui.com/modules/dropdown.html) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | `composable` | :x: |
+| Smooth UI | [Select](https://smooth-code.com/open-source/smooth-ui/docs/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: |  | :x: |
+| Zendesk Garden | [Select](https://garden.zendesk.com/components/select) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | :x: | `start` | :x: |
 
 
 <!--
@@ -752,7 +753,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Elastic UI | [Steps](https://elastic.github.io/eui/#/navigation/steps) | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | Element | [Steps](https://element.eleme.io/#/en-US/component/steps) | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Material UI | [Stepper](https://material-ui.com/components/steppers) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
-| Prime React | [Steps](https://primefaces.org/primereact/showcase/#/steps) | :x: | :heavy_check_mark: | :x: | :x: | :x: |
+| Prime React | [Steps](https://primefaces.org/primereact/steps) | :x: | :heavy_check_mark: | :x: | :x: | :x: |
 | Quasar | [Stepper](https://quasar.dev/vue-components/stepper) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Semantic UI | [Steps](https://semantic-ui.com/elements/step.html) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: | :heavy_check_mark: |
 | Zendesk Garden | [Stepper](https://garden.zendesk.com/components/stepper) | :x: | :x: | :x: | :x: | :x: |
@@ -815,11 +816,11 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Element | [Switch](https://element.eleme.io/#/en-US/component/switch) | :heavy_check_mark: | :x: | :x: | :x: | `left`, `right` | :x: |  |
 | Evergreen | [Switch](https://evergreen.segment.com/components/switch) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: | `integers` |
 | Fluent UI | [Toggle](https://developer.microsoft.com/en-us/fluentui#/controls/web/toggle) | :heavy_check_mark: | :x: | :x: | :x: | `left`, `right` | :x: |  |
-| Gestalt | [Switch](https://gestalt.netlify.app/Switch) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: |  |
+| Gestalt | [Switch](https://gestalt.netlify.app/switch) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: |  |
 | Grommet | [CheckBox](https://v2.grommet.io/checkbox) | :heavy_check_mark: | :x: | :x: | :x: | `left`, `right` | :x: |  |
 | Material UI | [Switch](https://material-ui.com/components/switches) | :heavy_check_mark: | :x: | :x: | :x: | `above`, `below`, `left`, `right` | :x: | `default`, `small` |
 | Onsen UI | [Switch](https://onsen.io/v2/api/react/Switch.html) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: |  |
-| Prime React | [InputSwitch](https://primefaces.org/primereact/showcase/#/inputswitch) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: |  |
+| Prime React | [InputSwitch](https://primefaces.org/primereact/inputswitch) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: |  |
 | Quasar | [toggle](https://quasar.dev/vue-components/toggle) | :heavy_check_mark: | :x: | :heavy_check_mark: | :x: | `left`, `right` | :x: | `custom`, `lg`, `md`, `sm`, `xl`, `xs` |
 | React Bootstrap | [Form.Check](https://react-bootstrap.github.io/components/forms/#forms-custom-switch) | :heavy_check_mark: | :x: | :x: | :x: | `right` | :x: |  |
 | React Toolbox | [Switch](http://react-toolbox.io/#/components/switch) | :heavy_check_mark: | :x: | :x: | :x: | `right` | :x: |  |
@@ -879,11 +880,11 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Element | [Tabs](https://element.eleme.io/#/en-US/component/tabs) | :heavy_check_mark: |
 | Evergreen | [Tablist](https://evergreen.segment.com/components/tabs) | :heavy_check_mark: |
 | Fluent UI | [Pivot](https://developer.microsoft.com/en-us/fluentui#/controls/web/pivot) | :x: |
-| Gestalt | [Tabs](https://gestalt.netlify.app/Tabs) | :x: |
+| Gestalt | [Tabs](https://gestalt.netlify.app/tabs) | :x: |
 | Grommet | [Tabs](https://v2.grommet.io/tabs) | :x: |
 | Material UI | [Tabs](https://material-ui.com/components/tabs) | :heavy_check_mark: |
 | Onsen UI | [Tabbar](https://onsen.io/v2/api/react/Tabbar.html) | :x: |
-| Prime React | [TabView](https://primefaces.org/primereact/showcase/#/tabview) | :x: |
+| Prime React | [TabView](https://primefaces.org/primereact/tabview) | :x: |
 | Quasar | [tabs](https://quasar.dev/vue-components/tabs) | :heavy_check_mark: |
 | React Bootstrap | [Tabs](https://react-bootstrap.github.io/components/tabs) | :x: |
 | React Toolbox | [Tabs](http://react-toolbox.io/#/components/tabs) | :x: |

@@ -94,6 +94,7 @@ export const materialUI: Framework = {
         filterable: false,
         groupable: true,
         icons: ['composable'],
+        virtual: false,
       },
     },
     {

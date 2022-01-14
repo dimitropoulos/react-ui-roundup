@@ -39,6 +39,7 @@ export const semanticUI: Framework = {
         filterable: true,
         groupable: false,
         icons: ['composable'],
+        virtual: false,
       },
     },
     {
