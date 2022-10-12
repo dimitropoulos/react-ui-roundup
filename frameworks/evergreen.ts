@@ -49,6 +49,19 @@ export const evergreen: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/components/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: false,
+        numPages: false,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'SelectMenu',
       componentURL: `${frameworkHomepage}/components/select-menu`,

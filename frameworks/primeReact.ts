@@ -43,6 +43,19 @@ export const primeReact: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Paginator',
+      componentURL: `${frameworkHomepage}/paginator`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: true,
+        numPages: true,
+        pageSize: true,
+        style: ['items', 'pages'],
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'Steps',
       componentURL: `${frameworkHomepage}/steps`,

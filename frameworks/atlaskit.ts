@@ -68,6 +68,19 @@ export const atlaskit: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/components/pagination`,
+      options: {
+        compact: false,
+        edgePages: false,
+        firstLast: false,
+        numPages: true,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
       componentURL: `${frameworkHomepage}/components/select`,

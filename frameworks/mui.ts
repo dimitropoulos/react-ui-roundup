@@ -1,13 +1,13 @@
 import { Framework } from '../frameworks';
 
-const frameworkHomepage = 'https://material-ui.com';
+const frameworkHomepage = 'https://mui.com/material-ui/';
 
-export const materialUI: Framework = {
+export const mui: Framework = {
   components: [
     {
       componentId: 'alert',
       componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/components/alert`,
+      componentURL: `${frameworkHomepage}/react-alert`,
       options: {
         closable: true,
         types: ['error', 'warning', 'info', 'success'],
@@ -16,7 +16,7 @@ export const materialUI: Framework = {
     {
       componentId: 'appBar',
       componentName: 'AppBar',
-      componentURL: `${frameworkHomepage}/components/app-bar`,
+      componentURL: `${frameworkHomepage}/react-app-bar`,
       options: {
         api: ['children'],
         denseMode: true,
@@ -27,7 +27,7 @@ export const materialUI: Framework = {
     {
       componentId: 'avatar',
       componentName: 'Avatar',
-      componentURL: `${frameworkHomepage}/components/avatars`,
+      componentURL: `${frameworkHomepage}/react-avatar`,
       options: {
         badge: true,
         shapes: ['circle', 'square', 'rounded-square'],
@@ -38,7 +38,7 @@ export const materialUI: Framework = {
     {
       componentId: 'avatarGroup',
       componentName: 'AvatarGroup',
-      componentURL: `${frameworkHomepage}/components/avatars`,
+      componentURL: `${frameworkHomepage}/react-avatar`,
       options: {
         cascade: ['below'],
         expandableGroup: false,
@@ -48,7 +48,7 @@ export const materialUI: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/buttons`,
+      componentURL: `${frameworkHomepage}/react-button`,
       options: {
         disabled: true,
         groupable: true,
@@ -60,7 +60,7 @@ export const materialUI: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/components/checkboxes`,
+      componentURL: `${frameworkHomepage}/react-checkbox`,
       options: {
         customIcon: true,
         disabled: true,
@@ -72,7 +72,7 @@ export const materialUI: Framework = {
     {
       componentId: 'datePicker',
       componentName: 'DatePicker',
-      componentURL: `${frameworkHomepage}/components/pickers`,
+      componentURL: 'https://mui.com/x/react-date-pickers/date-picker/',
       options: {
         clearable: false,
         customLocale: false,
@@ -84,9 +84,22 @@ export const materialUI: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/react-pagination`,
+      options: {
+        compact: true,
+        edgePages: true,
+        firstLast: true,
+        numPages: false,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
-      componentURL: `${frameworkHomepage}/components/selects`,
+      componentURL: `${frameworkHomepage}/react-select`,
       options: {
         async: true,
         disabled: true,
@@ -100,7 +113,7 @@ export const materialUI: Framework = {
     {
       componentId: 'stepper',
       componentName: 'Stepper',
-      componentURL: `${frameworkHomepage}/components/steppers`,
+      componentURL: `${frameworkHomepage}/react-stepper`,
       options: {
         canBeVertical: true,
         clickable: true,
@@ -112,7 +125,7 @@ export const materialUI: Framework = {
     {
       componentId: 'switch',
       componentName: 'Switch',
-      componentURL: `${frameworkHomepage}/components/switches`,
+      componentURL: `${frameworkHomepage}/react-switch`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -126,7 +139,7 @@ export const materialUI: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/components/tabs`,
+      componentURL: `${frameworkHomepage}/react-tabs`,
       options: {
         canBeVertical: true,
       },
@@ -153,7 +166,7 @@ export const materialUI: Framework = {
     typeScript: true,
   },
   frameworkHomepage,
-  frameworkId: 'materialUI',
-  frameworkName: 'Material UI',
-  repoURL: 'https://github.com/mui-org/material-ui',
+  frameworkId: 'mui',
+  frameworkName: 'MUI',
+  repoURL: 'https://github.com/mui/material-ui',
 };

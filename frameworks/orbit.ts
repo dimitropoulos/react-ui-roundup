@@ -7,7 +7,7 @@ export const orbit: Framework = {
     {
       componentId: 'alert',
       componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/components/alert-message/`,
+      componentURL: `${frameworkHomepage}/components/information/alert-message/`,
       options: {
         closable: true,
         types: ['success', 'info', 'warning', 'critical'],
@@ -16,7 +16,7 @@ export const orbit: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/components/button/`,
+      componentURL: `${frameworkHomepage}/components/action/button/`,
       options: {
         disabled: true,
         groupable: true,
@@ -28,7 +28,7 @@ export const orbit: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/components/checkbox`,
+      componentURL: `${frameworkHomepage}/components/input/checkbox`,
       options: {
         customIcon: false,
         disabled: true,
@@ -38,9 +38,22 @@ export const orbit: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/components/navigation/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: false,
+        numPages: true,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
-      componentURL: `${frameworkHomepage}/components/select`,
+      componentURL: `${frameworkHomepage}/components/input/select`,
       options: {
         async: false,
         disabled: true,

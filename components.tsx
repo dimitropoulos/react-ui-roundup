@@ -9,11 +9,12 @@ import { Button, button } from './components/button';
 import { Checkbox, checkbox } from './components/checkbox';
 import { DatePicker, datePicker } from './components/datePicker';
 import { ErrorBoundary, errorBoundary } from './components/errorBoundary';
+import { Pagination, pagination } from './components/pagination';
 import { Select, select } from './components/select';
 import { Stepper, stepper } from './components/stepper';
 import { Switch, switchComponent } from './components/switch';
 import { Tabs, tabs } from './components/tabs';
-import { Sentence } from './entities';
+import { CapitalLetter, Sentence } from './entities';
 
 export type Component =
   | Alert
@@ -24,6 +25,7 @@ export type Component =
   | Checkbox
   | DatePicker
   | ErrorBoundary
+  | Pagination
   | Select
   | Stepper
   | Switch
@@ -53,7 +55,7 @@ export interface ComponentInfo {
   componentId: string;
 
   /** The typical name used by the layman to identify this component. */
-  cannonicalName: string;
+  cannonicalName: `${CapitalLetter}${string}`;
 
   /** The English indefinte article to be used to refer to this Component */
   indefiniteArticle: 'a' | 'an';
@@ -71,6 +73,7 @@ export const componentInfo: ComponentInfo[] = sortBy(prop('componentId'), [
   checkbox,
   datePicker,
   errorBoundary,
+  pagination,
   select,
   stepper,
   switchComponent,

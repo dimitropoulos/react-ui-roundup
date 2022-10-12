@@ -15,7 +15,7 @@ import { evergreen } from './frameworks/evergreen';
 import { fluentUI } from './frameworks/fluentUI';
 import { gestalt } from './frameworks/gestalt';
 import { grommet } from './frameworks/grommet';
-import { materialUI } from './frameworks/materialUI';
+import { mui } from './frameworks/mui';
 import { onsenUI } from './frameworks/onsenUI';
 import { orbit } from './frameworks/orbit';
 import { primeReact } from './frameworks/primeReact';
@@ -58,7 +58,7 @@ export const frameworks: Framework[] = sort(ascend(pipe(prop('frameworkName'), t
   fluentUI,
   gestalt,
   grommet,
-  materialUI,
+  mui,
   onsenUI,
   orbit,
   primeReact,

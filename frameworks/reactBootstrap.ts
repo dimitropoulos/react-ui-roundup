@@ -38,6 +38,19 @@ export const reactBootstrap: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/components/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: true,
+        numPages: false,
+        pageSize:  false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Dropdown',
       componentURL: `${frameworkHomepage}/components/dropdowns`,

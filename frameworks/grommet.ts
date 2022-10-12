@@ -29,6 +29,19 @@ export const grommet: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/pagination`,
+      options: {
+        compact: true,
+        edgePages: true,
+        firstLast: true,
+        numPages: true,
+        pageSize: true,
+        style: ['items'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
       componentURL: `${frameworkHomepage}/select`,

@@ -64,6 +64,19 @@ export const elasticUI: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/#/navigation/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: true,
+        numPages: false,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'SuperSelect',
       componentURL: `${frameworkHomepage}/#/forms/super-select`,

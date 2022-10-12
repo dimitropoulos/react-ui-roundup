@@ -63,6 +63,19 @@ export const element: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/#/en-US/component/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: false,
+        numPages: true,
+        pageSize: true,
+        style: ['items'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
       componentURL: `${frameworkHomepage}/#/en-US/component/select`,

@@ -74,6 +74,19 @@ export const zendesk: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/components/pagination`,
+      options: {
+        compact: true,
+        edgePages: true,
+        firstLast: true,
+        numPages: true,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
       componentURL: `${frameworkHomepage}/components/select`,

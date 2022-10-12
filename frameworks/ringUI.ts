@@ -1,13 +1,13 @@
 import { Framework } from '../frameworks';
 
-const frameworkHomepage = 'https://jetbrains.github.io/ring-ui';
+const frameworkHomepage = 'https://jetbrains.github.io/ring-ui/master/index.html?path=/docs';
 
 export const ringUI: Framework = {
   components: [
     {
       componentId: 'alert',
       componentName: 'Alert',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-alert--simple`,
+      componentURL: `${frameworkHomepage}/components-alert--simple`,
       options: {
         closable: true,
         types: ['error', 'loading', 'message', 'success', 'warning'],
@@ -16,7 +16,7 @@ export const ringUI: Framework = {
     {
       componentId: 'appBar',
       componentName: 'Header',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-header--header`,
+      componentURL: `${frameworkHomepage}/components-header--header`,
       options: {
         api: ['children'],
         denseMode: true,
@@ -27,7 +27,7 @@ export const ringUI: Framework = {
     {
       componentId: 'avatar',
       componentName: 'Avatar',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-avatar--basic`,
+      componentURL: `${frameworkHomepage}/components-avatar--basic`,
       options: {
         badge: false,
         shapes: ['circle', 'rounded-square'],
@@ -38,7 +38,7 @@ export const ringUI: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-button--basic`,
+      componentURL: `${frameworkHomepage}/components-button--basic`,
       options: {
         disabled: true,
         groupable: true,
@@ -50,7 +50,7 @@ export const ringUI: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-checkbox--basic`,
+      componentURL: `${frameworkHomepage}/components-checkbox--basic`,
       options: {
         customIcon: false,
         disabled: true,
@@ -62,7 +62,7 @@ export const ringUI: Framework = {
     {
       componentId: 'datePicker',
       componentName: 'DatePicker',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-date-picker--clearable`,
+      componentURL: `${frameworkHomepage}/components-date-picker--clearable`,
       options: {
         clearable: true,
         customLocale: false,
@@ -74,9 +74,22 @@ export const ringUI: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pager',
+      componentURL: `${frameworkHomepage}/components-pager--basic`,
+      options: {
+        compact: false,
+        edgePages: false,
+        firstLast: true,
+        numPages: true,
+        pageSize: true,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-select--with-a-filter-and-tags`,
+      componentURL: `${frameworkHomepage}/components-select--with-a-filter-and-tags`,
       options: {
         async: true,
         disabled: true,
@@ -90,7 +103,7 @@ export const ringUI: Framework = {
     {
       componentId: 'switch',
       componentName: 'Toggle',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-toggle--basic`,
+      componentURL: `${frameworkHomepage}/components-toggle--basic`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -104,7 +117,7 @@ export const ringUI: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/master/index.html?path=/docs/components-tabs--basic`,
+      componentURL: `${frameworkHomepage}/components-tabs--basic`,
       options: {
         canBeVertical: false,
       },

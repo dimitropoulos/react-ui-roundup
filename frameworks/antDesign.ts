@@ -83,6 +83,19 @@ export const antDesign: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'Pagination',
+      componentURL: `${frameworkHomepage}/components/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: false,
+        numPages: true,
+        pageSize: true,
+        style: ['items'],
+      },
+    },
+    {
       componentId: 'select',
       componentName: 'Select',
       componentURL: `${frameworkHomepage}/components/select`,

@@ -6,6 +6,7 @@ export const quasar: Framework = {
   components: [
     {
       componentId: 'alert',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
       componentName: 'banner',
       componentURL: `${frameworkHomepage}/vue-components/banner`,
       options: {
@@ -15,7 +16,8 @@ export const quasar: Framework = {
     },
     {
       componentId: 'avatar',
-      componentName: 'Avatar',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
+      componentName: 'avatar',
       componentURL: `${frameworkHomepage}/vue-components/avatar`,
       options: {
         badge: true,
@@ -26,6 +28,7 @@ export const quasar: Framework = {
     },
     {
       componentId: 'button',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
       componentName: 'btn',
       componentURL: `${frameworkHomepage}/vue-components/button`,
       options: {
@@ -38,6 +41,7 @@ export const quasar: Framework = {
     },
     {
       componentId: 'checkbox',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
       componentName: 'checkbox',
       componentURL: `${frameworkHomepage}/vue-components/checkbox`,
       options: {
@@ -50,7 +54,8 @@ export const quasar: Framework = {
     },
     {
       componentId: 'datePicker',
-      componentName: 'DatePicker',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
+      componentName: 'date',
       componentURL: `${frameworkHomepage}/vue-components/date`,
       options: {
         clearable: false,
@@ -63,8 +68,23 @@ export const quasar: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
+      componentName: 'pagination',
+      componentURL: `${frameworkHomepage}/vue-components/pagination`,
+      options: {
+        compact: true,
+        edgePages: false,
+        firstLast: true,
+        numPages: true,
+        pageSize: false,
+        style: ['pages'],
+      },
+    },
+    {
       componentId: 'select',
-      componentName: 'Select',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
+      componentName: 'select',
       componentURL: `${frameworkHomepage}/vue-components/select`,
       options: {
         async: true,
@@ -78,7 +98,8 @@ export const quasar: Framework = {
     },
     {
       componentId: 'stepper',
-      componentName: 'Stepper',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
+      componentName: 'stepper',
       componentURL: `${frameworkHomepage}/vue-components/stepper`,
       options: {
         canBeVertical: true,
@@ -90,6 +111,7 @@ export const quasar: Framework = {
     },
     {
       componentId: 'switch',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
       componentName: 'toggle',
       componentURL: `${frameworkHomepage}/vue-components/toggle`,
       options: {
@@ -104,6 +126,7 @@ export const quasar: Framework = {
     },
     {
       componentId: 'tabs',
+      // @ts-expect-error quasar, being a vue framework, doesn't use react component conventions
       componentName: 'tabs',
       componentURL: `${frameworkHomepage}/vue-components/tabs`,
       options: {

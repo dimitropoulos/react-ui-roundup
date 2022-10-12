@@ -29,6 +29,19 @@ export const carbonDesign: Framework = {
       },
     },
     {
+      componentId: 'pagination',
+      componentName: 'PaginationNav',
+      componentURL: `${frameworkHomepage}/?path=/story/components-paginationnav--default`,
+      options: {
+        compact: false,
+        edgePages: false,
+        firstLast: false,
+        numPages: true,
+        pageSize: true,
+        style: ['items'],
+      },
+    },
+    {
       componentId: 'stepper',
       componentName: 'ProgressIndicator',
       componentURL: `${frameworkHomepage}/?path=/story/progressindicator--default`,
