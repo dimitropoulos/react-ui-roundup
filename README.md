@@ -87,30 +87,30 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 -->
 | Name | Homepage | Repository | Stars | Forks | Issues | License |
 | --- | --- | --- | --- | --- | --- | --- |
-| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 82,199 | 36,207 | 929 | MIT |
+| Ant Design | [ant.design](https://ant.design) | [ant-design/ant-design](https://github.com/ant-design/ant-design) | 86,259 | 40,164 | 1,000 | MIT |
 | Atlaskit | [atlassian.design](https://atlassian.design) | [bitbucket.org/atlassian/atlaskit-mk-2](https://bitbucket.org/atlassian/atlaskit-mk-2) | -- | -- | -- | -- |
-| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 19,338 | 2,062 | 669 | Apache 2.0 |
-| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 5,973 | 1,405 | 541 | Apache 2.0 |
-| Chakra UI | [chakra-ui.com/docs](https://chakra-ui.com/docs) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 28,998 | 2,589 | 84 | MIT |
-| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 5,350 | 714 | 354 | Other |
-| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 52,726 | 14,246 | 2,301 | MIT |
-| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,322 | 242 | 49 | MIT |
-| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 11,821 | 817 | 45 | MIT |
-| Fluent UI | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 14,113 | 2,316 | 675 | Other |
-| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 4,023 | 321 | 15 | Apache 2.0 |
-| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 8,048 | 982 | 198 | Apache 2.0 |
-| MUI | [mui.com/material-ui/](https://mui.com/material-ui/) | [mui/material-ui](https://github.com/mui/material-ui) | 81,915 | 28,229 | 1,278 | MIT |
-| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,641 | 1,024 | 104 | -- |
-| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 1,254 | 128 | 26 | MIT |
-| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 3,190 | 647 | 200 | MIT |
-| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 22,121 | 2,979 | 448 | MIT |
-| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 21,160 | 3,417 | 164 | MIT |
-| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,700 | 1,040 | 268 | MIT |
-| react-md | [react-md.dev](https://react-md.dev) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,322 | 316 | 52 | MIT |
-| Ring UI | [jetbrains.github.io/ring-ui/master/index.html?path=/docs](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 3,293 | 191 | 7 | Apache 2.0 |
-| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 50,195 | 5,108 | 1,059 | MIT |
-| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,603 | 114 | 10 | MIT |
-| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 1,030 | 86 | 15 | Apache 2.0 |
+| Blueprint | [blueprintjs.com](https://blueprintjs.com) | [palantir/blueprint](https://github.com/palantir/blueprint) | 19,863 | 2,126 | 662 | Apache 2.0 |
+| Carbon Design | [react.carbondesignsystem.com](http://react.carbondesignsystem.com) | [carbon-design-system/carbon](https://github.com/carbon-design-system/carbon) | 6,751 | 1,586 | 500 | Apache 2.0 |
+| Chakra UI | [chakra-ui.com/docs](https://chakra-ui.com/docs) | [chakra-ui/chakra-ui](https://github.com/chakra-ui/chakra-ui) | 33,104 | 2,928 | 137 | MIT |
+| Elastic UI | [elastic.github.io/eui](https://elastic.github.io/eui) | [elastic/eui](https://github.com/elastic/eui) | 5,740 | 761 | 267 | Other |
+| Element | [element.eleme.io](https://element.eleme.io) | [ElemeFE/element](https://github.com/ElemeFE/element) | 53,432 | 14,554 | 2,549 | MIT |
+| Elemental UI | [elemental-ui.com](http://elemental-ui.com) | [elementalui/elemental](https://github.com/elementalui/elemental) | 4,319 | 242 | 45 | MIT |
+| Evergreen | [evergreen.segment.com](https://evergreen.segment.com) | [segmentio/evergreen](https://github.com/segmentio/evergreen) | 12,168 | 858 | 57 | MIT |
+| Fluent UI | [developer.microsoft.com/en-us/fluentui](https://developer.microsoft.com/en-us/fluentui) | [microsoft/fluentui](https://github.com/microsoft/fluentui) | 15,794 | 2,497 | 733 | Other |
+| Gestalt | [gestalt.netlify.app](https://gestalt.netlify.app) | [pinterest/gestalt](https://github.com/pinterest/gestalt) | 4,121 | 343 | 16 | Apache 2.0 |
+| Grommet | [v2.grommet.io](https://v2.grommet.io) | [grommet/grommet](https://github.com/grommet/grommet) | 8,218 | 1,011 | 253 | Apache 2.0 |
+| MUI | [mui.com/material-ui/](https://mui.com/material-ui/) | [mui/material-ui](https://github.com/mui/material-ui) | 87,224 | 29,849 | 1,500 | MIT |
+| Onsen UI | [onsen.io](https://onsen.io) | [OnsenUI/OnsenUI](https://github.com/OnsenUI/OnsenUI) | 8,700 | 1,040 | 17 | -- |
+| Orbit | [orbit.kiwi](https://orbit.kiwi) | [kiwicom/orbit](https://github.com/kiwicom/orbit) | 1,310 | 140 | 28 | MIT |
+| Prime React | [primefaces.org/primereact](https://primefaces.org/primereact) | [primefaces/primereact](https://github.com/primefaces/primereact) | 4,111 | 725 | 246 | MIT |
+| Quasar | [quasar.dev](https://quasar.dev) | [quasarframework/quasar](https://github.com/quasarframework/quasar) | 23,676 | 3,210 | 487 | MIT |
+| React Bootstrap | [react-bootstrap.github.io](https://react-bootstrap.github.io) | [react-bootstrap/react-bootstrap](https://github.com/react-bootstrap/react-bootstrap) | 21,749 | 3,527 | 166 | MIT |
+| React Toolbox | [react-toolbox.io](http://react-toolbox.io) | [react-toolbox/react-toolbox](https://github.com/react-toolbox/react-toolbox) | 8,678 | 1,043 | 268 | MIT |
+| react-md | [react-md.dev](https://react-md.dev) | [mlaursen/react-md](https://github.com/mlaursen/react-md) | 2,347 | 319 | 57 | MIT |
+| Ring UI | [jetbrains.github.io/ring-ui/master/index.html?path=/docs](https://jetbrains.github.io/ring-ui/master/index.html?path=/docs) | [JetBrains/ring-ui](https://github.com/JetBrains/ring-ui) | 3,467 | 209 | 9 | Apache 2.0 |
+| Semantic UI | [semantic-ui.com](https://semantic-ui.com) | [Semantic-Org/Semantic-UI](https://github.com/Semantic-Org/Semantic-UI) | 50,604 | 5,100 | 1,069 | MIT |
+| Smooth UI | [smooth-code.com/open-source/smooth-ui](https://smooth-code.com/open-source/smooth-ui) | [smooth-code/smooth-ui](https://github.com/smooth-code/smooth-ui) | 1,598 | 112 | 10 | MIT |
+| Zendesk Garden | [garden.zendesk.com](https://garden.zendesk.com) | [zendeskgarden/react-components](https://github.com/zendeskgarden/react-components) | 1,057 | 92 | 21 | Apache 2.0 |
 
 <!--
 ********************************************************************************
@@ -118,7 +118,7 @@ THIS FILE ENTIRE FILE IS AUTOGENERATED!!!
 PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` directory if you would like to make changes :)
 ********************************************************************************
 -->
-> all of the above statistics were last updated Wed, 12 Oct 2022 18:16:19 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
+> all of the above statistics were last updated Tue, 13 Jun 2023 04:23:30 GMT.  For real-time data, [see the website](http://react-ui-roundup.dimitrimitropoulos.com).
 
 <!--
 ********************************************************************************
@@ -445,7 +445,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ant Design | [Button](https://ant.design/components/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `default`, `large`, `small` |
 | Atlaskit | [Button](https://atlassian.design/components/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `right` | :heavy_check_mark: |  |
 | Blueprint | [Button](https://blueprintjs.com/docs/#core/components/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `default`, `large` |
-| Carbon Design | [Button](http://react.carbondesignsystem.com/?path=/story/buttons--default) | :heavy_check_mark: | :heavy_check_mark: | `only`, `right` | :heavy_check_mark: | `default`, `field`, `small` |
+| Carbon Design | [Button](http://react.carbondesignsystem.com/?path=/story/components-button--default) | :heavy_check_mark: | :heavy_check_mark: | `only`, `right` | :heavy_check_mark: | `default`, `field`, `small` |
 | Chakra UI | [Button](https://chakra-ui.com/docs/form/button) | :heavy_check_mark: | :x: | `left`, `only`, `right` | :x: | `lg`, `md`, `sm`, `xs` |
 | Elastic UI | [Button](https://elastic.github.io/eui/#/navigation/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `m`, `sm`, `xs` |
 | Element | [Button](https://element.eleme.io/#/en-US/component/button) | :heavy_check_mark: | :heavy_check_mark: | `left`, `only`, `right` | :heavy_check_mark: | `default`, `medium`, `mini`, `small` |
@@ -509,7 +509,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ant Design | [Checkbox](https://ant.design/components/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | Atlaskit | [Checkbox](https://atlassian.design/components/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Blueprint | [Checkbox](https://blueprintjs.com/docs/#core/components/checkbox) | :x: | :x: | :heavy_check_mark: | :x: | `left`, `right` |
-| Carbon Design | [Checkbox](http://react.carbondesignsystem.com/?path=/story/checkbox--checked) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
+| Carbon Design | [Checkbox](http://react.carbondesignsystem.com/?path=/story/components-checkbox--default) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | Chakra UI | [Checkbox](https://chakra-ui.com/docs/form/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | `right` |
 | Elastic UI | [Checkbox](https://elastic.github.io/eui/#/forms/form-controls) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
 | Element | [Checkbox](https://element.eleme.io/#/en-US/component/checkbox) | :x: | :heavy_check_mark: | :heavy_check_mark: | :x: | `right` |
@@ -632,7 +632,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Framework | Name | Custom Text | Drop-In JSX Fallback | Wrapper JSX Fallback |
 | --- | --- | --- | --- | --- |
 | Ant Design | [Alert.ErrorBoundary](https://ant.design/components/alert/#components-alert-demo-error-boundary) | :heavy_check_mark: | :x: | :x: |
-| Carbon Design | [ErrorBoundary](http://react.carbondesignsystem.com/?path=/story/errorboundary--default) | :x: | :heavy_check_mark: | :x: |
+| Carbon Design | [ErrorBoundary](http://react.carbondesignsystem.com/?path=/story/components-errorboundary--default) | :x: | :heavy_check_mark: | :x: |
 | Elastic UI | [ErrorBoundary](https://elastic.github.io/eui/#/utilities/error-boundary) | :x: | :x: | :x: |
 
 <!--
@@ -813,7 +813,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | --- | --- | --- | --- | --- | --- | --- |
 | Ant Design | [Steps](https://ant.design/components/steps) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | Atlaskit | [ProgressTracker](https://atlassian.design/components/progress-tracker) | :x: | :heavy_check_mark: | :x: | :x: | :x: |
-| Carbon Design | [ProgressIndicator](http://react.carbondesignsystem.com/?path=/story/progressindicator--default) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
+| Carbon Design | [ProgressIndicator](http://react.carbondesignsystem.com/?path=/story/components-progressindicator--default) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :x: |
 | Elastic UI | [Steps](https://elastic.github.io/eui/#/navigation/steps) | :heavy_check_mark: | :x: | :x: | :x: | :x: |
 | Element | [Steps](https://element.eleme.io/#/en-US/component/steps) | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
 | MUI | [Stepper](https://mui.com/material-ui//react-stepper) | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |
@@ -874,7 +874,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ant Design | [Switch](https://ant.design/components/switch) | :heavy_check_mark: | :x: | :heavy_check_mark: | :heavy_check_mark: |  | :heavy_check_mark: | `default`, `small` |
 | Atlaskit | [Toggle](https://atlassian.design/components/toggle) | :heavy_check_mark: | :x: | :x: | :x: |  | :x: | `large`, `regular` |
 | Blueprint | [Switch](https://blueprintjs.com/docs/#core/components/switch) | :heavy_check_mark: | :x: | :x: | :heavy_check_mark: | `left`, `right` | :x: | `default`, `large` |
-| Carbon Design | [Switch](http://react.carbondesignsystem.com/?path=/story/toggle--toggled) | :heavy_check_mark: | :x: | :x: | :x: | `right` | :x: | `default`, `small` |
+| Carbon Design | [Switch](http://react.carbondesignsystem.com/?path=/story/components-toggle--default) | :heavy_check_mark: | :x: | :x: | :x: | `right` | :x: | `default`, `small` |
 | Chakra UI | [Switch](https://chakra-ui.com/docs/form/switch) | :heavy_check_mark: | :x: | :x: | :x: | `left`, `right` | :x: | `lg`, `md`, `sm` |
 | Elastic UI | [Switch](https://elastic.github.io/eui/#/forms/form-controls) | :heavy_check_mark: | :x: | :x: | :x: | `right` | :x: | `compressed`, `default` |
 | Element | [Switch](https://element.eleme.io/#/en-US/component/switch) | :heavy_check_mark: | :x: | :x: | :x: | `left`, `right` | :x: |  |
@@ -938,7 +938,7 @@ PLEASE SEE `markdown/generate-readme.ts` and the files in the `frameworks` direc
 | Ant Design | [Tabs](https://ant.design/components/tabs) | :heavy_check_mark: |
 | Atlaskit | [Tabs](https://atlassian.design/components/tabs) | :x: |
 | Blueprint | [Tabs](https://blueprintjs.com/docs/#core/components/tabs) | :heavy_check_mark: |
-| Carbon Design | [Tabs](http://react.carbondesignsystem.com/?path=/story/tabs--default) | :x: |
+| Carbon Design | [Tabs](http://react.carbondesignsystem.com/?path=/story/components-tabs--default) | :x: |
 | Chakra UI | [Tabs](https://chakra-ui.com/docs/disclosure/tabs) | :heavy_check_mark: |
 | Elastic UI | [Tabs](https://elastic.github.io/eui/#/navigation/tabs) | :x: |
 | Element | [Tabs](https://element.eleme.io/#/en-US/component/tabs) | :heavy_check_mark: |
