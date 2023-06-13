@@ -7,7 +7,7 @@ export const carbonDesign: Framework = {
     {
       componentId: 'button',
       componentName: 'Button',
-      componentURL: `${frameworkHomepage}/?path=/story/buttons--default`,
+      componentURL: `${frameworkHomepage}/?path=/story/components-button--default`,
       options: {
         disabled: true,
         groupable: true,
@@ -19,7 +19,7 @@ export const carbonDesign: Framework = {
     {
       componentId: 'checkbox',
       componentName: 'Checkbox',
-      componentURL: `${frameworkHomepage}/?path=/story/checkbox--checked`,
+      componentURL: `${frameworkHomepage}/?path=/story/components-checkbox--default`,
       options: {
         customIcon: false,
         disabled: true,
@@ -44,7 +44,7 @@ export const carbonDesign: Framework = {
     {
       componentId: 'stepper',
       componentName: 'ProgressIndicator',
-      componentURL: `${frameworkHomepage}/?path=/story/progressindicator--default`,
+      componentURL: `${frameworkHomepage}/?path=/story/components-progressindicator--default`,
       options: {
         canBeVertical: true,
         clickable: true,
@@ -70,7 +70,7 @@ export const carbonDesign: Framework = {
     {
       componentId: 'switch',
       componentName: 'Switch',
-      componentURL: `${frameworkHomepage}/?path=/story/toggle--toggled`,
+      componentURL: `${frameworkHomepage}/?path=/story/components-toggle--default`,
       options: {
         disabled: true,
         indeterminate: false,
@@ -98,7 +98,7 @@ export const carbonDesign: Framework = {
     {
       componentId: 'errorBoundary',
       componentName: 'ErrorBoundary',
-      componentURL: `${frameworkHomepage}/?path=/story/errorboundary--default`,
+      componentURL: `${frameworkHomepage}/?path=/story/components-errorboundary--default`,
       options: {
         customText: false,
         dropInFallback: true,
@@ -108,7 +108,7 @@ export const carbonDesign: Framework = {
     {
       componentId: 'tabs',
       componentName: 'Tabs',
-      componentURL: `${frameworkHomepage}/?path=/story/tabs--default`,
+      componentURL: `${frameworkHomepage}/?path=/story/components-tabs--default`,
       options: {
         canBeVertical: false,
       },
